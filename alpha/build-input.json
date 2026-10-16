@@ -1,0 +1,11 @@
+{
+  "version": "0.3.2",
+  "archive": {
+    "url": "https://next-why-thrown-main.trycloudflare.com/releases/RebornClient-Windows-0.3.2.zip",
+    "sha256": "f4a7aa877a6a660a4d781772329b037067e6c69e426409bdd9e8115d44971aed"
+  },
+  "update": {
+    "url": "https://next-why-thrown-main.trycloudflare.com/releases/RebornClient-0.3.2.zip",
+    "sha256": "311acafdd999ac4a5617efa684db3095f01e1a08c770c0be0261753045a3c3ee"
+  }
+}
