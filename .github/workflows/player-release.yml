@@ -46,7 +46,9 @@ jobs:
           [IO.File]::WriteAllBytes((Join-Path $PWD 'installer/Reborn.ico'), [byte[]]($header+$png))
       - name: Install pinned official WiX build tool
         shell: pwsh
-        run: dotnet tool install --global wix --version 5.0.2
+        run: |
+          dotnet tool install --global wix --version 5.0.2
+          wix extension add --global WixToolset.Util.wixext/5.0.2
       - name: Build normal per-user MSI
         shell: pwsh
         run: node build/make-player-installer.mjs payload installer
