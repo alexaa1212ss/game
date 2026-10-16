@@ -1,5 +1,5 @@
 // Clean Windows runner smoke test; never contains owner credentials or tools.
-import {spawn} from 'node:child_process';import {readFileSync,writeFileSync,existsSync} from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
+import {spawn} from 'node:child_process';import * as codec from './protocol-codec.mjs';import {readFileSync,writeFileSync,existsSync} from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
 const root=path.join(process.env.LOCALAPPDATA,'Programs/CavegameReborn'),base='http://127.0.0.1:33942',game='http://127.0.0.1:33944',env={...process.env,CAVEGAME_CLIENT_PORT:'33942',CAVEGAME_GAME_PORT:'33944'};
 const pause=ms=>new Promise(r=>setTimeout(r,ms)),steps=[];let nonce,identity;
 async function until(check){for(let i=0;i<180;i++){try{const v=await check();if(v)return v;}catch{}await pause(1000);}throw Error('Installed player startup timed out.');}
@@ -7,12 +7,16 @@ async function request(route,body){const r=await fetch(base+route,{method:body?'
 async function launch(){spawn(path.join(root,'Cavegame Reborn.exe'),['--no-browser'],{env,windowsHide:true,stdio:'ignore'});await until(async()=>{const h=await request('/health');return h.clientOnly&&h;});const html=await(await fetch(base)).text(),c=JSON.parse(html.match(/window.RebornLauncher=(.*?);<\/script>/s)[1]);nonce=c.nonce;return c;}
 try{
  let config=await launch();identity=config.identityId;assert.match(identity,/^r_[a-f0-9]{48}$/);steps.push('Actual installed native EXE starts bundled runtime and creates DPAPI identity');
- if(!process.argv.includes('--offline-smoke')){
  const nickname='AlphaCI_'+Math.random().toString(16).slice(2,8),result=await request('/launcher/connect',{nickname});assert.equal(result.account.developer,false);assert.equal(result.account.id,identity);
  const page=await(await fetch(game+'/play')).text();assert.ok(page.includes('window.RebornOnline='));assert.ok(!page.includes('/creative.js'));assert.ok(!page.includes('/worldedit.js'));assert.equal((await fetch(game+'/asset/scaled/pick_wood.png')).status,200);assert.equal((await fetch(game+'/worldedit.js')).status,404);steps.push('Official HTTPS login succeeds as normal player; game and tool sprites load; developer assets absent');
+ const online=JSON.parse(page.match(/window.RebornOnline=(.*?);<\/script>/s)[1]),remote=JSON.parse(page.match(/window.CavegameRemote=(.*?);window.RebornOnline=/s)[1]);let ws=new WebSocket(remote.endpoint);ws.binaryType='arraybuffer';const packets=[];ws.onmessage=e=>packets.push(codec.decodePacket(new Uint8Array(e.data)));
+ await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject;});const send=(type,value)=>ws.send(codec.encodePacket(type,codec.createPacket(type,value)));
+ send('secretid',{data:JSON.stringify({protocol:1,token:online.sessionToken})});await until(()=>packets.some(p=>p.type==='sessionId'));send('server-ready',{nickname,adsEnabled:false});await until(()=>packets.some(p=>p.type==='state-blocks'));
+ const self=()=>packets.findLast(p=>p.type==='state-blocks')?.state.players.find(p=>p.id===identity),before=self();assert.ok(before);const x=before.x;
+ send('move',{move:{right:true,left:false,up:false,down:false}});await pause(400);send('move',{move:{right:false,left:false,up:false,down:false}});await until(()=>self()?.x>x);steps.push('Installed player authenticates over public WSS, spawns and moves using real game packets');ws.close();await pause(1000);
+
  assert.equal((await fetch(game+'/launcher/recovery/export',{method:'POST',headers:{Origin:game},body:'{}'})).status,403);steps.push('Game origin cannot export identity keys');
- }
- await request('/launcher/quit',{});await pause(1500);config=await launch();assert.equal(config.identityId,identity);steps.push('Close/reopen preserves protected identity');
+ await request('/launcher/quit',{});await pause(1500);config=await launch();assert.equal(config.identityId,identity);assert.equal(config.settings.nickname,nickname);steps.push('Close/reopen preserves protected identity and nickname');
  await request('/launcher/quit',{});await pause(1500);
- writeFileSync('player-acceptance.json',JSON.stringify({passed:true,steps,identityCreated:true,remoteLogin:!process.argv.includes('--offline-smoke'),actualBrowserRenderVerified:false,notYetVerified:['Official server login and browser gameplay while tunnel is offline','Interactive install UI on second physical PC','Browser movement/mining in installed alpha package','Real next-release update/rollback and post-update progress'],at:new Date().toISOString()},null,2));
+ writeFileSync('player-acceptance.json',JSON.stringify({passed:true,steps,identityCreated:true,remoteLogin:true,actualBrowserRenderVerified:false,notYetVerified:['Interactive install UI on second physical PC','Browser movement/mining in installed alpha package','Real next-release update/rollback and post-update progress'],at:new Date().toISOString()},null,2));
 }catch(error){writeFileSync('player-acceptance.json',JSON.stringify({passed:false,steps,error:error.message}));try{await request('/launcher/quit',{});}catch{}throw error;}

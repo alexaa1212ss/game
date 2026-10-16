@@ -1,9 +1,9 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "product": "RebornPlayer",
-  "at": "2026-10-16T01:47:35.270Z",
-  "archiveBytes": 37093513,
-  "installedBytes": 94922592,
+  "at": "2026-10-16T02:14:16.004Z",
+  "archiveBytes": 38021267,
+  "installedBytes": 97396072,
   "files": [
     {
       "path": "bootstrap.mjs",
@@ -13,7 +13,7 @@
     {
       "path": "Cavegame Reborn.exe",
       "bytes": 10752,
-      "sha256": "9dac43835334ebff328e769c70c1b4990e7444b1e0922333979ce0b522a71dba"
+      "sha256": "219c2c701d2d409b44cdb1da078ee4a5f461f6c7a2e07f5522b3ac29b34405fc"
     },
     {
       "path": "install-product.json",
@@ -23,22 +23,22 @@
     {
       "path": "installed.json",
       "bytes": 46,
-      "sha256": "9e865220921daf5bac6de5103c828a05adb9fd4c23dfcdeb4e9d2cacadd5fe4e"
+      "sha256": "f3d25233587d16d366de5f7d3dd238893ee34c8595f48af90088efc6372f2045"
     },
     {
       "path": "installer-version.txt",
       "bytes": 5,
-      "sha256": "8225d01c6781052b4445ba5eada856290c242c119a3f0d65d80ba166edb99acc"
+      "sha256": "7c3850b28d57f77292b6d8e9fe00998daf5823523e40e97a51c79279055cf0a2"
     },
     {
       "path": "Player Maintenance.exe",
       "bytes": 6144,
-      "sha256": "044f2c0b32fcb2545c4d762f3a24a83c41c98c21d74ba9e5ee86a55cfb4d24bc"
+      "sha256": "eca745cbc2a8e1a05e897d69ee9b5334bba0b90c576a9a055cd592fd43a5e566"
     },
     {
       "path": "player-config.json",
-      "bytes": 483,
-      "sha256": "b655ec3ff7069a0ea02b18a48d62be66dedf1c0c8b21d4c566c536fbea99348c"
+      "bytes": 498,
+      "sha256": "a819c92e4360cf80b0421391919f279e52101fe179ce5312c9e1bf9e3afbd5a6"
     },
     {
       "path": "release-public.pem",
@@ -46,959 +46,929 @@
       "sha256": "6331769957d7ea159575b08185f615b9b24f4fac91ee76875c654aca1ea995f0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/bg1.png",
+      "path": "versions/0.3.3/app/public/asset/bg1.png",
       "bytes": 40064,
       "sha256": "5b9b662df1a4c596d3e96be1f38009bd6fcd04f9a37ca8943dbf230eefec204b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/cavegame-logo.png",
+      "path": "versions/0.3.3/app/public/asset/cavegame-logo.png",
       "bytes": 6604,
       "sha256": "53b36e3085423c3deb7cfc1591589f8a01dbe6a0b825426f65a175d2dca7d352"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/icon.ico",
+      "path": "versions/0.3.3/app/public/asset/icon.ico",
       "bytes": 3802,
       "sha256": "9ed01d6536686224a3107809532ab62eebddc41e1b7642c06c50b02d243c6ade"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/logo/google-g.svg",
+      "path": "versions/0.3.3/app/public/asset/logo/google-g.svg",
       "bytes": 855,
       "sha256": "35875309f3f024453b1bbdbe67bc4affd99af7482180d36f99bae0a32737b493"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/logo/logo-colored-small.svg",
+      "path": "versions/0.3.3/app/public/asset/logo/logo-colored-small.svg",
       "bytes": 16923,
       "sha256": "c9dcfda9f433c11a01c664080fcd6e3f59600b896ecd17401402f5f4d8e912a4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/loonride/logo-colored-small.png",
+      "path": "versions/0.3.3/app/public/asset/loonride/logo-colored-small.png",
       "bytes": 4408,
       "sha256": "10d83a9278d647dea48670a0b534e2f17739a244c87ef15490229611d3163630"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/mineroyale-logo.png",
+      "path": "versions/0.3.3/app/public/asset/mineroyale-logo.png",
       "bytes": 24427,
       "sha256": "8760cbb944506034fcaaddf5d18a6baa349e389a00ed45af8251785c52d2e83b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/oldwest-io-promo-banner.png",
+      "path": "versions/0.3.3/app/public/asset/oldwest-io-promo-banner.png",
       "bytes": 80545,
       "sha256": "ec725b1c21c1230882c2646ac296fc04efa102149cc1468320c2d934dc9b474a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/addicting-games.png",
+      "path": "versions/0.3.3/app/public/asset/promo/addicting-games.png",
       "bytes": 4780,
       "sha256": "3a76cb9b1ecf81c46b41adba2912e7badfe7300da13edf51cb6d44106ebad50b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/logomark-on-white.svg",
+      "path": "versions/0.3.3/app/public/asset/promo/logomark-on-white.svg",
       "bytes": 436,
       "sha256": "e05a50d648d4521f99445f6669139dd2b04a18801601246347537d0dfec5d3ac"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/mainbanner.png",
+      "path": "versions/0.3.3/app/public/asset/promo/mainbanner.png",
       "bytes": 138788,
       "sha256": "4b66fa246418bf652950bf3dc226f7c8a620b289d1ad8339d275bc0a2dfa49ef"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/mineroyale-banner.png",
+      "path": "versions/0.3.3/app/public/asset/promo/mineroyale-banner.png",
       "bytes": 166370,
       "sha256": "a09cd6f4317ad47445307fe5664b2f1c3c4b1fca71fadf38dc78f28903cf7a84"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/replacement-reward.png",
+      "path": "versions/0.3.3/app/public/asset/promo/replacement-reward.png",
       "bytes": 19684,
       "sha256": "3073d3e30f931cd580f971cbd596752ed695210fffbfe2de45c871a6e5e8c63b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/promo/replacement2.png",
+      "path": "versions/0.3.3/app/public/asset/promo/replacement2.png",
       "bytes": 21218,
       "sha256": "8db1fe29708fef70bd626c691d34795c0e1fd191f618bf8853002264fb7cc631"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/aethersteel-ingot.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/aethersteel-ingot.svg",
       "bytes": 414,
       "sha256": "0711a4166d0443ffbabb1868fd827e90a42b20d4afd5ab85d35133bd643779e3"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/aethersteel-ore.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/aethersteel-ore.svg",
       "bytes": 595,
       "sha256": "5843de2b56e06ce9c0b7f55ce8aed72d366d53bb1e7e6843cc99dd4c730e48ac"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/arc-bolt.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/arc-bolt.svg",
       "bytes": 343,
       "sha256": "98b1e6e55245dd1f54390622c8f0dc00b546e6de2b5deefcebaf1a7ae49507d1"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/arc-charge.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/arc-charge.svg",
       "bytes": 390,
       "sha256": "af793d053a1393649ca42f3a61f1cf47c0b632389c7d5476167d028f581dbfa4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/arc-launcher.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/arc-launcher.svg",
       "bytes": 462,
       "sha256": "3c34dc66fd05d0ddab9a4b9fe9f1078a089314f3789ff42041516d26dcf50017"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/helmet-aethersteel-enchanted.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/helmet-aethersteel-enchanted.svg",
       "bytes": 541,
       "sha256": "07d4ae6c24cd886d09c02eca0d08586f0265ee2bd4612a10be73bf841ca88ff7"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/helmet-aethersteel.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/helmet-aethersteel.svg",
       "bytes": 410,
       "sha256": "8726d1101f2a340075207c2ef285218248917a5c818ef4547a4d61900695255e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/pick-aethersteel-enchanted.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/pick-aethersteel-enchanted.svg",
       "bytes": 647,
       "sha256": "783bbcdf901551d7b3c4266d6d0475cd07c7fd963aae4c1ab6ae100d71775666"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/pick-aethersteel.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/pick-aethersteel.svg",
       "bytes": 516,
       "sha256": "8f2f303767476ff625201360172395c481f14880369f7c0e45406e0da7f64a20"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/player-aethersteel.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/player-aethersteel.svg",
       "bytes": 549,
       "sha256": "792bf823679e96f15195c92ec40e0c6f3fc9923690346da82bb0737c77b8edae"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/sword-aethersteel-enchanted.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/sword-aethersteel-enchanted.svg",
       "bytes": 674,
       "sha256": "52c9a8e99be568496a86c83e6fb7a5105dc35a4b2e46b606c6184925b144a851"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/sword-aethersteel.svg",
+      "path": "versions/0.3.3/app/public/asset/reborn/sword-aethersteel.svg",
       "bytes": 543,
       "sha256": "4afc77fbab8229d7d12c9d06144d7d0153b09852ceefff06169c0d05f742e4a5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/celestial-dragon-citadel.png",
-      "bytes": 3189,
-      "sha256": "6679a8505849b3e283d8b7f249a561426b1f65951f1d6ef7f8a72c1c4d793e3d"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/clockwork-aether-dragon.png",
-      "bytes": 1595,
-      "sha256": "afb0c04528aaf64c5bec9e0d1940205bb2142fe89784732a2823e904f92c47f3"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/crystalheart-reliquary.png",
-      "bytes": 482,
-      "sha256": "6a0518698fcc2272be978f84d17740d42ce51ecbed5c8285579ba3bbcf6af442"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/emberfox-familiar.png",
-      "bytes": 590,
-      "sha256": "7988863dc7255ab1439d942957f44dddbd588ff33f96d5e03786fd7818beec51"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/mushroom-lantern-cottage.png",
-      "bytes": 644,
-      "sha256": "55ff07a922b2ed2a27a6a2c360eec9b116b131ccc0a6eb89e0973245c7b4febb"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/reborn/templates/sunforged-phoenix.png",
-      "bytes": 1498,
-      "sha256": "5efc42a22dcddfe36023fba3b11f08f0f92a65d93182e79ef17973618a040543"
-    },
-    {
-      "path": "versions/0.3.2/app/public/asset/scaled/alphabet.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/alphabet.png",
       "bytes": 1553,
       "sha256": "23b11fb74502aa1ef11ac88e777b104926db1a7808699a7328cd107b5a5cabf0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/anvil.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/anvil.png",
       "bytes": 3619,
       "sha256": "1bca4be5b17822a3d5813f7d27b9e9903206993a3879879892a9bdbf35447155"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/apple.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/apple.png",
       "bytes": 1115,
       "sha256": "6fa2cbaee6cefece31d8be323eef8cb467e2d3b995c316e77e0b49a3575f2e3a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/arrow-horizontal.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/arrow-horizontal.png",
       "bytes": 1288,
       "sha256": "694a4b985fa9bc8768649f00ca425df3c29f4d3014744bd038a8c270afbd66b8"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/arrow.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/arrow.png",
       "bytes": 1578,
       "sha256": "c05d8a1803af6f57eee45103f3631bc0d4893f12b1ec1fd0540a6688dd77700f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/background-circle.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/background-circle.png",
       "bytes": 1396,
       "sha256": "b0af707dd8e791a2fd51772cedf3082993dfac0d5c7c68f261b52b049073a22f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/background.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/background.png",
       "bytes": 175,
       "sha256": "0a1197fd48b458e692909152147b1ccf53b59e03585b79bbc9dd7f9e697a16ad"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bar.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bar.png",
       "bytes": 134,
       "sha256": "83e5e4811ffc05ad00085da175e05d878c1d039a34bab05a51cbecd4d0a8a8b0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/barrier.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/barrier.png",
       "bytes": 1420,
       "sha256": "a72d685d4bc416af64360c3240c00cb9623d2acf1a3d4d989f578230d3f1a00f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bone.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bone.png",
       "bytes": 2014,
       "sha256": "5c2e8ac84c5d9a2d44aeba733cf654854c2a79237db47eb4c26ce72bffd89ad9"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bow-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bow-enchanted.png",
       "bytes": 2475,
       "sha256": "c50d945ad6659f2d3b659d99929e863cb1d5c7afcf47c21bd80af82762b0f25e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bow.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bow.png",
       "bytes": 2349,
       "sha256": "0ac68c0633f420fd4fbd0bb12ffbba20103506ce1fd7eccdc0d24f7316dc9ce1"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/brick_grey.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/brick_grey.png",
       "bytes": 1468,
       "sha256": "17a3d4efae50222b05832a1904da642417bc52864ea94b4b8cd0de40429e796a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/brown-spores.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/brown-spores.png",
       "bytes": 1664,
       "sha256": "1a71790fc2c1fa57924c17e35852983aaab9a3df0afb30faae316711f39674f0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bullet-trail.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bullet-trail.png",
       "bytes": 303,
       "sha256": "c19644cd63bb35749716d4024cad2e3d5ae8df1f02fd1cd569dc687dc282a68e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/bullet.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/bullet.png",
       "bytes": 230,
       "sha256": "0ea826a2a875568f4d6bcab66495a978b3fc373930938f7074f4569b2e5849b5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/chest.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/chest.png",
       "bytes": 2135,
       "sha256": "70c781cd6b2e93339b0befe37fc4d4af4d20f2d00740fff67422708debc066d6"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/coal.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/coal.png",
       "bytes": 950,
       "sha256": "d696fb29634dc07dab8bc1316500ab1dbb3c47dbceb9c9904f61b076ad6a7e7a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/cobble.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/cobble.png",
       "bytes": 1886,
       "sha256": "36d82b709744c4b2d373456781a77de4da5dc50bb46ca6d8cfd57ea52e8ec113"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/cracks.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/cracks.png",
       "bytes": 2769,
       "sha256": "4bc9a5b13780b4ff6c6aca5e3db1171992c146f552475897598ab71a16b7c605"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/crate.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/crate.png",
       "bytes": 2200,
       "sha256": "37554fdb5976188cd033a53361c0aad378e147a156e5a6fe6a84b1cb9e8515e3"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/diamond.png",
       "bytes": 1032,
       "sha256": "5edd5a372f37e72312113cb067aff6cf15fcb2aeef0837cbc61f300df7cb478e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/dirt.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/dirt.png",
       "bytes": 1371,
       "sha256": "595e7f3f8bab6cdf6d34cc73e2fc719adb9940c8b038c034c7acece8f2de04a0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/enchantment_table.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/enchantment_table.png",
       "bytes": 4325,
       "sha256": "04d93a191bba060e2c73934a963f753aaa920226aeee17ad47e450bd7e15ae09"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/fire-particles.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/fire-particles.png",
       "bytes": 146,
       "sha256": "6b873b8754c2d5e5419fe3e28716f2910fce21d34bff107748c4f7195b190ea4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/generic-particle.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/generic-particle.png",
       "bytes": 81,
       "sha256": "c725880fd818a2a6e19d72f0b2ca40b9597663e7c019b4dd2b63230344919038"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/goblin-king.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/goblin-king.png",
       "bytes": 5775,
       "sha256": "8850ffe3c7e29ba6bb0fa25fcbb59e7d50bda5ba75fc955e53580ae9230a0611"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/goblin.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/goblin.png",
       "bytes": 5762,
       "sha256": "088b3295afcdc7c3068c7584accff094769287f59db1ffedff5f299ddaee79c8"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/gold-generator.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/gold-generator.png",
       "bytes": 2539,
       "sha256": "f5f590818b9059ef1305d7cd887130b5c6c71586d20395e399fc17ad1c661d30"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/gold-particles.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/gold-particles.png",
       "bytes": 115,
       "sha256": "d9d60a259b2f7e576477644b2d7c35f73d8c13a6525fd75bef43260697aa1188"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/gold.png",
       "bytes": 902,
       "sha256": "ebcdf071dd8a19dfac978ddeb6c631f06a72d26b8c13d1fff08162c4524d6e06"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/golden-apple.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/golden-apple.png",
       "bytes": 1078,
       "sha256": "9da4d3cacca07c77e88841d79e0828014283af4a609b35f4e00981635b8abef2"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/golden-compass.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/golden-compass.png",
       "bytes": 2924,
       "sha256": "7a2dee58a395af3af7c90b912b990bfd8d549b3b970fd1061680b71137bb3bb5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/grappling-hook.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/grappling-hook.png",
       "bytes": 1677,
       "sha256": "9abe3e7c3ea4add99336073e94bbb42ad982d7ea496835e1a08abcb60271c97f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/gray-filter.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/gray-filter.png",
       "bytes": 99,
       "sha256": "993e59b824792dfaad30f4561ae8209fe22eab8684c497ba3ad36e44df268e09"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/greystone-dark.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/greystone-dark.png",
       "bytes": 867,
       "sha256": "46b7daa47a5d730de8db7378e54f1f61a3049c8eed5ce877e139ee50b9d0319f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/gun.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/gun.png",
       "bytes": 230,
       "sha256": "0ea826a2a875568f4d6bcab66495a978b3fc373930938f7074f4569b2e5849b5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/hands.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/hands.png",
       "bytes": 853,
       "sha256": "598506acb12ea89fc8c8615635d2596a43d2dd5d1167f2b03696afc21edb97ee"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_diamond-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_diamond-enchanted.png",
       "bytes": 1933,
       "sha256": "f01c428bc50b213e0e50c071f2bb8b0d5788a9bc639f45e5fbfe9fd40b997e6a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_diamond.png",
       "bytes": 1754,
       "sha256": "342961520a55bc5ba5785ddae1fdcbfd88b249c0d91cd6f52bc9e564583b3571"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_gold-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_gold-enchanted.png",
       "bytes": 1962,
       "sha256": "5996848edb75e4d3c12d82b8356525445271f7a82bcaacd8176ea7e39d0a9f5c"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_gold.png",
       "bytes": 1772,
       "sha256": "4063bfa49314b5570e3c50a691b88a9c46da0a112d9c15ad4061b2b4fa52e703"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_iron-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_iron-enchanted.png",
       "bytes": 1898,
       "sha256": "5d89f9cf103e2b2214b980c10d5c7479dcb3dfd6e6a2f59641f40979bcdd12ab"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_iron.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_iron.png",
       "bytes": 1701,
       "sha256": "74dad5e6d88bebaa117f55669783be9753ef35333b40077e484bc0d4da4478cd"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_leather-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_leather-enchanted.png",
       "bytes": 1840,
       "sha256": "62945335f33ec85275e9eadf1af279e955ebcf672997f6176d5d5ca0ebc90e1e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/helmet_leather.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/helmet_leather.png",
       "bytes": 1686,
       "sha256": "3c319d158ad2e478a29228988689c2e996341a924af84bf953983c373751bab4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/iron.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/iron.png",
       "bytes": 865,
       "sha256": "627cd2ca7909d55510a1415306b5617f48c485eadce4bd69fdbafc874d179a5a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/leaves-spawn.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/leaves-spawn.png",
       "bytes": 2715,
       "sha256": "7486b36fd4e2559c31701b22698a2da7e02ca7435ecda753ea60aeb022003f54"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/leaves.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/leaves.png",
       "bytes": 2905,
       "sha256": "847c9cbe5e30e2389191495c96fe86d5c45b0d1fceda5cfa7ebb85a6bd906b8c"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/log.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/log.png",
       "bytes": 1132,
       "sha256": "2357aa4955afd23adb4e8b746d85cb0f9ff68fb497ffe3668afc4ba89e12dbae"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/map.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/map.png",
       "bytes": 685870,
       "sha256": "5943026924a79e668e5159d602959c144e90cd2b6da531e1982d956830429f08"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/mushroom-brown.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/mushroom-brown.png",
       "bytes": 797,
       "sha256": "2ee53cff7d393a1f41d79dceab8a35395d041ef5b6c07a228fbd2dd84cffe694"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/mushroom-red.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/mushroom-red.png",
       "bytes": 1418,
       "sha256": "7679729e028d24d712be9335d7d4494fab18748f327066506f3c7b904a89f318"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/mysterious-map.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/mysterious-map.png",
       "bytes": 2909,
       "sha256": "eeb144f3c4505f714ee14a4973b4a814c7a072a1958eb20b606e66c8431894bd"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/obsidian.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/obsidian.png",
       "bytes": 3154,
       "sha256": "3c9d96bb02352c6408997e39ad6b0eff8cd77a6d5448f958b581f7b71ad3a0d5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/outline.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/outline.png",
       "bytes": 158,
       "sha256": "a15362ce88d7109febf414c69ad5dccee4bb649537d4eb5e518691324abcc7d4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/particle.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/particle.png",
       "bytes": 95,
       "sha256": "8013cad7020d0bb4c555026d32684e488253ea8493d60b50d00e05bf38965a29"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_diamond-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_diamond-enchanted.png",
       "bytes": 1530,
       "sha256": "16bade54685db98e02e681dd3376c02f9ccaef6cd3c34d915dc34b59e27aa760"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_diamond.png",
       "bytes": 1501,
       "sha256": "6db0ba944f8094676fa3ed697dd73535b6bae4a9f4a03bb4ca6e3dc3765e2972"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_gold-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_gold-enchanted.png",
       "bytes": 1739,
       "sha256": "05846046daf8abcaedac936c3f0aa275f4074e2a1c37751c5ce6d9610fc5d493"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_gold.png",
       "bytes": 1752,
       "sha256": "7a6ed005b0c2b60b1f6266765d4dfc888f2a4ef11ede810d3c9864f60d138564"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_iron-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_iron-enchanted.png",
       "bytes": 1714,
       "sha256": "61013a7b894274a7d5df2372818bdd1a6c10a20137616c92c91c47494fbfa137"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_iron.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_iron.png",
       "bytes": 1725,
       "sha256": "60ebb3f26d70e4da29e8260bd16ff09c0554f5ad967c8fd12451a25f448db53f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_stone-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_stone-enchanted.png",
       "bytes": 1669,
       "sha256": "9cc786de5a234f6e604b5b77bff9b0952cf491488be952cdbcebfcd645108c0e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_stone.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_stone.png",
       "bytes": 1688,
       "sha256": "bb571a6d496579b89a070cb988bb0169815c47ea96f7e043847ee430641a9a3e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_wood-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_wood-enchanted.png",
       "bytes": 1665,
       "sha256": "809c38afdc3ada26da914164340dc6c502ca9be7cfd9982c97b0edca93dcf583"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/pick_wood.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/pick_wood.png",
       "bytes": 1674,
       "sha256": "3535b5e714181852c123526084335694e566c4ae7e931cb1092264e9c5e4866a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-diamond-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-diamond-enchanted.png",
       "bytes": 2425,
       "sha256": "198205b065f4ac17731424771b0c8dea8f273dae5619992b6f94848ec04e00b2"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-diamond.png",
       "bytes": 2262,
       "sha256": "837b409138bb22b08d8fd4e98b7ba71a9155f55fea02836850ffe4d09cead3bf"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-gold-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-gold-enchanted.png",
       "bytes": 2443,
       "sha256": "211db27f0d1665116c44f7cb746c0bd11bdaffeca0f6b7949a60394fa7a10ff8"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-gold.png",
       "bytes": 2285,
       "sha256": "1e2840cf799d3669cf8c6457846ba5ca60eabf4053d30bd0b57b8307b324d378"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-iron-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-iron-enchanted.png",
       "bytes": 2393,
       "sha256": "411252c8d36514b104e2202826a2049c60479146ad4b2f3366a21691ba4f0d77"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-iron.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-iron.png",
       "bytes": 2234,
       "sha256": "f3436edaaf0ab9614bf372ef22b2b07d0952c88304660e671d4999f3804fa6de"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-leather-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-leather-enchanted.png",
       "bytes": 2399,
       "sha256": "3873cf22bc2d84cd7cf75b36828303d4928bbda4e70a07d3839065c786a145e6"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/player-leather.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/player-leather.png",
       "bytes": 2246,
       "sha256": "cba76e9fd73c0fb3f0ad4270d963cdd36e868960310eaa271748c08601a45ad4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/red-spores.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/red-spores.png",
       "bytes": 2071,
       "sha256": "31199426af6c14cab3f8c7b70dfb8c1210b7d31eb7252d78e4e0b9f0f7daa164"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/redsand-down.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/redsand-down.png",
       "bytes": 2185,
       "sha256": "9299272a34578d6f04eead03707a94b63d8fe52f93a470737ba89e312997b8d4"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/redsand-left.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/redsand-left.png",
       "bytes": 2162,
       "sha256": "68b06527550a2a7aa4483b4cec5900356cbd86e4c297ea4d2e0742b74f5624f5"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/redsand-right.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/redsand-right.png",
       "bytes": 2177,
       "sha256": "7fb54f08e04b91867a3f816438d758723747a2211b72ab2f52c7672da06fe987"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/redsand-up.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/redsand-up.png",
       "bytes": 2193,
       "sha256": "a19744ceb9639aa0a59c26cc94dd6f94688552d690897f3890fb4e72266aa80d"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/redsand.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/redsand.png",
       "bytes": 1045,
       "sha256": "d43139db314de962254906b7ed554ba5b4cfefb10497e46bcce5e183328741da"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/reinforced-obsidian.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/reinforced-obsidian.png",
       "bytes": 2086,
       "sha256": "468a2b9cc1edc235db0b4af53594392c8fcb55ebd76d1a5e74aeaf030abfc082"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sand.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sand.png",
       "bytes": 1120,
       "sha256": "ba6e5ea4e2e74d766b5ac9b1c258a171e8726982fe443f120ed020acf1fede9d"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sapling.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sapling.png",
       "bytes": 1223,
       "sha256": "9759af64e2372d8375fc4e0e5961df35099a646fee5f2e8c40cbe5dfcd47637d"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/skeleton-spawner.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/skeleton-spawner.png",
       "bytes": 1846,
       "sha256": "3cfdae3abbf4590bc4ec902dcbf5dfe2ac5d101cf81643e4495507b806715aa3"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/skeleton.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/skeleton.png",
       "bytes": 3817,
       "sha256": "4c938f9a55b82089c84cecf1cc82b5f894725df8daf3d2989036deb4c04a0f75"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/spawner.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/spawner.png",
       "bytes": 658,
       "sha256": "cb7c144733e602dbba32d9bb9a5f63961589ba05051a3c160a58a687711329e9"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/spider-bow.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/spider-bow.png",
       "bytes": 2685,
       "sha256": "ea5abfb07599400519d0f7d2f1dab6650f04efe6b77e0f9ea8be6149738b32b6"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/spider-spawner.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/spider-spawner.png",
       "bytes": 1445,
       "sha256": "377720dfe96a1158d57a3fe52bc5290cd5044ba6fe840623973142025fbfacc8"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/spider.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/spider.png",
       "bytes": 1675,
       "sha256": "407023f8b59bfba0f87f01f9237a970c9b6b37936976399a4cd6c0d28e175eee"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stew.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stew.png",
       "bytes": 1859,
       "sha256": "1469dd275280ea6a10809a234b2ec0026c138a164765074a856691a86a5dd56a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sticks.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sticks.png",
       "bytes": 2069,
       "sha256": "5b87bba80c7c4f30849732c0b83702e4c71e10e97eef888566957829d7ba0b6c"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stone.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stone.png",
       "bytes": 988,
       "sha256": "64d615e1a524d5c83564e0f0dd6c3e42d5f0d4fd6723aefc644b3e6e3d7e6e4b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stone_coal_alt.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stone_coal_alt.png",
       "bytes": 2756,
       "sha256": "7fd699749e072913bd92de3e1401dc8d6d655ab54a0b37749eda5a332dff7346"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stone_diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stone_diamond.png",
       "bytes": 2296,
       "sha256": "9e2105c1c4cc0b9194827f362ff920a08a51731ad18a1e9b190432074a668611"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stone_gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stone_gold.png",
       "bytes": 2701,
       "sha256": "15b5bd215433a8c9cea7e8248e69ba8821a0b4d58998d6bb92fad8ad8af89056"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/stone_silver_alt.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/stone_silver_alt.png",
       "bytes": 2611,
       "sha256": "311c7b0060aab88d36c37c0eef9bc700d4ca10733e4e158101195843f3efd745"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_diamond-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_diamond-enchanted.png",
       "bytes": 1644,
       "sha256": "5f362f14063ccd2804bf33caeea91f2ff4ed54f3057526cd1fd5158be06379c2"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_diamond.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_diamond.png",
       "bytes": 1591,
       "sha256": "6a49764e710c362b3f642dade591ab14d1a3eefbe35cb61531b4ae5f1352739b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_gold-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_gold-enchanted.png",
       "bytes": 1635,
       "sha256": "71af7afed0c2c7b6198a9a1a3b2172b9c5dc7177bb17ff02689ffec850ef0b03"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_gold.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_gold.png",
       "bytes": 1606,
       "sha256": "f3eeb5469f71ea7ffd7e1349868a0a2e22f30a95658831e1a57fcf7418440124"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_iron-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_iron-enchanted.png",
       "bytes": 1578,
       "sha256": "74be86d3275b741e23a213fc7f0fc7ca3ee529dd03b99dd3fb94fca4cb60b74d"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_iron.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_iron.png",
       "bytes": 1522,
       "sha256": "990ea8b11169cb1e3e535fcd1a30dbe1ce84f91a7bbd251b81a7e25a3350ca0e"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_stone-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_stone-enchanted.png",
       "bytes": 1611,
       "sha256": "e4b0eef8ddb42155fee5da09cd01e967d206c73791658e54621a2f4d3eade462"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_stone.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_stone.png",
       "bytes": 1552,
       "sha256": "e3d231ee7b3441fe61ea2d941167be9905a18b4ebf13e19db3593df8656a9e9a"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_wood-enchanted.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_wood-enchanted.png",
       "bytes": 1558,
       "sha256": "3651c73ea0b8f953d3f759c66ba6cdbaf5818c977b477e768ad6c48f86e5c82b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/sword_wood.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/sword_wood.png",
       "bytes": 1566,
       "sha256": "81e6370b7801a1db20c1b63c82e851308e2ccd2314756ea994cc07c1be29fb8b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/table.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/table.png",
       "bytes": 2245,
       "sha256": "e42adddf0673f9d12f7621b63bff4ed64637a668e16ea7ac3be427e9f860047b"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/team-stick.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/team-stick.png",
       "bytes": 2269,
       "sha256": "5419f3967d8abad60f03ea4ff9fa3fee252a5a425cf1568b94bef09f68a81a06"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/tnt-turret-inventory.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/tnt-turret-inventory.png",
       "bytes": 2911,
       "sha256": "cae8fe902b46e2879811b8e89d8869b91c2f85ca84d689824ea6a282fde637f0"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/tnt-turret.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/tnt-turret.png",
       "bytes": 1971,
       "sha256": "9c76b4e08b78604d5ff64ef45c5e0975aa733774b8ef725cc02bc88f388b4e15"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/tnt.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/tnt.png",
       "bytes": 778,
       "sha256": "180b93cb2007b4fe85577fbf5ef8d956f373b4706975e1720bad0ccfbe6f860c"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/trunk_top.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/trunk_top.png",
       "bytes": 1132,
       "sha256": "2357aa4955afd23adb4e8b746d85cb0f9ff68fb497ffe3668afc4ba89e12dbae"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/turret-base.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/turret-base.png",
       "bytes": 2682,
       "sha256": "675f06fb944b65217b30ec8a1810521b86ade7d2647ae39b8d7affe961c658ec"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/turret-inventory.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/turret-inventory.png",
       "bytes": 3165,
       "sha256": "873e4e8dc358ea4a4145cfa50616ba6cfb4808240615448614c56aaff7ec08c6"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/turret.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/turret.png",
       "bytes": 3334,
       "sha256": "29f96e49b6ee51fbc3e97003839cc8177685d0f05dab39f52e8f74fe87db07b6"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/vault-door.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/vault-door.png",
       "bytes": 923,
       "sha256": "3365bbe5e85d1de8bbbe3e4cb493c1320ec5a5a6963193fb1a6b862755b0d140"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/web.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/web.png",
       "bytes": 5256,
       "sha256": "080bca635d4886ade1b6ed3bf3c47b5e53156e334fef1a9fcdd3df8905442580"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/wood.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/wood.png",
       "bytes": 1252,
       "sha256": "d9d480bf58060ff1a06735b0b4ebef7f8fc56c41a704f96e24fd1db9e755449f"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/zombie-disguise.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/zombie-disguise.png",
       "bytes": 2324,
       "sha256": "a36fb1648696089ad347899c3be34a9ab2fb27b6e6451d70d0479d9a09807864"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/zombie-spawner.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/zombie-spawner.png",
       "bytes": 1383,
       "sha256": "7b0368b20fb2dcfaca5491348d7c3e5c677f27d4b8df6d695d5c29bd7c14c3aa"
     },
     {
-      "path": "versions/0.3.2/app/public/asset/scaled/zombie.png",
+      "path": "versions/0.3.3/app/public/asset/scaled/zombie.png",
       "bytes": 1669,
       "sha256": "18f70bedc72bf9c2387d9d78b7ff8c1d6ce29b5c385e335cb33dadac26273253"
     },
     {
-      "path": "versions/0.3.2/app/public/client-enhancements.js",
+      "path": "versions/0.3.3/app/public/client-enhancements.js",
       "bytes": 173,
       "sha256": "6f898d565904b95686a68d7dc32d47e606abae57a3319ffc242d9049ef4d2725"
     },
     {
-      "path": "versions/0.3.2/app/public/client.local.js",
+      "path": "versions/0.3.3/app/public/client.local.js",
       "bytes": 1638291,
       "sha256": "3993cd2fb121a55cb946bf89f1143c4a5a893c96e9ca93fc7110e19a72a04e6b"
     },
     {
-      "path": "versions/0.3.2/app/public/empire.css",
+      "path": "versions/0.3.3/app/public/empire.css",
       "bytes": 12709,
       "sha256": "54cd18fa0b607b2a475f569154295f19b1be9e0e723b0eff1a58a03fa31f3d4f"
     },
     {
-      "path": "versions/0.3.2/app/public/empire.js",
+      "path": "versions/0.3.3/app/public/empire.js",
       "bytes": 27237,
       "sha256": "df99eb49b18af6d3af1ef33dee82db6a52c94d178a2edaf49c80b09a90408e44"
     },
     {
-      "path": "versions/0.3.2/app/public/index.html",
+      "path": "versions/0.3.3/app/public/index.html",
       "bytes": 17231,
       "sha256": "3b2c3ab5b07bc1fd0193469ec23d2332c67dd136243b687f2087b9047932e0cb"
     },
     {
-      "path": "versions/0.3.2/app/public/interface-art.css",
+      "path": "versions/0.3.3/app/public/interface-art.css",
       "bytes": 45403,
       "sha256": "aaae0d54161d73c56453c60eaae99d7f1bab3f3c95db47c003cba7d46d7a960e"
     },
     {
-      "path": "versions/0.3.2/app/public/interface-art.js",
+      "path": "versions/0.3.3/app/public/interface-art.js",
       "bytes": 6954,
       "sha256": "4158d36598751c07af5f695630f8be36d0096739930271fa7aa536c32cd9c9a2"
     },
     {
-      "path": "versions/0.3.2/app/public/local-adapter.js",
+      "path": "versions/0.3.3/app/public/local-adapter.js",
       "bytes": 642,
       "sha256": "018c6f6ef19c7692e109822797ce722ff3d71872c8262540de644f58a3e12dc6"
     },
     {
-      "path": "versions/0.3.2/app/public/local-content-runtime.js",
+      "path": "versions/0.3.3/app/public/local-content-runtime.js",
       "bytes": 1289,
       "sha256": "e2e73f5fe0f257284268383794deac53df90169eaa7a256928b4838f97889b24"
     },
     {
-      "path": "versions/0.3.2/app/public/local-content.js",
+      "path": "versions/0.3.3/app/public/local-content.js",
       "bytes": 3832,
       "sha256": "d3c3fec3b5042fd9cd7807296366e2eed1817b99dc9c6cf4efb58c54d4ee9eb4"
     },
     {
-      "path": "versions/0.3.2/app/public/local.css",
+      "path": "versions/0.3.3/app/public/local.css",
       "bytes": 6744,
       "sha256": "da961eb3eebec1a9a44e5fb8adce5a81efc1106954da06edd073560ad7ab31ff"
     },
     {
-      "path": "versions/0.3.2/app/public/main.5f1c93f79d65309715e7.css",
+      "path": "versions/0.3.3/app/public/main.5f1c93f79d65309715e7.css",
       "bytes": 26243,
       "sha256": "292f48f76022938e16fd564c28c4b8995ed72d354c06caa36780f00fee49a4f1"
     },
     {
-      "path": "versions/0.3.2/app/public/main.5f1c93f79d65309715e7.js.LICENSE.txt",
+      "path": "versions/0.3.3/app/public/main.5f1c93f79d65309715e7.js.LICENSE.txt",
       "bytes": 9749,
       "sha256": "25efb68951d38dddc0a5d2a753699a63e4710af5850af262f5639c27846444ef"
     },
     {
-      "path": "versions/0.3.2/app/public/manifest.json",
+      "path": "versions/0.3.3/app/public/manifest.json",
       "bytes": 69,
       "sha256": "57d28fe5e68f761d9d9ae264db5f64bebb1f7b7bead879bc33bf597189de0474"
     },
     {
-      "path": "versions/0.3.2/app/public/online-client.js",
+      "path": "versions/0.3.3/app/public/online-client.js",
       "bytes": 6893,
       "sha256": "bd85a117a8e22d28512b35f0668d91c9885c9acdbefdd49cb06d816423aa9e94"
     },
     {
-      "path": "versions/0.3.2/app/public/online-guard.js",
+      "path": "versions/0.3.3/app/public/online-guard.js",
       "bytes": 2262,
       "sha256": "726de634f6b28e20a92a4ba804e835944b0ded94b0c98a7c7b4362b7f0b43f54"
     },
     {
-      "path": "versions/0.3.2/app/public/online-launcher.html",
+      "path": "versions/0.3.3/app/public/online-launcher.html",
       "bytes": 2009,
       "sha256": "75b7e69978d41d30d5b624b6dfeaa7fb11cff1f745337183485bc4ecba24ba39"
     },
     {
-      "path": "versions/0.3.2/app/public/online-launcher.js",
+      "path": "versions/0.3.3/app/public/online-launcher.js",
       "bytes": 3561,
       "sha256": "349173b89d093840feade3bb43de3df57f4e67d05cb29a086d1ee25163af1233"
     },
     {
-      "path": "versions/0.3.2/app/public/online.css",
+      "path": "versions/0.3.3/app/public/online.css",
       "bytes": 2637,
       "sha256": "207f97b73aaa4e170fb03f4227a1570d9767815d3a6e43d7a18139237f2386a4"
     },
     {
-      "path": "versions/0.3.2/app/public/player-zoom.js",
+      "path": "versions/0.3.3/app/public/player-zoom.js",
       "bytes": 710,
       "sha256": "858bbea8e39f72fb1d32b7dcf4661f70650e26b1c3ef18829d0e3c521b748391"
     },
     {
-      "path": "versions/0.3.2/app/public/privacy",
-      "bytes": 11464,
-      "sha256": "cdadc39bd6bb560005a1eee4b10eb25e14a19b08f400d348c19080d8e270a5a3"
+      "path": "versions/0.3.3/app/public/privacy",
+      "bytes": 867,
+      "sha256": "1f1d0980355d0287f1b5fc1e9465c6c07290b770221504d394a56e072c5974ea"
     },
     {
-      "path": "versions/0.3.2/app/public/terms",
-      "bytes": 10395,
-      "sha256": "d530875583f023ccdbf2fc93ea05ea0fd41c2b9a92859a28ad272617f95acec9"
+      "path": "versions/0.3.3/app/public/terms",
+      "bytes": 775,
+      "sha256": "0a727f7036e953901fff9cb7792895594c2ceca1034f8b0e1c5dd02946512903"
     },
     {
-      "path": "versions/0.3.2/app/public/ui-shell.css",
+      "path": "versions/0.3.3/app/public/ui-shell.css",
       "bytes": 2867,
       "sha256": "84d27fc318e475a5c30b07d703d91a725ab6b1f97da1eba0163d178f2d88dd43"
     },
     {
-      "path": "versions/0.3.2/app/public/ui-shell.js",
+      "path": "versions/0.3.3/app/public/ui-shell.js",
       "bytes": 4479,
       "sha256": "5804ea914204d966f2b8df29410d1b67238fad2f7d3a2ba3a6ccd9dee9e63599"
     },
     {
-      "path": "versions/0.3.2/app/scripts/start-online-client.mjs",
+      "path": "versions/0.3.3/app/scripts/start-online-client.mjs",
       "bytes": 2116,
-      "sha256": "a248da17586bf9728f57f9036e535fcf274051f4a245b7fc161dde19c77a3def"
+      "sha256": "fae29738220bb679fa0fead7e0ddc49ba543571c6a2e40adc9a79146aac7c064"
     },
     {
-      "path": "versions/0.3.2/app/src/atomic-json.mjs",
+      "path": "versions/0.3.3/app/src/atomic-json.mjs",
       "bytes": 694,
       "sha256": "816a4c8f7a7d8d097cf9fe63c1e9aca97ce5c99a918b840d6e8e79fbf8f54603"
     },
     {
-      "path": "versions/0.3.2/app/src/online/client-assets.mjs",
+      "path": "versions/0.3.3/app/src/online/client-assets.mjs",
       "bytes": 759,
       "sha256": "e4b23af04d69f2a65e54cd15354d08b6588dc3d9f51c2860cb03ad7fd5130f7f"
     },
     {
-      "path": "versions/0.3.2/app/src/online/client-schemas.mjs",
+      "path": "versions/0.3.3/app/src/online/client-schemas.mjs",
       "bytes": 8737,
       "sha256": "1c899d6b4361ac312daca4d9475db19b89e988e5362c69413ba470669fd6c445"
     },
     {
-      "path": "versions/0.3.2/app/src/online/client.mjs",
+      "path": "versions/0.3.3/app/src/online/client.mjs",
       "bytes": 12467,
       "sha256": "335424a3a9218cb8760d578adfe1e29e2da82c46ee62e14d6e13b9df27d78f46"
     },
     {
-      "path": "versions/0.3.2/app/src/online/constants.mjs",
+      "path": "versions/0.3.3/app/src/online/constants.mjs",
       "bytes": 180,
       "sha256": "36a3610826c484b0d61b2ce1711757b7018958c18840ef6286ea304230c91870"
     },
     {
-      "path": "versions/0.3.2/app/src/online/deployment.mjs",
+      "path": "versions/0.3.3/app/src/online/deployment.mjs",
       "bytes": 991,
       "sha256": "2e474a2c31aab3bf553324e71050830a93577bee7e8b7777e57ef75c801d3649"
     },
     {
-      "path": "versions/0.3.2/app/src/online/identity.mjs",
+      "path": "versions/0.3.3/app/src/online/identity.mjs",
       "bytes": 4683,
       "sha256": "7ab4b740dc4ad9a233ab052616654770973b21be665dea16028096516572af14"
     },
     {
-      "path": "versions/0.3.2/app/src/online/update.mjs",
+      "path": "versions/0.3.3/app/src/online/update.mjs",
       "bytes": 7424,
       "sha256": "a92d6bf40edf2df79dd25c7d45b8883a569c87f7d620a874d12a368b006bef8b"
     },
     {
-      "path": "versions/0.3.2/app/src/online/zip.mjs",
+      "path": "versions/0.3.3/app/src/online/zip.mjs",
       "bytes": 5443,
       "sha256": "64f67d90b901980d79e0f05b38aa1572b7250247d38ca6aa76ada0f96aad2334"
     },
     {
-      "path": "versions/0.3.2/runtime/LICENSE",
-      "bytes": 156927,
-      "sha256": "c43590e66f725c30d0dd1352643c2fc8490cfd0fd06ce6829261afcb1b5bf62b"
+      "path": "versions/0.3.3/runtime/LICENSE",
+      "bytes": 157609,
+      "sha256": "5888dbb9a1d2b18f2c3e6c5f6af1b39de658372b402a0577b002777f14c62ace"
     },
     {
-      "path": "versions/0.3.2/runtime/node.exe",
-      "bytes": 91380224,
-      "sha256": "63c259c81e5d472b5f11c8d506070130cb04a1ecf84b80377a34ed6ec9048088"
+      "path": "versions/0.3.3/runtime/node.exe",
+      "bytes": 93882184,
+      "sha256": "ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c"
     },
     {
-      "path": "versions/0.3.2/trusted-release.json",
-      "bytes": 26858,
-      "sha256": "1f85ff23839cb7f5a80e202ca95c2efbc1dfae9d8b67fd8fa4fc71dedc24d6b6"
+      "path": "versions/0.3.3/trusted-release.json",
+      "bytes": 25896,
+      "sha256": "61fce400eb2a7ec8e01b5d2f5592c4d8ebe2ab185a2751de1e86498ce71860b0"
     }
   ],
   "excluded": [
@@ -1011,5 +981,7 @@
     "logs/backups"
   ],
   "windowsSignature": "Unsigned: Authenticode certificate required",
-  "serverHosting": "Temporary owner-PC Cloudflare tunnel; not 24/7"
+  "serverHosting": "Temporary owner-PC Cloudflare tunnel; not 24/7",
+  "runtimeVersion": "24.22.0",
+  "runtimeAuthenticode": "Verified Valid on clean Windows build runner"
 }

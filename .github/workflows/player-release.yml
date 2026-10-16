@@ -23,8 +23,11 @@ jobs:
           $inputData = Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
           Expand-Archive -LiteralPath build/player-without-runtime.zip -DestinationPath payload
           $runtime = Join-Path payload ('versions/' + $inputData.version + '/runtime/node.exe')
-          Invoke-WebRequest -Uri 'https://nodejs.org/dist/v24.14.0/win-x64/node.exe' -OutFile $runtime
-          if ((Get-FileHash -LiteralPath $runtime -Algorithm SHA256).Hash.ToLowerInvariant() -ne '63c259c81e5d472b5f11c8d506070130cb04a1ecf84b80377a34ed6ec9048088') { throw 'Official Node runtime hash mismatch' }
+          Invoke-WebRequest -Uri 'https://nodejs.org/dist/v24.22.0/win-x64/node.exe' -OutFile $runtime
+          if ((Get-FileHash -LiteralPath $runtime -Algorithm SHA256).Hash.ToLowerInvariant() -ne 'ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c') { throw 'Official Node runtime hash mismatch' }
+          if ((Get-AuthenticodeSignature $runtime).Status -ne 'Valid') { throw 'Official runtime Windows signature invalid' }
+          Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/nodejs/node/v24.22.0/LICENSE' -OutFile (Join-Path payload ('versions/'+$inputData.version+'/runtime/LICENSE'))
+          & $runtime -e "const f=require('fs');const m=JSON.parse(f.readFileSync('alpha/player-stable.json','utf8'));f.writeFileSync('payload/versions/'+m.release.version+'/trusted-release.json',JSON.stringify(m));"
           & $runtime build/ci-reconstruct-player.mjs
           if ($LASTEXITCODE -ne 0) { throw 'Signed update reconstruction failed' }
           $audit = Get-Content alpha/player-file-audit.json -Raw | ConvertFrom-Json
@@ -53,7 +56,7 @@ jobs:
           $installer = (Resolve-Path installer/CavegameRebornSetup.msi).Path
           $installProcess = Start-Process msiexec.exe -ArgumentList @('/i', "`"$installer`"", '/qn', '/norestart', '/L*v', 'install.log') -Wait -PassThru -WindowStyle Hidden
           if ($installProcess.ExitCode -ne 0) { throw "Installer exit $($installProcess.ExitCode)" }
-          node build/ci-player-acceptance.mjs --offline-smoke
+          node build/ci-player-acceptance.mjs 
           if ($LASTEXITCODE -ne 0) { throw 'Installed player acceptance failed' }
       - name: Uninstall and preserve identity
         shell: pwsh
@@ -72,7 +75,9 @@ jobs:
         run: |
           $inputData = Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
           Get-FileHash installer/CavegameRebornSetup.msi -Algorithm SHA256 | Format-List | Out-File installer/SHA256.txt
-          gh release create "alpha-$($inputData.version)" installer/CavegameRebornSetup.msi installer/SHA256.txt "RebornClient-$($inputData.version).zip" alpha/player-stable.json alpha/player-file-audit.json player-acceptance.json --title "Cavegame Reborn Alpha $($inputData.version)" --notes-file ALPHA-NOTES.md --latest
+          gh release upload "alpha-$($inputData.version)" installer/CavegameRebornSetup.msi installer/SHA256.txt alpha/player-stable.json alpha/player-file-audit.json player-acceptance.json
+          if($LASTEXITCODE -ne 0){throw 'Release asset upload failed'}
+          gh release edit "alpha-$($inputData.version)" --prerelease=false --latest --title "Cavegame Reborn Alpha $($inputData.version)" --notes-file ALPHA-NOTES.md
       - name: Retain build diagnostics
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

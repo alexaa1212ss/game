@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.3.2",
-    "file": "RebornClient-0.3.2.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.3.2/RebornClient-0.3.2.zip",
-    "bytes": 37093513,
-    "sha256": "311acafdd999ac4a5617efa684db3095f01e1a08c770c0be0261753045a3c3ee",
+    "version": "0.3.3",
+    "file": "RebornClient-0.3.3.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.3.3/RebornClient-0.3.3.zip",
+    "bytes": 38021267,
+    "sha256": "e6d8484e480825038cf7af00a0fd2d092471614c0cab64e8b465e1711d694f1f",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792115253782,
-    "expiresAt": 1794707253782,
+    "publishedAt": 1792116855294,
+    "expiresAt": 1794708855294,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -141,36 +141,6 @@
         "path": "app/public/asset/reborn/sword-aethersteel.svg",
         "bytes": 543,
         "sha256": "4afc77fbab8229d7d12c9d06144d7d0153b09852ceefff06169c0d05f742e4a5"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/celestial-dragon-citadel.png",
-        "bytes": 3189,
-        "sha256": "6679a8505849b3e283d8b7f249a561426b1f65951f1d6ef7f8a72c1c4d793e3d"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/clockwork-aether-dragon.png",
-        "bytes": 1595,
-        "sha256": "afb0c04528aaf64c5bec9e0d1940205bb2142fe89784732a2823e904f92c47f3"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/crystalheart-reliquary.png",
-        "bytes": 482,
-        "sha256": "6a0518698fcc2272be978f84d17740d42ce51ecbed5c8285579ba3bbcf6af442"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/emberfox-familiar.png",
-        "bytes": 590,
-        "sha256": "7988863dc7255ab1439d942957f44dddbd588ff33f96d5e03786fd7818beec51"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/mushroom-lantern-cottage.png",
-        "bytes": 644,
-        "sha256": "55ff07a922b2ed2a27a6a2c360eec9b116b131ccc0a6eb89e0973245c7b4febb"
-      },
-      {
-        "path": "app/public/asset/reborn/templates/sunforged-phoenix.png",
-        "bytes": 1498,
-        "sha256": "5efc42a22dcddfe36023fba3b11f08f0f92a65d93182e79ef17973618a040543"
       },
       {
         "path": "app/public/asset/scaled/alphabet.png",
@@ -884,13 +854,13 @@
       },
       {
         "path": "app/public/privacy",
-        "bytes": 11464,
-        "sha256": "cdadc39bd6bb560005a1eee4b10eb25e14a19b08f400d348c19080d8e270a5a3"
+        "bytes": 867,
+        "sha256": "1f1d0980355d0287f1b5fc1e9465c6c07290b770221504d394a56e072c5974ea"
       },
       {
         "path": "app/public/terms",
-        "bytes": 10395,
-        "sha256": "d530875583f023ccdbf2fc93ea05ea0fd41c2b9a92859a28ad272617f95acec9"
+        "bytes": 775,
+        "sha256": "0a727f7036e953901fff9cb7792895594c2ceca1034f8b0e1c5dd02946512903"
       },
       {
         "path": "app/public/ui-shell.css",
@@ -905,7 +875,7 @@
       {
         "path": "app/scripts/start-online-client.mjs",
         "bytes": 2116,
-        "sha256": "a248da17586bf9728f57f9036e535fcf274051f4a245b7fc161dde19c77a3def"
+        "sha256": "fae29738220bb679fa0fead7e0ddc49ba543571c6a2e40adc9a79146aac7c064"
       },
       {
         "path": "app/src/atomic-json.mjs",
@@ -954,15 +924,15 @@
       },
       {
         "path": "runtime/LICENSE",
-        "bytes": 156927,
-        "sha256": "c43590e66f725c30d0dd1352643c2fc8490cfd0fd06ce6829261afcb1b5bf62b"
+        "bytes": 157609,
+        "sha256": "5888dbb9a1d2b18f2c3e6c5f6af1b39de658372b402a0577b002777f14c62ace"
       },
       {
         "path": "runtime/node.exe",
-        "bytes": 91380224,
-        "sha256": "63c259c81e5d472b5f11c8d506070130cb04a1ecf84b80377a34ed6ec9048088"
+        "bytes": 93882184,
+        "sha256": "ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c"
       }
     ]
   },
-  "signature": "DD40ED7+AcdRSdMTgK0rbQSZUbUlkC/+77uy00o2Wm6soOwFAo/XCBjyMG+zfI7ty7jlZA93q7H+FN9P5y01Aw=="
+  "signature": "VtomOAYi9AHBrWa1DS9hA1MXUTMHESyNLPeGKJDOzRWvXKyKBuhu/Oq8wIhjaY8AY9oXsMn+Xrup+VBCXLieAA=="
 }
