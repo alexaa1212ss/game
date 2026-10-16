@@ -2,7 +2,7 @@ name: Build and verify Windows player installer
 on:
   push:
     branches: [main]
-    paths: ['alpha/build-input.json', '.github/workflows/player-release.yml', 'build/make-player-installer.mjs']
+    paths: ['alpha/build-input.json', '.github/workflows/player-release.yml', 'build/make-player-installer.mjs', 'build/ci-installer-ui.ps1']
   workflow_dispatch:
 permissions:
   contents: write
