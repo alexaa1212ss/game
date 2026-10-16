@@ -75,7 +75,7 @@ jobs:
         run: |
           $inputData = Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
           Get-FileHash installer/CavegameRebornSetup.msi -Algorithm SHA256 | Format-List | Out-File installer/SHA256.txt
-          gh release upload "alpha-$($inputData.version)" installer/CavegameRebornSetup.msi installer/SHA256.txt alpha/player-stable.json alpha/player-file-audit.json player-acceptance.json
+          gh release upload "alpha-$($inputData.version)" installer/CavegameRebornSetup.msi installer/SHA256.txt alpha/player-stable.json alpha/player-file-audit.json player-acceptance.json --clobber
           if($LASTEXITCODE -ne 0){throw 'Release asset upload failed'}
           gh release edit "alpha-$($inputData.version)" --prerelease=false --latest --title "Cavegame Reborn Alpha $($inputData.version)" --notes-file ALPHA-NOTES.md
       - name: Retain build diagnostics
