@@ -2,7 +2,7 @@ name: Build and verify Windows player installer
 on:
   push:
     branches: [main]
-    paths: ['alpha/build-input.json', '.github/workflows/player-release.yml', 'build/**']
+    paths: ['alpha/build-input.json', '.github/workflows/player-release.yml', 'build/make-player-installer.mjs']
   workflow_dispatch:
 permissions:
   contents: write
@@ -53,9 +53,19 @@ jobs:
       - name: Install on clean Windows runner
         shell: pwsh
         run: |
-          $installer = (Resolve-Path installer/CavegameRebornSetup.msi).Path
-          $installProcess = Start-Process msiexec.exe -ArgumentList @('/i', "`"$installer`"", '/qn', '/norestart', '/L*v', 'install.log') -Wait -PassThru -WindowStyle Hidden
-          if ($installProcess.ExitCode -ne 0) { throw "Installer exit $($installProcess.ExitCode)" }
+          Invoke-WebRequest -Uri 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.3.2/CavegameRebornSetup.msi' -OutFile previous.msi
+          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '3a0418e4b2634e8d999bd6b76bad6721949da8904130d88879f31f22ef58d0e9'){throw 'Previous installer hash mismatch'}
+          $previous=(Resolve-Path previous.msi).Path
+          $initial=Start-Process msiexec.exe -ArgumentList @('/i',"`"$previous`"",'/qn','/norestart','/L*v','previous-install.log') -Wait -PassThru -WindowStyle Hidden
+          if($initial.ExitCode -ne 0){throw 'Previous installer failed'}
+          node build/ci-player-acceptance.mjs
+          if($LASTEXITCODE -ne 0){throw 'Previous installed client / automatic update failed'}
+          $pointer=Get-Content (Join-Path $env:LOCALAPPDATA 'Programs/CavegameReborn/installed.json') -Raw | ConvertFrom-Json
+          if($pointer.current -ne '0.3.3'){throw 'Real HTTPS application update did not activate'}
+          $identity=Join-Path $env:LOCALAPPDATA 'CavegameReborn/identity/identity.json'
+          $identityBefore=(Get-FileHash $identity).Hash
+          & ./build/ci-installer-ui.ps1
+          if((Get-FileHash $identity).Hash -ne $identityBefore){throw 'Installer upgrade changed identity'}
           node build/ci-player-acceptance.mjs 
           if ($LASTEXITCODE -ne 0) { throw 'Installed player acceptance failed' }
       - name: Uninstall and preserve identity
@@ -85,6 +95,8 @@ jobs:
           name: windows-installer-diagnostics
           path: |
             install.log
+            install-ui.log
+            previous-install.log
             uninstall.log
             player-acceptance.json
             installer/Player.wxs
