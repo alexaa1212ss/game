@@ -1,0 +1,35 @@
+name: Prepare current runtime candidate
+on:
+  push:
+    branches: [main]
+    paths: ['alpha/build-input.json', '.github/workflows/runtime-candidate.yml']
+permissions:
+  contents: write
+jobs:
+  candidate:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Assemble audited player files with official current LTS runtime
+        shell: pwsh
+        run: |
+          $inputData=Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
+          Expand-Archive -LiteralPath build/player-without-runtime.zip -DestinationPath payload
+          $runtime=Join-Path payload ('versions/'+$inputData.version+'/runtime/node.exe')
+          Invoke-WebRequest -Uri 'https://nodejs.org/dist/v24.22.0/win-x64/node.exe' -OutFile $runtime
+          if((Get-FileHash $runtime -Algorithm SHA256).Hash.ToLowerInvariant() -ne 'ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c'){throw 'Official runtime hash mismatch'}
+          if((Get-AuthenticodeSignature $runtime).Status -ne 'Valid'){throw 'Official runtime Windows signature invalid'}
+          Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/nodejs/node/v24.22.0/LICENSE' -OutFile (Join-Path payload ('versions/'+$inputData.version+'/runtime/LICENSE'))
+          & $runtime build/ci-prepare-runtime.mjs
+          if($LASTEXITCODE -ne 0){throw 'Candidate failed'}
+      - name: Publish candidate for local signing review
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $inputData=Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
+          gh release create "alpha-$($inputData.version)" "RebornClient-$($inputData.version).zip" runtime-candidate.json --prerelease --title "Cavegame Reborn $($inputData.version) — validation pending" --notes 'Unsigned packaging candidate. Not an installer release. The verified public installer remains the previous tested release until signing and acceptance finish.'
+          $body=@{message='Record hash-verified runtime candidate for private-key signing review';content=[Convert]::ToBase64String([IO.File]::ReadAllBytes((Join-Path $PWD 'runtime-candidate.json')))}|ConvertTo-Json
+          $body|Out-File candidate-upload.json -Encoding utf8
+          gh api --method PUT "repos/$env:GITHUB_REPOSITORY/contents/alpha/runtime-candidate.json" --input candidate-upload.json
