@@ -3,10 +3,10 @@
     "format": 1,
     "product": "RebornPlayer",
     "protocol": 1,
-    "server": "https://next-why-thrown-main.trycloudflare.com",
+    "server": "https://link-aerospace-algorithm-geological.trycloudflare.com",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792115253782,
-    "expiresAt": 1794707253782
+    "publishedAt": 1792116568058,
+    "expiresAt": 1794708568058
   },
-  "signature": "xaiffQM0oE+qhKlAEVcSuBFGnbYveUaN3TMRhkqf1GBwGDZ1CtyygaaywgnNQEg5wJvyBkKIm51cvv8rPd+KCg=="
+  "signature": "nAZcQIf6XL9jE2ay87QRiSXFvcgNKCYPOD0fqHep6BZzIHbdm0MkTCXBgip5eNZlOfaRzgpis6B/Tfa5zN2bBg=="
 }
