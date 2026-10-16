@@ -28,9 +28,19 @@ Click-SetupButton $complete 'Play Cavegame Reborn'
 $installProcess.WaitForExit()
 if($installProcess.ExitCode -ne 0){throw ('Interactive installer failed: '+$installProcess.ExitCode)}
 $ready=$false
+$activePort=$null
 for($attempt=0;$attempt -lt 90;$attempt++){
- try{$health=Invoke-RestMethod -Uri 'http://127.0.0.1:33942/health';if($health.clientOnly){$ready=$true;break}}catch{}
+ foreach($candidatePort in @(33942,33930)){
+  try{$health=Invoke-RestMethod -Uri ('http://127.0.0.1:'+$candidatePort+'/health') -TimeoutSec 1;if($health.clientOnly){$ready=$true;$activePort=$candidatePort;break}}catch{}
+ }
+ if($ready){break}
  Start-Sleep -Seconds 1
 }
 if(-not $ready){throw 'Installer Play button did not open the client'}
-Write-Output 'Interactive welcome, Install, completion, and Play action verified.'
+Write-Output ('Interactive welcome, Install, completion, and Play action verified on port '+$activePort)
+$launcher='http://127.0.0.1:'+$activePort
+$page=(Invoke-WebRequest -Uri $launcher -UseBasicParsing).Content
+$match=[regex]::Match($page,'window.RebornLauncher=(.*?);</script>','Singleline')
+$config=$match.Groups[1].Value | ConvertFrom-Json
+Invoke-RestMethod -Uri ($launcher+'/launcher/quit') -Method Post -Headers @{'x-reborn-launcher'=$config.nonce} -ContentType 'application/json' -Body '{}' | Out-Null
+Start-Sleep -Seconds 2
