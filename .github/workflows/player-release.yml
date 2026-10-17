@@ -45,7 +45,7 @@ jobs:
           Start-Transcript -Path installer-build-output.txt
           dotnet tool install --global wix --version 5.0.2
           wix extension add --global WixToolset.Util.wixext/5.0.2
-          node build/make-player-installer.mjs payload installer 0.4.0 2>&1 | Tee-Object -FilePath installer-native-output.txt
+          node build/make-player-installer.mjs payload installer 0.4.1 2>&1 | Tee-Object -FilePath installer-native-output.txt
           if($LASTEXITCODE -ne 0){throw 'Installer build failed'}
           Stop-Transcript
       - name: Stage signed update without promoting installer or stable feeds
@@ -61,17 +61,19 @@ jobs:
       - name: Previous installer to real HTTPS signed update and native launch
         shell: pwsh
         run: |
-          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.3.3/CavegameRebornSetup.msi' -OutFile previous.msi
-          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '3b12f64aa85d97bfb27d2f2aabee9e8416a41f4db1e7e85ae0a0b759fc93f6b5'){throw 'Previous MSI hash mismatch'}
+          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.0/CavegameRebornSetup.msi' -OutFile previous.msi
+          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '08cf9d3f07b71eb2957a36e6a95209e1464a97e6217a884eee453f384a856f0d'){throw 'Previous MSI hash mismatch'}
           $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path previous.msi).Path)`"",'/qn','/norestart','/L*v','previous-install.log') -Wait -PassThru -WindowStyle Hidden
           if($p.ExitCode -ne 0){throw 'Previous installer failed'}
           # Explicit signed staging directory for this clean CI fixture only.
           # Public stable feeds still point to the previous released build.
           Copy-Item alpha/candidate-player-config.json (Join-Path $env:LOCALAPPDATA 'Programs/CavegameReborn/player-config.json') -Force
+          $env:CAVEGAME_TEST_OLD_LAUNCHER='1'
           node build/ci-player-acceptance.mjs
+          Remove-Item Env:CAVEGAME_TEST_OLD_LAUNCHER
           if($LASTEXITCODE -ne 0){throw 'Installed agreement/update/public gameplay acceptance failed'}
           $pointer=Get-Content (Join-Path $env:LOCALAPPDATA 'Programs/CavegameReborn/installed.json') -Raw | ConvertFrom-Json
-          if($pointer.current -ne '0.4.0'){throw 'HTTPS update did not activate'}
+          if($pointer.current -ne '0.4.1'){throw 'HTTPS update did not activate'}
           $identity=Join-Path $env:LOCALAPPDATA 'CavegameReborn/identity/identity.json'
           $before=(Get-FileHash $identity).Hash
           & ./build/ci-installer-ui.ps1
@@ -116,7 +118,7 @@ jobs:
           $expected=(Get-FileHash installer/CavegameRebornSetup.msi -Algorithm SHA256).Hash
           $actual=(Get-FileHash canonical.msi -Algorithm SHA256).Hash
           if($actual -ne $expected){throw 'Canonical latest link differs from intended MSI'}
-          @{url=$url;version='0.4.0';sha256=$actual.ToLowerInvariant();bytes=(Get-Item canonical.msi).Length;verified=$true;at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Out-File canonical-download-verification.json -Encoding utf8
+          @{url=$url;version='0.4.1';sha256=$actual.ToLowerInvariant();bytes=(Get-Item canonical.msi).Length;verified=$true;at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Out-File canonical-download-verification.json -Encoding utf8
           $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path canonical.msi).Path)`"",'/qn','/norestart','/L*v','canonical-install.log') -Wait -PassThru -WindowStyle Hidden
           if($p.ExitCode -ne 0){throw 'Canonical installer failed'}
           node build/ci-player-acceptance.mjs

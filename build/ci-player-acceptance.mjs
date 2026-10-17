@@ -1,12 +1,20 @@
 // Clean Windows runner smoke test; never contains owner credentials or tools.
 import {spawn} from 'node:child_process';import * as codec from './protocol-codec.mjs';import {readFileSync,writeFileSync,existsSync} from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
 const root=path.join(process.env.LOCALAPPDATA,'Programs/CavegameReborn'),base='http://127.0.0.1:33942',game='http://127.0.0.1:33944',env={...process.env,CAVEGAME_CLIENT_PORT:'33942',CAVEGAME_GAME_PORT:'33944'};
+const expectedVersion=JSON.parse(readFileSync('alpha/build-input.json','utf8')).version;
 const pause=ms=>new Promise(r=>setTimeout(r,ms)),steps=[];let nonce,identity;
 async function until(check){for(let i=0;i<180;i++){try{const v=await check();if(v)return v;}catch{}await pause(1000);}throw Error('Installed player startup timed out.');}
 async function request(route,body){const r=await fetch(base+route,{method:body?'POST':'GET',headers:{'Content-Type':'application/json','x-reborn-launcher':nonce??''},body:body?JSON.stringify(body):undefined});const result=await r.json();if(!r.ok)throw Error(result.error);return result;}
-async function launch(){spawn(path.join(root,'Cavegame Reborn.exe'),['--no-browser'],{env,windowsHide:true,stdio:'ignore'});await until(async()=>{const h=await request('/health');return h.clientOnly&&h;});const html=await(await fetch(base)).text(),c=JSON.parse(html.match(/window.RebornLauncher=(.*?);<\/script>/s)[1]);nonce=c.nonce;return c;}
+async function launch(){spawn(path.join(root,'Cavegame Reborn.exe'),['--no-browser'],{env,windowsHide:true,stdio:'ignore'});await until(async()=>{const h=await request('/health');return h.clientOnly&&h.version===expectedVersion&&h;});const html=await(await fetch(base)).text(),c=JSON.parse(html.match(/window.RebornLauncher=(.*?);<\/script>/s)[1]);nonce=c.nonce;return c;}
 try{
- let config=await launch();identity=config.identityId;assert.match(identity,/^r_[a-f0-9]{48}$/);steps.push('Actual installed native EXE starts bundled runtime and creates DPAPI identity');
+ if(process.env.CAVEGAME_TEST_OLD_LAUNCHER==='1'){
+  const previous=JSON.parse(readFileSync(path.join(root,'installed.json'),'utf8')).current,folder=path.join(root,'versions',previous),config=JSON.parse(readFileSync(path.join(root,'player-config.json'),'utf8'));
+  assert.notEqual(previous,expectedVersion);
+  spawn(path.join(folder,'runtime/node.exe'),[path.join(folder,'app/scripts/start-online-client.mjs'),'--no-browser'],{env:{...env,CAVEGAME_APP_VERSION:previous,CAVEGAME_INSTALL_ROOT:root,CAVEGAME_PLAYER_DEPLOYMENT:JSON.stringify(config.fallback.deployment)},windowsHide:true,stdio:'ignore'});
+  const running=await until(async()=>{const h=await request('/health');return h.version===previous&&h;});identity=running.identityId;
+  steps.push('Previous installed '+previous+' launcher is deliberately left running before the native EXE checks for an update');
+ }
+ let config=await launch();if(identity)assert.equal(config.identityId,identity);identity=config.identityId;assert.equal(config.version,expectedVersion);assert.match(identity,/^r_[a-f0-9]{48}$/);steps.push('Actual installed native EXE starts verified '+expectedVersion+' runtime and preserves or creates DPAPI identity');
  const nickname='AlphaCI_'+Math.random().toString(16).slice(2,8);
  const agreement=await request('/launcher/agreement');assert.equal(agreement.required,true);
  if(!agreement.accepted){await assert.rejects(()=>request('/launcher/connect',{nickname}),/agreement/i);await request('/launcher/agreement',{decision:'decline',version:agreement.policy.version,sha256:agreement.policy.sha256});await assert.rejects(()=>request('/launcher/connect',{nickname}),/agreement/i);await request('/launcher/agreement',{decision:'accept',version:agreement.policy.version,sha256:agreement.policy.sha256});steps.push('First-launch agreement gates login; DECLINE denies; explicit test I AGREE enables access');}
