@@ -1,4 +1,4 @@
-﻿# Cavegame Reborn Closed Alpha 0.4.2
+# Cavegame Reborn Closed Alpha 0.4.3
 
 Session stability patch for ordinary players. Existing installations update automatically when the usual shortcut is opened. No reinstall or server-address entry is needed.
 
@@ -11,6 +11,8 @@ Session stability patch for ordinary players. Existing installations update auto
 
 Reproduced the released 0.4.1 session race with a genuine ordinary-player fixture: overlapping login replies can leave the client holding a revoked token and produce the exact `Session expired. Reconnect through the launcher.` response. The patched test remains authorized. Historical evidence cannot establish every input stage on the remote tester PC; its movement/attack repair still requires the tester's own confirmation.
 
-403/403 local regression tests passed, plus signed-package/agreement and native private-server checks. Windows installer/update and real-browser recovery acceptance are required by the release workflow before promotion.
+404/404 local regression tests passed, plus signed-package/agreement and native private-server checks. Windows installer/update and real-browser recovery acceptance are required by the release workflow before promotion.
 
 The MSI is not yet Authenticode-signed; new-application SmartScreen reputation warnings remain possible. No Defender bypasses or exclusions are used. The temporary Alpha server currently runs on the developer's host PC and is available only while that host and tunnel run.
+
+Automatic validated recovery bypasses the recovered beforeunload confirmation. Manual exits and denied recovery keep the normal guard. Server diagnostics remain on 0.4.2 with the same protocol and saved world.

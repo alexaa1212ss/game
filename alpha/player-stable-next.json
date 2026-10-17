@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.2",
-    "file": "RebornClient-0.4.2.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.2/RebornClient-0.4.2.zip",
-    "bytes": 38033365,
-    "sha256": "0b8cfbd1d1cda47ba6ac812201b89fb4dcc0352245ae60c5889b78a8e35d5985",
+    "version": "0.4.3",
+    "file": "RebornClient-0.4.3.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.3/RebornClient-0.4.3.zip",
+    "bytes": 38033546,
+    "sha256": "2692377b9279423dd3c80fca2155b0dfeab6b48684f66245a599432876f4f313",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792242031722,
-    "expiresAt": 1794834031722,
+    "publishedAt": 1792242715171,
+    "expiresAt": 1794834715171,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -844,8 +844,8 @@
       },
       {
         "path": "app/public/online-input.js",
-        "bytes": 3508,
-        "sha256": "a62472bacc2e99244729459825d0bc05ad89c004fbf782b9966d147c4ec9e243"
+        "bytes": 3903,
+        "sha256": "aba91eabf35fca385948a51a1c682299b44c52b7c68badea8c744f96775eeb81"
       },
       {
         "path": "app/public/online-launcher.html",
@@ -959,5 +959,5 @@
       }
     ]
   },
-  "signature": "N8qdIZpfS65amgBWO/8GAm8+2JE706bU+o0m7018P6eAWCM3plfmrk9UXZ1AMOTt7/Uxscw/6UnnvQFSmTj7Aw=="
+  "signature": "hNz0BLU2VTHOnHv2ZuvW1P9Ah7POX7P0vpxfEwoy9sbSDi9sx5mN/uM8PSK8ELsAQDfRJIrA/dt1tkWb11aHCw=="
 }
