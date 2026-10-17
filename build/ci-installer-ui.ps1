@@ -23,7 +23,7 @@ function Click-SetupButton($window,[string]$label){
 }
 $welcome=Find-SetupWindow 'Cavegame Reborn Setup'
 Click-SetupButton $welcome 'Install'
-$complete=Find-SetupWindow 'Cavegame Reborn � Installed'
+$complete=Find-SetupWindow 'Cavegame Reborn — Installed'
 Click-SetupButton $complete 'Play Cavegame Reborn'
 $installProcess.WaitForExit()
 if($installProcess.ExitCode -ne 0){throw ('Interactive installer failed: '+$installProcess.ExitCode)}

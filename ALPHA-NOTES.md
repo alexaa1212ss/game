@@ -1,4 +1,4 @@
-# Cavegame: Reborn � Closed Alpha 0.4.0
+# Cavegame: Reborn — Closed Alpha 0.4.0
 
 This update starts a fresh V5 Alpha season. Previous world/builds/inventory/economy remain privately archived; they are not part of the fresh season. Device identity and developer ownership remain intact. The separate offline game and saves are preserved.
 
