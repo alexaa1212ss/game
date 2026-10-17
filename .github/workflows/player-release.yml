@@ -45,7 +45,7 @@ jobs:
           Start-Transcript -Path installer-build-output.txt
           dotnet tool install --global wix --version 5.0.2
           wix extension add --global WixToolset.Util.wixext/5.0.2
-          node build/make-player-installer.mjs payload installer 0.4.0
+          node build/make-player-installer.mjs payload installer 0.4.0 2>&1 | Tee-Object -FilePath installer-native-output.txt
           if($LASTEXITCODE -ne 0){throw 'Installer build failed'}
           Stop-Transcript
       - name: Stage signed update without promoting installer or stable feeds
@@ -131,6 +131,8 @@ jobs:
           path: |
             *install*.log
             installer-build-output.txt
+            installer-native-output.txt
+            installer/wix-result.json
             player-acceptance.json
             canonical-download-verification.json
             installer/Player.wxs
@@ -144,7 +146,8 @@ jobs:
         run: |
           if(Test-Path installer-build-output.txt){
             $text=Get-Content installer-build-output.txt -Raw
-            $data=@{run='${{ github.run_id }}';buildOutput=$text}|ConvertTo-Json
+            $native=if(Test-Path installer/wix-result.json){Get-Content installer/wix-result.json -Raw}else{'No native result'}
+            $data=@{run='${{ github.run_id }}';buildOutput=$text;native=$native}|ConvertTo-Json
             $body=@{message='Retain installer compiler diagnostic';content=[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($data))}|ConvertTo-Json
             $body|Out-File diagnostic-upload.json -Encoding utf8
             gh api --method PUT 'repos/${{ github.repository }}/contents/alpha/installer-diagnostic-${{ github.run_id }}.json' --input diagnostic-upload.json
