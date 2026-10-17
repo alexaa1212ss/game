@@ -5,8 +5,8 @@
     "protocol": 1,
     "server": "https://valium-weapon-perform-velocity.trycloudflare.com",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792237196912,
-    "expiresAt": 1794829196912
+    "publishedAt": 1792237340349,
+    "expiresAt": 1794829340349
   },
-  "signature": "LegYOkLnE+48n1OhWFp9FKKi8cVjsOmCy93bEsgkK/x9RQEfcC6Fzo89Uf5V5NXts82UHsJnbcM0eUEb6Yx/Cg=="
+  "signature": "DfnREbeL6zVXq2ioa6ukKXVlnZwx1LrndJCbg2a2n+u2qHIz2D7maUELCYDdX1Y/C/dXCENAXeklSM5YPK0qCg=="
 }
