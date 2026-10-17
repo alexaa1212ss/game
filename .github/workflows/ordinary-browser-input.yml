@@ -1,0 +1,30 @@
+name: Ordinary player real browser input probe
+on:
+  push:
+    branches: [main]
+    paths: ['build/ci-browser-input.mjs', '.github/workflows/ordinary-browser-input.yml']
+permissions:
+  contents: read
+jobs:
+  browser-input:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install released player and run real Edge input
+        shell: pwsh
+        run: |
+          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.1/CavegameRebornSetup.msi' -OutFile player.msi
+          if((Get-FileHash player.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '4d08fcaf3ab7cb1b36bb47d5150b6d235178d6a136a5309fcae0da8383b8158c'){throw 'Installer hash mismatch'}
+          $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path player.msi).Path)`"",'/qn','/norestart') -Wait -PassThru -WindowStyle Hidden
+          if($p.ExitCode -ne 0){throw 'Install failed'}
+          node build/ci-browser-input.mjs
+          if($LASTEXITCODE -ne 0){throw 'Browser input probe failed; inspect report'}
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: ordinary-browser-diagnostic
+          path: |
+            ordinary-browser-report.json
+            ordinary-browser.png
+          retention-days: 14
