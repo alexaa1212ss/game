@@ -29,7 +29,7 @@ try{
  const boot=await evaluate('window.__inputBoot'),oldLease=await evaluate('window.RebornOnline.gameLease');
  const current=JSON.parse(readFileSync(path.join(install,'installed.json'),'utf8')).current,app=path.join(install,'versions',current,'app');
  const {openIdentity}=await import(pathToFileURL(path.join(app,'src/online/identity.mjs'))),{signIn}=await import(pathToFileURL(path.join(app,'src/online/client.mjs')));
- const key=openIdentity(path.join(process.env.LOCALAPPDATA,'CavegameReborn/identity')),receipt=JSON.parse(readFileSync(path.join(process.env.LOCALAPPDATA,'CavegameReborn/alpha-agreement.json'),'utf8'));
+ const key=openIdentity(path.join(process.env.LOCALAPPDATA,'CavegameReborn/identity')),receipt=JSON.parse(readFileSync(path.join(process.env.LOCALAPPDATA,'CavegameReborn/alpha-agreement.json'),'utf8')).receipt;
  const endpoint=await evaluate('window.CavegameRemote.endpoint'),origin=new URL(endpoint);origin.protocol=origin.protocol==='wss:'?'https:':'http:';
  // A second legitimate login for this CI identity revokes its old session, exactly as production authentication requires.
  await signIn(origin.origin,key,session.account.nickname,{alphaAgreement:a.policy,alphaReceipt:receipt});
