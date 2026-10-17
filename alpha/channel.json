@@ -1,12 +1,1 @@
-{
-  "deployment": {
-    "format": 1,
-    "product": "RebornPlayer",
-    "protocol": 1,
-    "server": "https://consultation-runs-only-counseling.trycloudflare.com",
-    "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792244861979,
-    "expiresAt": 1794836861979
-  },
-  "signature": "XaesHNlDjUJCw2BBpBOuBcVqhNUR0UvYyC6oNMOINmiA/AbYuDXIpHgcCqhJZ5rXsVdUpxFtAszDZ0G0CW7MCQ=="
-}
+{"deployment":{"format":1,"product":"RebornPlayer","protocol":1,"server":"https://consultation-runs-only-counseling.trycloudflare.com","updateFeed":"https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json","publishedAt":1792244903364,"expiresAt":1794836903364},"signature":"91XQ9T8XeyTEaufGM4YvpyABlO/QIiAQ9oXG/v3cXFL5sCFcc+Zc2ZK7BMLlPcuMkSlkBn43VfGxWhmdB5ElAA=="}
