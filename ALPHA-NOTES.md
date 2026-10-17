@@ -1,12 +1,16 @@
-# Cavegame: Reborn — Closed Alpha 0.4.1
+﻿# Cavegame Reborn Closed Alpha 0.4.2
 
-Connection recovery update. Existing installations update through the signed launcher channel; no reinstall or manual server address is required. Season 2 / V5 and player identities, inventories, progress and agreement receipts are preserved.
+Session stability patch for ordinary players. Existing installations update automatically when the usual shortcut is opened. No reinstall or server-address entry is needed.
 
-- Refresh the verified official server directory when opening the launcher, pressing Play, checking updates, and during launcher/game heartbeats.
-- Signed directory cache retains the latest valid destination across launches, rejects older/conflicting records and forgery, and bypasses stale intermediary caches.
-- A new verified app version replaces an already-running older launcher instead of silently opening its stale process.
-- A moved host is reported clearly; return to the launcher and press Play to connect to its new verified address. An in-progress login retries once only when a newly signed directory changes the destination.
-- Host-only tools log failures, retry unexpected exits with a limit, verify local/public server identity, and publish the signed directory automatically after one-time owner GitHub authorization. Those tools and credentials are excluded from the player package.
-- Existing V5 generation, streamed terrain privacy, mining/inventory/UI fixes, and explicit Closed Alpha agreement gate remain in place. Anyone may accept the current agreement and play; there is no tester allowlist.
+- Serialize login/session refresh and reuse an authenticated session instead of revoking it during overlapping game handshakes.
+- Recover an expired session once, using the existing protected identity and agreement acceptance. Bans and other authorization failures remain enforced.
+- Retire outdated game windows so they cannot refresh and invalidate a newer session.
+- Initialize online interfaces with the authenticated account ID.
+- Add bounded connection/input diagnostics to distinguish browser focus/input, packet delivery, server rejection and rendered state. No login keys, session tokens or chat contents are logged by this diagnostic.
+- Preserve Season 2, V5 terrain, inventories, research and developer permissions. No world wipe or authority/rate-limit relaxation.
 
-Hosting still runs on the owner's PC through a temporary tunnel, so the PC and host window must remain running. GitHub hosts installers/updates, not the game simulation. Permanent 24/7 hosting and Authenticode signing remain outstanding. Never disable Windows security features.
+Reproduced the released 0.4.1 session race with a genuine ordinary-player fixture: overlapping login replies can leave the client holding a revoked token and produce the exact `Session expired. Reconnect through the launcher.` response. The patched test remains authorized. Historical evidence cannot establish every input stage on the remote tester PC; its movement/attack repair still requires the tester's own confirmation.
+
+403/403 local regression tests passed, plus signed-package/agreement and native private-server checks. Windows installer/update and real-browser recovery acceptance are required by the release workflow before promotion.
+
+The MSI is not yet Authenticode-signed; new-application SmartScreen reputation warnings remain possible. No Defender bypasses or exclusions are used. The temporary Alpha server currently runs on the developer's host PC and is available only while that host and tunnel run.

@@ -1,8 +1,6 @@
 name: Ordinary player real browser input probe
 on:
-  push:
-    branches: [main]
-    paths: ['build/ci-browser-input.mjs', '.github/workflows/ordinary-browser-input.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:

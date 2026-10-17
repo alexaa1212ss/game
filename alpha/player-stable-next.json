@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.1",
-    "file": "RebornClient-0.4.1.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.1/RebornClient-0.4.1.zip",
-    "bytes": 38029426,
-    "sha256": "f24cb7b473253830709df7bd2c347c1d93efaa79b03469d07b5bc1026bbee22c",
+    "version": "0.4.2",
+    "file": "RebornClient-0.4.2.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.2/RebornClient-0.4.2.zip",
+    "bytes": 38033365,
+    "sha256": "0b8cfbd1d1cda47ba6ac812201b89fb4dcc0352245ae60c5889b78a8e35d5985",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792237340349,
-    "expiresAt": 1794829340349,
+    "publishedAt": 1792242031722,
+    "expiresAt": 1794834031722,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -789,8 +789,8 @@
       },
       {
         "path": "app/public/local-adapter.js",
-        "bytes": 642,
-        "sha256": "018c6f6ef19c7692e109822797ce722ff3d71872c8262540de644f58a3e12dc6"
+        "bytes": 676,
+        "sha256": "35842ad702eedc8f2457762d542c4f6004dbdc1c20acd09971cd15472c0ac564"
       },
       {
         "path": "app/public/local-content-runtime.js",
@@ -841,6 +841,11 @@
         "path": "app/public/online-guard.js",
         "bytes": 2262,
         "sha256": "726de634f6b28e20a92a4ba804e835944b0ded94b0c98a7c7b4362b7f0b43f54"
+      },
+      {
+        "path": "app/public/online-input.js",
+        "bytes": 3508,
+        "sha256": "a62472bacc2e99244729459825d0bc05ad89c004fbf782b9966d147c4ec9e243"
       },
       {
         "path": "app/public/online-launcher.html",
@@ -909,8 +914,8 @@
       },
       {
         "path": "app/src/online/client.mjs",
-        "bytes": 17350,
-        "sha256": "2f50e2d91712b09f9ebc1ddfaf88a890b0e2b4f25b21a983572df2b44ea023ae"
+        "bytes": 22052,
+        "sha256": "744fc2f7283c3743531eb1de71486e90446f5c2f20a0cfdc0e9665cd43e850f4"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -926,6 +931,11 @@
         "path": "app/src/online/identity.mjs",
         "bytes": 4683,
         "sha256": "7ab4b740dc4ad9a233ab052616654770973b21be665dea16028096516572af14"
+      },
+      {
+        "path": "app/src/online/input-observation.mjs",
+        "bytes": 1626,
+        "sha256": "82519f800f9672bf9bded571dffac5bc834fc937e9a666aa4de79a2845e9816a"
       },
       {
         "path": "app/src/online/update.mjs",
@@ -949,5 +959,5 @@
       }
     ]
   },
-  "signature": "+iDDMvqh7S7ytif2o9evRq8ult6YoROquCM+QRyqnN4z2bVKwAn+f5hbP0SBXp6bj10SonwwFqc+rGfENG/fDQ=="
+  "signature": "N8qdIZpfS65amgBWO/8GAm8+2JE706bU+o0m7018P6eAWCM3plfmrk9UXZ1AMOTt7/Uxscw/6UnnvQFSmTj7Aw=="
 }
