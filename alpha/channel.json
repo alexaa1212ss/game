@@ -3,10 +3,10 @@
     "format": 1,
     "product": "RebornPlayer",
     "protocol": 1,
-    "server": "https://transmitted-upload-remedy-jersey.trycloudflare.com",
+    "server": "https://consultation-runs-only-counseling.trycloudflare.com",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792244332417,
-    "expiresAt": 1794836332417
+    "publishedAt": 1792244861979,
+    "expiresAt": 1794836861979
   },
-  "signature": "VX16EDfq697WaYQWynd6s8cMZBAVJuVkBqsx3QQ1VNScCFlHzlaXG0SYQ5H+SUIerZmgmUIDGzAafEzpZ5ZqCQ=="
+  "signature": "XaesHNlDjUJCw2BBpBOuBcVqhNUR0UvYyC6oNMOINmiA/AbYuDXIpHgcCqhJZ5rXsVdUpxFtAszDZ0G0CW7MCQ=="
 }
