@@ -1,0 +1,12 @@
+{
+  "deployment": {
+    "format": 1,
+    "product": "RebornPlayer",
+    "protocol": 1,
+    "server": "https://queen-referenced-encountered-gif.trycloudflare.com",
+    "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
+    "publishedAt": 1792199119716,
+    "expiresAt": 1794790409454
+  },
+  "signature": "NUOoRVVsrS4gJaXLYOJY4QYweaJygKufLqJEvR0b5N2PYDQsyy1C75NQ5iImNMJzprwdPQc5eT21rVYZMsfSDA=="
+}
