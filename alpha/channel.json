@@ -3,10 +3,10 @@
     "format": 1,
     "product": "RebornPlayer",
     "protocol": 1,
-    "server": "https://dist-rico-lotus-eligibility.trycloudflare.com",
+    "server": "https://clark-evident-occupation-periods.trycloudflare.com",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792246735264,
-    "expiresAt": 1794838735264
+    "publishedAt": 1792254677212,
+    "expiresAt": 1794846677212
   },
-  "signature": "ORjWxHvEfkt7SnpnZGCtDy/EdWxlCb2y4glCPvrM+DO1S96mFKtHaAuWR5I58cOPg7G0Lfhvqc15Fcb9sxfZAA=="
+  "signature": "jPYL5vEBENq7+9lANq4kROQT6+ZqMTLJkID3IE5w9idUI8e4lRJrwBMPqPT+m7WuV8eCgqXTmIk8PCOgyOqSBg=="
 }
