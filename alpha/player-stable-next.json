@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.3",
-    "file": "RebornClient-0.4.3.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.3/RebornClient-0.4.3.zip",
-    "bytes": 38033546,
-    "sha256": "2692377b9279423dd3c80fca2155b0dfeab6b48684f66245a599432876f4f313",
+    "version": "0.4.4",
+    "file": "RebornClient-0.4.4.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.4/RebornClient-0.4.4.zip",
+    "bytes": 38038524,
+    "sha256": "6a6cd22291f9b6b8c4466c6a8ad43c4b268aedbeaa0fe8acee3278c582edd38f",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792242715171,
-    "expiresAt": 1794834715171,
+    "publishedAt": 1792244693314,
+    "expiresAt": 1794836693314,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -141,6 +141,16 @@
         "path": "app/public/asset/reborn/sword-aethersteel.svg",
         "bytes": 543,
         "sha256": "4afc77fbab8229d7d12c9d06144d7d0153b09852ceefff06169c0d05f742e4a5"
+      },
+      {
+        "path": "app/public/asset/reborn-app-preview.png",
+        "bytes": 1540,
+        "sha256": "a83c9f6948919dfc7b19c819d64718fc453a24fe36a1d92bfe2a852b21977dcd"
+      },
+      {
+        "path": "app/public/asset/reborn-app.ico",
+        "bytes": 4015,
+        "sha256": "3194482044cd5ef1bf13856d63c96096af5a945d742608c57f9484c749c69222"
       },
       {
         "path": "app/public/asset/scaled/alphabet.png",
@@ -849,13 +859,18 @@
       },
       {
         "path": "app/public/online-launcher.html",
-        "bytes": 2825,
-        "sha256": "f535aae0d7b57d1622ba7825e05a68150b72922a89903b6b91cba3bd7abb078f"
+        "bytes": 2831,
+        "sha256": "46042f76f2a239e8a9a96b0a95a5fffb345e1a10a9d2557e7585bc791e9e5514"
       },
       {
         "path": "app/public/online-launcher.js",
         "bytes": 5969,
         "sha256": "50eb0b9f5294d470a12fb6933bcee8c87db5cc3806d0cbc8b13fb259e9578387"
+      },
+      {
+        "path": "app/public/online-spawn.js",
+        "bytes": 735,
+        "sha256": "502aab4f3bfccf48e5425dfa966affa148b84c7455b78ed7f35806934574ab11"
       },
       {
         "path": "app/public/online.css",
@@ -889,8 +904,8 @@
       },
       {
         "path": "app/scripts/start-online-client.mjs",
-        "bytes": 3432,
-        "sha256": "717d3813b7ecbe4be0c04e535a5a8e7320477eeadedb36f63e0133a82e0a7f77"
+        "bytes": 3629,
+        "sha256": "d94475ca9158993134f1869c965025a0eb5b4d0d2530e5b6b8f0c869569942b8"
       },
       {
         "path": "app/src/atomic-json.mjs",
@@ -914,8 +929,8 @@
       },
       {
         "path": "app/src/online/client.mjs",
-        "bytes": 22052,
-        "sha256": "744fc2f7283c3743531eb1de71486e90446f5c2f20a0cfdc0e9665cd43e850f4"
+        "bytes": 22173,
+        "sha256": "fcb22cef01776918e11d4c44eb22bdb4852eca847f9af8e88a1ed07d70a6011e"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -943,6 +958,11 @@
         "sha256": "c583aac998beec6153e4939ca9d6f4587ffd8e4835b21ed3c130759048eb446f"
       },
       {
+        "path": "app/src/online/windows-icon.mjs",
+        "bytes": 1214,
+        "sha256": "ed0fb434a81cc4a08c04eb82e3153e16502c5527baa9027545448498b11ee63b"
+      },
+      {
         "path": "app/src/online/zip.mjs",
         "bytes": 5443,
         "sha256": "64f67d90b901980d79e0f05b38aa1572b7250247d38ca6aa76ada0f96aad2334"
@@ -959,5 +979,5 @@
       }
     ]
   },
-  "signature": "hNz0BLU2VTHOnHv2ZuvW1P9Ah7POX7P0vpxfEwoy9sbSDi9sx5mN/uM8PSK8ELsAQDfRJIrA/dt1tkWb11aHCw=="
+  "signature": "vSWR0D8Su+e/NUVB7T3ByN2JhJ20Of4XCd13ITbewy+2cMQtW3BKNNL21wRHqvOxZVKZhT3vZF5piRmytqRuAg=="
 }

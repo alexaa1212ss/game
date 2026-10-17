@@ -1,18 +1,11 @@
-# Cavegame Reborn Closed Alpha 0.4.3
+# Cavegame Reborn Closed Alpha 0.4.4 - Spawn & Movement
 
-Session stability patch for ordinary players. Existing installations update automatically when the usual shortcut is opened. No reinstall or server-address entry is needed.
+- One-way launch pads carry players through the closed spawn hedge and land 2.5 blocks outside. Return using /spawn; normal movement cannot pass back through the hedge.
+- Ten-block flat red-sand no-build apron, with a gray filter and no procedural terrain, ores or structures in that reserved footprint.
+- Spawn/apron are immutable even for the owner, Creative mining and WorldEdit. No mobs can enter; intruders are expelled.
+- Dash/Rush follows normalized WASD input, independently of cursor direction. Standing still gives no dash travel.
+- New seven-resolution Windows .ico, launcher favicon and per-user shortcut-icon refresh on signed updates.
+- No season wipe. Existing world/accounts are privately archived before the host first starts this content build. Existing spawn/apron overrides are masked by its fixed protected layout; all other progress remains.
+- 409/409 regression tests, native disposable-server startup/save and signed player-package checks passed. Windows installer/real-browser acceptance must finish before promotion.
 
-- Serialize login/session refresh and reuse an authenticated session instead of revoking it during overlapping game handshakes.
-- Recover an expired session once, using the existing protected identity and agreement acceptance. Bans and other authorization failures remain enforced.
-- Retire outdated game windows so they cannot refresh and invalidate a newer session.
-- Initialize online interfaces with the authenticated account ID.
-- Add bounded connection/input diagnostics to distinguish browser focus/input, packet delivery, server rejection and rendered state. No login keys, session tokens or chat contents are logged by this diagnostic.
-- Preserve Season 2, V5 terrain, inventories, research and developer permissions. No world wipe or authority/rate-limit relaxation.
-
-Reproduced the released 0.4.1 session race with a genuine ordinary-player fixture: overlapping login replies can leave the client holding a revoked token and produce the exact `Session expired. Reconnect through the launcher.` response. The patched test remains authorized. Historical evidence cannot establish every input stage on the remote tester PC; its movement/attack repair still requires the tester's own confirmation.
-
-404/404 local regression tests passed, plus signed-package/agreement and native private-server checks. Windows installer/update and real-browser recovery acceptance are required by the release workflow before promotion.
-
-The MSI is not yet Authenticode-signed; new-application SmartScreen reputation warnings remain possible. No Defender bypasses or exclusions are used. The temporary Alpha server currently runs on the developer's host PC and is available only while that host and tunnel run.
-
-Automatic validated recovery bypasses the recovered beforeunload confirmation. Manual exits and denied recovery keep the normal guard. Server diagnostics remain on 0.4.2 with the same protocol and saved world.
+Existing players close/reopen their normal shortcut to receive the signed update. No reinstall, manual address or account approval. Windows signing/reputation and 24/7 hosting remain external requirements. Kriper previously confirmed gameplay with VPN; direct-route reliability remains unresolved.

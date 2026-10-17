@@ -1,12 +1,1 @@
-{
-  "deployment": {
-    "format": 1,
-    "product": "RebornPlayer",
-    "protocol": 1,
-    "server": "https://childhood-internationally-miss-controller.trycloudflare.com",
-    "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792242715171,
-    "expiresAt": 1794834715171
-  },
-  "signature": "Pahl5KncUxp/t8l0fhNt/CtGglu7lmoKnqe+au1Yc2A+m65I5vhJZZ3bOjS5emLeUcRam6lldeKfuai5Z/jiBg=="
-}
+{"deployment":{"format":1,"product":"RebornPlayer","protocol":1,"server":"https://consultation-runs-only-counseling.trycloudflare.com","updateFeed":"https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json","publishedAt":1792244903364,"expiresAt":1794836903364},"signature":"91XQ9T8XeyTEaufGM4YvpyABlO/QIiAQ9oXG/v3cXFL5sCFcc+Zc2ZK7BMLlPcuMkSlkBn43VfGxWhmdB5ElAA=="}
