@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">Cavegame Reborn — dig deeper, build further</title>
+<desc id="desc">Dark navy project banner with a geometric cave landscape and teal crystal accents. Windows player, signed updates, automated releases.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101d2b"/><stop offset="1" stop-color="#080e18"/></linearGradient>
+<linearGradient id="rock" x2="0" y2="1"><stop stop-color="#1e3745"/><stop offset="1" stop-color="#11232f"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#91c5d0" stroke-opacity=".06"/></pattern>
+</defs>
+<rect width="1280" height="420" rx="20" fill="url(#bg)"/><rect width="1280" height="420" rx="20" fill="url(#grid)"/>
+<path d="M878 0H1280V420H840L886 352 864 288 922 238 900 179 946 116Z" fill="url(#rock)"/>
+<path d="M1040 0L1090 80 1066 154 1140 202 1110 280 1160 342 1120 420H1280V0Z" fill="#0b1722"/>
+<path d="M900 179L946 116 960 134 932 187 954 237 896 291 918 348 870 420" fill="none" stroke="#456b73" stroke-opacity=".5" stroke-width="2"/>
+<g stroke="#79e8d0" stroke-width="2">
+<path d="M1018 241L1046 190 1063 241 1042 275Z" fill="#3cc8b0"/><path d="M1046 190L1042 275M1018 241H1063" fill="none"/>
+<path d="M1082 313L1100 278 1115 315 1096 338Z" fill="#237e83"/><path d="M1100 278L1096 338" fill="none"/>
+<path d="M966 106L980 76 995 108 979 126Z" fill="#237e83"/>
+</g>
+<g fill="#79e8d0"><circle cx="988" cy="306" r="3"/><circle cx="1126" cy="134" r="2"/><circle cx="1052" cy="109" r="2"/><circle cx="1174" cy="367" r="3"/></g>
+<rect x="62" y="54" width="172" height="29" rx="14" fill="#123c39"/><text x="148" y="74" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#79e8d0">CLOSED ALPHA</text>
+<text x="60" y="164" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="750" letter-spacing="-2" fill="#f0f6fc">Cavegame</text>
+<text x="63" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="45" font-weight="300" letter-spacing="12" fill="#79e8d0">REBORN</text>
+<text x="64" y="276" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#b5c7d6">Dig deeper. Build further.</text>
+<path d="M64 312H772" stroke="#2b414e"/>
+<text x="64" y="352" font-family="Consolas,monospace" font-size="15" fill="#95acbd">WINDOWS PLAYER</text>
+<circle cx="253" cy="347" r="3" fill="#52d9bb"/>
+<text x="276" y="352" font-family="Consolas,monospace" font-size="15" fill="#95acbd">SIGNED UPDATES</text>
+<circle cx="464" cy="347" r="3" fill="#52d9bb"/>
+<text x="487" y="352" font-family="Consolas,monospace" font-size="15" fill="#95acbd">AUTOMATED RELEASES</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+<title id="title">alexaa1212ss — software developer</title>
+<desc id="desc">Software developer working across game systems, developer tooling, and automation. Navy and teal geometric banner.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101d2b"/><stop offset="1" stop-color="#080e18"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#91c5d0" stroke-opacity=".06"/></pattern></defs>
+<rect width="1280" height="380" rx="20" fill="url(#bg)"/><rect width="1280" height="380" rx="20" fill="url(#grid)"/>
+<circle cx="1098" cy="188" r="125" fill="none" stroke="#284450"/><circle cx="1098" cy="188" r="95" fill="none" stroke="#284450" stroke-dasharray="4 12"/>
+<path d="M1054 148L1014 188 1054 228M1142 148L1182 188 1142 228M1115 129L1081 247" fill="none" stroke="#79e8d0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1098" cy="63" r="5" fill="#79e8d0"/><circle cx="1223" cy="188" r="5" fill="#79e8d0"/><circle cx="973" cy="188" r="5" fill="#79e8d0"/>
+<text x="64" y="78" font-family="Consolas,monospace" font-size="14" letter-spacing="3" fill="#79e8d0">SOFTWARE DEVELOPER</text>
+<text x="60" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="70" font-weight="750" letter-spacing="-2" fill="#f0f6fc">alexaa1212ss</text>
+<text x="64" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="27" fill="#b5c7d6">Game systems. Developer tooling. Automation.</text>
+<path d="M64 261H850" stroke="#2b414e"/>
+<text x="64" y="305" font-family="Consolas,monospace" font-size="16" fill="#95acbd">EXPLORE</text><path d="M151 300H183M177 295L183 300 177 305" fill="none" stroke="#79e8d0" stroke-width="2"/>
+<text x="204" y="305" font-family="Consolas,monospace" font-size="16" fill="#95acbd">BUILD</text><path d="M278 300H310M304 295L310 300 304 305" fill="none" stroke="#79e8d0" stroke-width="2"/>
+<text x="331" y="305" font-family="Consolas,monospace" font-size="16" fill="#95acbd">REFINE</text>
+</svg>
