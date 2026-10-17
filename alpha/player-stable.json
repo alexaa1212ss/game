@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.3.3",
-    "file": "RebornClient-0.3.3.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.3.3/RebornClient-0.3.3.zip",
-    "bytes": 38021267,
-    "sha256": "e6d8484e480825038cf7af00a0fd2d092471614c0cab64e8b465e1711d694f1f",
+    "version": "0.4.0",
+    "file": "RebornClient-0.4.0.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.0/RebornClient-0.4.0.zip",
+    "bytes": 38027867,
+    "sha256": "063ce3a9d11705e5051115ec570e51f49b931d884074849247f3f1dddcd15c06",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792116855294,
-    "expiresAt": 1794708855294,
+    "publishedAt": 1792198409454,
+    "expiresAt": 1794790409454,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -828,24 +828,34 @@
         "sha256": "bd85a117a8e22d28512b35f0668d91c9885c9acdbefdd49cb06d816423aa9e94"
       },
       {
+        "path": "app/public/online-fidelity.css",
+        "bytes": 4881,
+        "sha256": "2c22b9f36891fc5eda78d8c695b8adec2ed11ad612b6ba0d0aa946d0b2de1c7d"
+      },
+      {
+        "path": "app/public/online-fidelity.js",
+        "bytes": 3696,
+        "sha256": "98bf6503e86bc600bd84b7f09f489a63f97168970438d2880d62909e659dcd64"
+      },
+      {
         "path": "app/public/online-guard.js",
         "bytes": 2262,
         "sha256": "726de634f6b28e20a92a4ba804e835944b0ded94b0c98a7c7b4362b7f0b43f54"
       },
       {
         "path": "app/public/online-launcher.html",
-        "bytes": 2009,
-        "sha256": "75b7e69978d41d30d5b624b6dfeaa7fb11cff1f745337183485bc4ecba24ba39"
+        "bytes": 2825,
+        "sha256": "f535aae0d7b57d1622ba7825e05a68150b72922a89903b6b91cba3bd7abb078f"
       },
       {
         "path": "app/public/online-launcher.js",
-        "bytes": 3561,
-        "sha256": "349173b89d093840feade3bb43de3df57f4e67d05cb29a086d1ee25163af1233"
+        "bytes": 5744,
+        "sha256": "efb8acd165e13f83df9327ce0907c463ef59a9450671f2559020ae05b5e18c72"
       },
       {
         "path": "app/public/online.css",
-        "bytes": 2637,
-        "sha256": "207f97b73aaa4e170fb03f4227a1570d9767815d3a6e43d7a18139237f2386a4"
+        "bytes": 3998,
+        "sha256": "5ef1b8fae368d1752d80c88320daf105063b9f71708615ed3c99cb82bfe769d4"
       },
       {
         "path": "app/public/player-zoom.js",
@@ -854,8 +864,8 @@
       },
       {
         "path": "app/public/privacy",
-        "bytes": 867,
-        "sha256": "1f1d0980355d0287f1b5fc1e9465c6c07290b770221504d394a56e072c5974ea"
+        "bytes": 910,
+        "sha256": "6426dc97b06e5501c47d8ff0db18fe403e6f7b340142f190d156d00d2b54c9fa"
       },
       {
         "path": "app/public/terms",
@@ -874,13 +884,18 @@
       },
       {
         "path": "app/scripts/start-online-client.mjs",
-        "bytes": 2116,
-        "sha256": "fae29738220bb679fa0fead7e0ddc49ba543571c6a2e40adc9a79146aac7c064"
+        "bytes": 2228,
+        "sha256": "7cd8c15e38062aa32e13232dd142db367b76bca3320578083a3ceb03314533af"
       },
       {
         "path": "app/src/atomic-json.mjs",
         "bytes": 694,
         "sha256": "816a4c8f7a7d8d097cf9fe63c1e9aca97ce5c99a918b840d6e8e79fbf8f54603"
+      },
+      {
+        "path": "app/src/online/alpha-agreement.mjs",
+        "bytes": 2304,
+        "sha256": "f8e022c037972fb1042719187451b0dc8616a5e5040ef0767cc60a39214e9ce1"
       },
       {
         "path": "app/src/online/client-assets.mjs",
@@ -894,8 +909,8 @@
       },
       {
         "path": "app/src/online/client.mjs",
-        "bytes": 12467,
-        "sha256": "335424a3a9218cb8760d578adfe1e29e2da82c46ee62e14d6e13b9df27d78f46"
+        "bytes": 16315,
+        "sha256": "9278b13c7568ece3ed75b8bb36b9edf161de077b1ffe908429108ca55a6d3056"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -934,5 +949,5 @@
       }
     ]
   },
-  "signature": "VtomOAYi9AHBrWa1DS9hA1MXUTMHESyNLPeGKJDOzRWvXKyKBuhu/Oq8wIhjaY8AY9oXsMn+Xrup+VBCXLieAA=="
+  "signature": "jSmsgGfKyqpl/XkePSLcIL52DlavwzbqCHEEA3IBWT3uJS6XE1a9draXFgprP9gKJ1CEAokR2hP/ezF/JxtLCw=="
 }
