@@ -1,1 +1,12 @@
-{"deployment":{"format":1,"product":"RebornPlayer","protocol":1,"server":"https://consultation-runs-only-counseling.trycloudflare.com","updateFeed":"https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json","publishedAt":1792244903364,"expiresAt":1794836903364},"signature":"91XQ9T8XeyTEaufGM4YvpyABlO/QIiAQ9oXG/v3cXFL5sCFcc+Zc2ZK7BMLlPcuMkSlkBn43VfGxWhmdB5ElAA=="}
+{
+  "deployment": {
+    "format": 1,
+    "product": "RebornPlayer",
+    "protocol": 1,
+    "server": "https://sympathy-requiring-valley-nato.trycloudflare.com",
+    "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
+    "publishedAt": 1792245909520,
+    "expiresAt": 1794837909520
+  },
+  "signature": "AZ24NB1TvCIrhF6+0Yq60rYQgGG76rKnIFwwwRC5lCLCDlpHxRszyVU6X8A9zXfY9fb7Q1u2vmGzWwzJ1IlTBQ=="
+}
