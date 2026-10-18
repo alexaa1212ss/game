@@ -34,3 +34,4 @@ try{
  writeFileSync('player-acceptance.json',JSON.stringify({passed:true,steps,identityCreated:true,remoteLogin:true,actualBrowserRenderVerified:false,notYetVerified:['Interactive install UI on second physical PC','Browser movement/mining in installed alpha package','Real next-release update/rollback and post-update progress'],at:new Date().toISOString()},null,2));
 }catch(error){writeFileSync('player-acceptance.json',JSON.stringify({passed:false,steps,error:error.message}));try{await request('/launcher/quit',{});}catch{}throw error;}
 
+

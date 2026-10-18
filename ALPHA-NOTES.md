@@ -1,10 +1,12 @@
-# Cavegame Reborn Closed Alpha 0.4.5 - Content Corrections
+# Cavegame Reborn Closed Alpha 0.4.9 — Stable Hosting & Launcher Recovery
 
-- Normal sand with a subtler transparent gray tint in the no-build apron.
-- Mobs can enter the apron; only spawn and its hedge exclude them. Building/WorldEdit protection remains.
-- Online /home and /warp use 15-second stand-still countdowns. Existing Survival /spawn remains 20 seconds. Countdown, completion and cancellation messages use the recovered blue chat style.
-- Any held item or bare hands can harvest ordinary wood, leaves, saplings and both mushrooms. Mushroom/sapling harvesting is quick with no full-block cracking. Cobblestone is neither consumed nor placed while finishing that harvest. Ore tiers, reach, visibility and immutable spawn protection remain enforced.
-- Gold compass has an account-wide ten-minute reuse cooldown, enforced and saved by the server across reconnects/restarts.
-- No wipe: same Season 2, seed, inventories and progression. Existing installations update through the normal shortcut; no reinstall or manual address.
+- The Alpha now runs on a separate Oracle Chicago VM with a reserved address and HTTPS/WSS. It starts automatically after a VM reboot and does not require the developer PC to stay online.
+- Season 2, V5 terrain, accounts, inventories, research, clans, owner permissions and Tester grants are preserved. No world reset.
+- The launcher retains the newest verified server directory across overlapping old/new launcher processes. A late response cannot restore an older cached address.
+- A second signed-directory retrieval route uses GitHub's API when its raw-file CDN is unavailable. Both routes require the existing release signature.
+- An unexpected HTML server response produces a useful reconnect message instead of a JSON syntax error.
+- Existing installations receive the signed player update through their normal shortcut. Identities, settings and progress are preserved. Offline or network-blocked PCs cannot be updated remotely while unreachable.
 
-Focused and full regression, native disposable-server and signed-package tests precede release; Windows installer/update/browser checks gate promotion. Private server/keys/data are excluded from the player package. Hosting requires the operator PC/tunnel; permanent hosting and Windows code signing remain external requirements. Kriper's direct-route issue remains unresolved; his VPN route was verified.
+The player installer contains no server implementation/data, moderation or WorldEdit tools, private identity or signing keys. Application updates remain signature/hash verified. Project binaries remain unsigned by Authenticode and Windows reputation prompts may appear; never disable Windows security protections.
+
+Hosting currently uses expiring trial credits. Availability and capacity are not guaranteed. The 60-player configuration is not a claim of a verified 60-player cloud load test.

@@ -23,3 +23,4 @@ const safeSource=source.replace('<Package Name=','<Package ProductCode="'+produc
 writeFileSync(path.join(out,'Player.wxs'),safeSource);const result=spawnSync(process.platform==='win32'?'wix.exe':'wix',['build',path.join(out,'Player.wxs'),'-ext','WixToolset.Util.wixext','-arch','x64','-out',path.join(out,'CavegameRebornSetup.msi')],{encoding:'utf8',windowsHide:true,maxBuffer:8*1024*1024,timeout:180000});
 writeFileSync(path.join(out,'wix-result.json'),JSON.stringify({status:result.status,signal:result.signal,error:result.error?{message:result.error.message,code:result.error.code}:null,stdout:result.stdout??'',stderr:result.stderr??''},null,2));
 process.stdout.write(result.stdout??'');process.stderr.write(result.stderr??'');if(result.error)console.error(result.error.message);if(result.status!==0)process.exit(result.status??1);
+

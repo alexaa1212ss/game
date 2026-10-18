@@ -1,1 +1,12 @@
-{"deployment":{"format":1,"product":"RebornPlayer","protocol":1,"server":"https://sympathy-requiring-valley-nato.trycloudflare.com","updateFeed":"https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json","publishedAt":1792245924891,"expiresAt":1794837924891},"signature":"uyBlmaoqunGIqIHxe6+c1E+e1KqduXh9zOWgPGR/hEotcIDZXLnRwd/ILNcS0S8hi6EoNCOCkdGNGn3xVANUCg=="}
+{
+  "deployment": {
+    "format": 1,
+    "product": "RebornPlayer",
+    "protocol": 1,
+    "server": "https://reborn-alpha.147-224-150-14.sslip.io",
+    "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
+    "publishedAt": 1792367796280,
+    "expiresAt": 1794959796280
+  },
+  "signature": "srFmrO5FKtfF8UsjJ8SdD79xJNeDY1fZv6iZbEN3JqOVSewAQzEpjhtVOFADC4jZfYR2DYs4I0Jw3P9pctuQAQ=="
+}

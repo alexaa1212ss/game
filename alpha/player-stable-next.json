@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.5",
-    "file": "RebornClient-0.4.5.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.5/RebornClient-0.4.5.zip",
-    "bytes": 38038528,
-    "sha256": "df729c9c7c55dfd8ddfb8ce3c6ddb7c6baeafce25124a1c19a09351dba2fe9b0",
+    "version": "0.4.9",
+    "file": "RebornClient-0.4.9.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.9/RebornClient-0.4.9.zip",
+    "bytes": 38039092,
+    "sha256": "b78aff1d0636141c780f50b7b8ab926929db499db4c4d8dc837782f1208c9288",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792245758851,
-    "expiresAt": 1794837758851,
+    "publishedAt": 1792367796280,
+    "expiresAt": 1794959796280,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -889,8 +889,8 @@
       },
       {
         "path": "app/public/terms",
-        "bytes": 775,
-        "sha256": "0a727f7036e953901fff9cb7792895594c2ceca1034f8b0e1c5dd02946512903"
+        "bytes": 855,
+        "sha256": "aa0df2b07010f5fbd2dc7950ff0036ed34d700cdd85a0eeef5dc6a5414b8f972"
       },
       {
         "path": "app/public/ui-shell.css",
@@ -929,8 +929,8 @@
       },
       {
         "path": "app/src/online/client.mjs",
-        "bytes": 22173,
-        "sha256": "fcb22cef01776918e11d4c44eb22bdb4852eca847f9af8e88a1ed07d70a6011e"
+        "bytes": 22352,
+        "sha256": "00d580028da902f9b27f0b86949e9fc080779ff86400d2a24ec82d7cee7f7745"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -939,8 +939,8 @@
       },
       {
         "path": "app/src/online/deployment.mjs",
-        "bytes": 2929,
-        "sha256": "2dfa7835868fd28cd308ca619ca1bfd3938e8f08ab3eb29c761f5850afc98ae0"
+        "bytes": 4195,
+        "sha256": "bed0deea7c845b77ef30c37ae0441e55bfadd0af538d1320861dc01938646173"
       },
       {
         "path": "app/src/online/identity.mjs",
@@ -979,5 +979,5 @@
       }
     ]
   },
-  "signature": "mj7VIWGgo1FgTYlqoe74UO+Mf2Vs5HVqvZ28AbWDi9pwNSucsjHl+NiazkeKpz+HVPn0rtf/L1zyUK0WI1x1Dg=="
+  "signature": "wKZqulg4UOkzT9HK4z/ix3T9/A4DULA6+jAIp85rjTeoHeiUiHn/RoZWzp4c2qCHNJ5HwwNHqyYK/9S3/pi3CA=="
 }
