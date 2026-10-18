@@ -3,10 +3,10 @@
     "format": 1,
     "product": "RebornPlayer",
     "protocol": 1,
-    "server": "https://simon-trying-providers-afternoon.trycloudflare.com",
+    "server": "https://reborn-alpha.147-224-150-14.sslip.io",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792360471799,
-    "expiresAt": 1794952471799
+    "publishedAt": 1792367779820,
+    "expiresAt": 1794959779820
   },
-  "signature": "9xnhns8FyGPpw5tKx5oc2kN2cCqVnUiWOMEOWwfJpTrTv8wer5wzl1FvBbJgkOiZQmGp9C2nRacA/w7HmgKEDQ=="
+  "signature": "iAqTAMBvbkuTH390yMs+unqh6X8HL4bilLk6xIef1BJg9SsuXnihJzCyGq0FhkTCXcwNn0+MxKX8UIE4Mp7jCQ=="
 }
