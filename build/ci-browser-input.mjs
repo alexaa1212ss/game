@@ -21,6 +21,20 @@ async function exerciseCommunityMenus(){
  await click('.ro-community-open');await until(()=>evaluate("document.querySelectorAll('#ro-content table').length===3"));const boards=await evaluate("fetch('/v1/leaderboards').then(r=>r.json())");for(const rows of Object.values(boards)){if(rows.length>10||rows.some(p=>/^(?:AlphaCI_[0-9a-f]{6}|BrowserCI_[0-9a-f]{4}|TestBot_[0-9a-f]{4})$/i.test(p.nickname)))throw Error('Server Community board limit or QA filter failed');}if(!await evaluate("[...document.querySelectorAll('#ro-content h3')].every(h=>h.textContent.includes('Top 10'))"))throw Error('Top 10 headings missing');await key('Escape','Escape',27);
  report.community={geometry,boardRows:Object.fromEntries(Object.entries(boards).map(([k,v])=>[k,v.length])),focusAndSpacePassed:true};report.steps.push('Community sits below Gold Empire clear of native EXP/HUD; both close paths return focus to canvas; Space does not reopen; real server boards are top ten without generated QA identities');
 }
+async function exerciseCraftMaximum(){
+ await evaluate(`(()=>{const original=window.fetch;window.__bulkResults=[];window.fetch=async function(input,...rest){const r=await original.call(this,input,...rest);if(String(input).endsWith('/v1/craft-max'))window.__bulkResults.push(await r.clone().json());return r;};})()`);
+ const key=async(type,key,code,n)=>command('Input.dispatchKeyEvent',{type,key,code,windowsVirtualKeyCode:n,nativeVirtualKeyCode:n});
+ const pressE=async()=>{await key('keyDown','e','KeyE',69);await key('keyUp','e','KeyE',69);await pause(400);};await pressE();
+ const selector='#craft-modal .overlay-inventory[data-type=arrow]';
+ if(!await evaluate(`document.querySelector(${JSON.stringify(selector)})?.getClientRects().length>0`)){
+  const tabs=await evaluate("[...document.querySelectorAll('#inventory-overlay td')].map(n=>{const r=n.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})");for(const r of tabs){await command('Input.dispatchMouseEvent',{type:'mousePressed',...r,button:'left',buttons:1,clickCount:1});await command('Input.dispatchMouseEvent',{type:'mouseReleased',...r,button:'left',buttons:0,clickCount:1});if(await evaluate(`document.querySelector(${JSON.stringify(selector)})?.getClientRects().length>0`))break;}
+ }
+ const rect=await evaluate(`(()=>{const r=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2,width:r.width,height:r.height}})()`);if(!rect.width||!rect.height)throw Error('Crafting arrows not visible');const {x,y}=rect,click=async modifiers=>{await command('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',buttons:1,clickCount:1,modifiers});await command('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',buttons:0,clickCount:1,modifiers});await pause(400);};
+ const before=await evaluate("window.__inputEvents.sent[40]||0");await click(0);if(await evaluate("window.__inputEvents.sent[40]||0")!==before+1)throw Error('Normal click did not send one original craft');
+ await key('keyDown','Shift','ShiftLeft',16);await click(8);await key('keyUp','Shift','ShiftLeft',16);await until(()=>evaluate('window.__bulkResults.length===1'));
+ const result=await evaluate('window.__bulkResults[0]');if(!result.ok||result.batches<2||result.items!==result.batches*10)throw Error('Server craft maximum failed: '+JSON.stringify(result));if(await evaluate("window.__inputEvents.sent[40]||0")!==before+1)throw Error('Shift-click also sent ordinary crafting packets');
+ report.craftMaximum={...result,ordinaryPackets:1,bulkRequests:1};report.steps.push('Real normal shop click sends one craft; real Shift-click uses one authenticated request to craft maximum, without duplicate ordinary packets');await pressE();
+}
 try{
  spawn(path.join(install,'Cavegame Reborn.exe'),['--no-browser'],{env:{...process.env,CAVEGAME_CLIENT_PORT:'33942',CAVEGAME_GAME_PORT:'33944'},stdio:'ignore',windowsHide:true});await until(()=>request('/health'));
  const page=await(await fetch(base)).text(),config=JSON.parse(page.match(/window.RebornLauncher=(.*?);<\/script>/s)[1]);nonce=config.nonce;
@@ -41,7 +55,7 @@ try{
  report.leaderboard=await evaluate(`(()=>{const s=window.__inputGame.scene.getScene('Game');return {rows:s.leaderboardData,localBalance:s.myBalance,selfText:document.querySelector('.leaderboard li.me').textContent,selfColor:getComputedStyle(document.querySelector('.leaderboard li.me')).color,players:document.querySelector('#player-count').textContent}})()`);
  if(report.leaderboard.localBalance!==report.leaderboard.rows.find(p=>p.sessionId===report.before.id)?.score)throw Error('Native HUD did not apply the authoritative shop balance');
  report.steps.push('Native leaderboard lists online players, highlights self and applies authoritative shop balance');
- await until(()=>evaluate("document.querySelector('#empire-launch')?.hidden===false"));await exerciseCommunityMenus();
+ await until(()=>evaluate("document.querySelector('#empire-launch')?.hidden===false"));await exerciseCommunityMenus();await exerciseCraftMaximum();
  const current=JSON.parse(readFileSync(path.join(install,'installed.json'),'utf8')).current,app=path.join(install,'versions',current,'app');
  const {openIdentity}=await import(pathToFileURL(path.join(app,'src/online/identity.mjs'))),{signIn}=await import(pathToFileURL(path.join(app,'src/online/client.mjs')));
  const key=openIdentity(path.join(process.env.LOCALAPPDATA,'CavegameReborn/identity')),receipt=JSON.parse(readFileSync(path.join(process.env.LOCALAPPDATA,'CavegameReborn/alpha-agreement.json'),'utf8')).receipt;

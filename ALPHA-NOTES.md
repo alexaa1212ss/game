@@ -1,3 +1,15 @@
+# Cavegame Reborn Closed Alpha 0.4.13 — Craft Max, Movement & Compass
+
+- Online walking speed increases slightly from 340 to 350 world units per second. Sneak, flight and the offline game retain their existing speeds.
+- Shift-click a recipe in the crafting shop to craft the maximum your resources and inventory can support. Normal click still crafts once. Costs, research discounts/yields, gold accounting and item limits remain server-authoritative; one bulk request avoids flooding crafting packets.
+- A cooling-down Gold Compass uses the native on-screen announcement, with remaining seconds, instead of blue chat. The account-wide ten-minute cooldown and saved readiness time remain unchanged.
+- Community top-ten/bot filtering, button placement and menu focus fixes from 0.4.12 are retained. Same world, season, identities, inventories, XP rewards and permissions; fresh complete backup before the private server update.
+- Local acceptance: 463/463 regressions, signed player inventory/authorization checks, eleven real packaged Edge checks including normal/Shift-click and the compass announcement without chat, and the signed Linux server preflight.
+- Windows release checks cover signed 0.4.12 → 0.4.13 automatic updating, MSI installation/upgrade/uninstall, real normal/Shift-click crafting, gameplay, session recovery and canonical installer download before stable promotion.
+- Existing installed players receive the update by closing and reopening their normal shortcut while online. No reinstall or identity replacement is required.
+
+---
+
 # Cavegame Reborn Closed Alpha 0.4.12 — Community & Menu Fixes
 
 - Community sits directly below Gold Empire, clear of the native EXP bar and gold HUD.
