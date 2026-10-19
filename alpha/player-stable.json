@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.11",
-    "file": "RebornClient-0.4.11.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.11/RebornClient-0.4.11.zip",
-    "bytes": 38033027,
-    "sha256": "10c9869fe3813f0ef5d17b17c83dc0811a62a6282d190f11e47b1ec88ce8a165",
+    "version": "0.4.12",
+    "file": "RebornClient-0.4.12.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.12/RebornClient-0.4.12.zip",
+    "bytes": 38033610,
+    "sha256": "08d2af3c2d02204758f98ded57ae8eab0e9f2047f496dc3fe61bd33160ff8341",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792370171963,
-    "expiresAt": 1794962171963,
+    "publishedAt": 1792380688382,
+    "expiresAt": 1794972688382,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -719,8 +719,8 @@
       },
       {
         "path": "app/public/empire.js",
-        "bytes": 27237,
-        "sha256": "df99eb49b18af6d3af1ef33dee82db6a52c94d178a2edaf49c80b09a90408e44"
+        "bytes": 27256,
+        "sha256": "7b1e35b789f162b8b77bb2a5c7caaf425a665076e62adf7dbf884c0214baa47c"
       },
       {
         "path": "app/public/index.html",
@@ -774,8 +774,8 @@
       },
       {
         "path": "app/public/online-client.js",
-        "bytes": 6893,
-        "sha256": "bd85a117a8e22d28512b35f0668d91c9885c9acdbefdd49cb06d816423aa9e94"
+        "bytes": 8082,
+        "sha256": "f4af3e4cd18c857991af85c04b98d55a4f32196068b76cbf613cf8240049325e"
       },
       {
         "path": "app/public/online-fidelity.css",
@@ -814,8 +814,8 @@
       },
       {
         "path": "app/public/online.css",
-        "bytes": 4288,
-        "sha256": "5d4ac56c09797b3c0aa9df54656e8337b351abf531bab6bfc0a58060f7a901df"
+        "bytes": 4405,
+        "sha256": "49af51ffe168a94bd5e81e02b42f3789dc5c224018e288fad2e7d727a0bcd296"
       },
       {
         "path": "app/public/player-zoom.js",
@@ -839,8 +839,8 @@
       },
       {
         "path": "app/public/ui-shell.js",
-        "bytes": 4479,
-        "sha256": "5804ea914204d966f2b8df29410d1b67238fad2f7d3a2ba3a6ccd9dee9e63599"
+        "bytes": 4813,
+        "sha256": "14b8e780cd2bbc0f56ca84e65502327163d0db2e3c33fab313e7308ebd44d4dc"
       },
       {
         "path": "app/scripts/start-online-client.mjs",
@@ -919,5 +919,5 @@
       }
     ]
   },
-  "signature": "V4JDokJ79UbPS+x+2N4+n50bKWFQ2cpy3SxDDhcR49sxLcEQzRJSXV8Qow+YanhMVmOA//JjTDwrdyQJfVB4Aw=="
+  "signature": "AnfUJY2k9Z2w9PubRMuBZ0s1AUVC1wAlmx65YSMEi/QCnkNU9qs4NpHXTCASa+OzX8oNUss80F6fxGnuiPC5BQ=="
 }
