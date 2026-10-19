@@ -5,8 +5,8 @@
     "protocol": 1,
     "server": "https://reborn-alpha.147-224-150-14.sslip.io",
     "updateFeed": "https://raw.githubusercontent.com/alexaa1212ss/game/main/alpha/player-stable.json",
-    "publishedAt": 1792382524598,
-    "expiresAt": 1794974524598
+    "publishedAt": 1792446289709,
+    "expiresAt": 1795038289709
   },
-  "signature": "3aWNAzHCTpS2DuzxfGb7nolbdx7LBGRm/RsPnSyH0aZAk4YGf3nwEWh1NU7xGBPCEs08ySl7S2QglzOLSDJ1Aw=="
+  "signature": "oAVtpTmaDumfz2kYfjscSNGx6/ByNNe5MfWfUy6JiQcs8sbE3hfkdRllILWsSRdKxdIF5J8G5miOSusgkbLoCw=="
 }
