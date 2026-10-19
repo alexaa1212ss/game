@@ -1,3 +1,15 @@
+# Cavegame Reborn Closed Alpha 0.4.11 — Gold HUD & Classic Content
+
+- Restores the original live gold leaderboard and shop balance: top five online players, with your row red at its real rank; if below fifth, your own rank appears beneath the top five.
+- Original enchantment caps restored: Efficiency/Sharpness/Protection/Power V; Fortune/Looting/Pickpocket/Web Cutter/Grind III; Rush/Burst/Shotgun II; Infinity I. Burst II limits Shotgun to I. These caps are also enforced on commands, saved gear and item transfers.
+- Experimental Aethersteel resource/ore/tools/armor, Arc Launcher/Charges and 15 custom enchantments removed from Online. Existing experimental ore becomes stone. Original gear, accounts, balances, world seed and Season 2 are preserved; the server has a complete pre-update backup. No season wipe.
+- The player package excludes experimental artwork. Shared source assets remain preserved for the offline build and historical releases.
+- Classic caps are corroborated by the [community enchantment reference](https://cavegame-io.fandom.com/wiki/Enchantments); the original private server's roll probabilities remain unavailable.
+- 437 local regression tests and 13 Linux cloud staging tests passed. Native Windows installer, signed 0.4.10 upgrade, agreement/login/gameplay and native HUD checks run in the release workflow before promotion. Physical remote testers still need to confirm their experience.
+- The original HUD's integer wire format saturates displayed balances at 2,147,483,647; the Gold Empire dashboard retains exact large balances. Server transactions remain authoritative.
+
+---
+
 # Cavegame Reborn Closed Alpha 0.4.10 — Stable Hosting & Launcher Recovery
 
 - Press Escape three times quickly in the launcher to reveal Backup server connection. Explicitly enable the address for that connection; Use official server clears it. The override is not retained across launcher restarts. HTTPS, identity protection, agreement enforcement and the official signed updater remain required.

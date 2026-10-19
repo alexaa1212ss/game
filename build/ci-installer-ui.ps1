@@ -50,4 +50,3 @@ $match=[regex]::Match($page,'window.RebornLauncher=(.*?);</script>','Singleline'
 $config=$match.Groups[1].Value | ConvertFrom-Json
 Invoke-RestMethod -Uri ($launcher+'/launcher/quit') -Method Post -Headers @{'x-reborn-launcher'=$config.nonce} -ContentType 'application/json' -Body '{}' | Out-Null
 Start-Sleep -Seconds 2
-

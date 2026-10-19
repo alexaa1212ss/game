@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.10",
-    "file": "RebornClient-0.4.10.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.10/RebornClient-0.4.10.zip",
-    "bytes": 38039952,
-    "sha256": "9b32954a0692693e1480ba3197eb6651c65f7851b6df6e07ac3ba938c63bb63d",
+    "version": "0.4.11",
+    "file": "RebornClient-0.4.11.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.11/RebornClient-0.4.11.zip",
+    "bytes": 38033027,
+    "sha256": "10c9869fe3813f0ef5d17b17c83dc0811a62a6282d190f11e47b1ec88ce8a165",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792368516860,
-    "expiresAt": 1794960516860,
+    "publishedAt": 1792370171963,
+    "expiresAt": 1794962171963,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -81,66 +81,6 @@
         "path": "app/public/asset/promo/replacement2.png",
         "bytes": 21218,
         "sha256": "8db1fe29708fef70bd626c691d34795c0e1fd191f618bf8853002264fb7cc631"
-      },
-      {
-        "path": "app/public/asset/reborn/aethersteel-ingot.svg",
-        "bytes": 414,
-        "sha256": "0711a4166d0443ffbabb1868fd827e90a42b20d4afd5ab85d35133bd643779e3"
-      },
-      {
-        "path": "app/public/asset/reborn/aethersteel-ore.svg",
-        "bytes": 595,
-        "sha256": "5843de2b56e06ce9c0b7f55ce8aed72d366d53bb1e7e6843cc99dd4c730e48ac"
-      },
-      {
-        "path": "app/public/asset/reborn/arc-bolt.svg",
-        "bytes": 343,
-        "sha256": "98b1e6e55245dd1f54390622c8f0dc00b546e6de2b5deefcebaf1a7ae49507d1"
-      },
-      {
-        "path": "app/public/asset/reborn/arc-charge.svg",
-        "bytes": 390,
-        "sha256": "af793d053a1393649ca42f3a61f1cf47c0b632389c7d5476167d028f581dbfa4"
-      },
-      {
-        "path": "app/public/asset/reborn/arc-launcher.svg",
-        "bytes": 462,
-        "sha256": "3c34dc66fd05d0ddab9a4b9fe9f1078a089314f3789ff42041516d26dcf50017"
-      },
-      {
-        "path": "app/public/asset/reborn/helmet-aethersteel-enchanted.svg",
-        "bytes": 541,
-        "sha256": "07d4ae6c24cd886d09c02eca0d08586f0265ee2bd4612a10be73bf841ca88ff7"
-      },
-      {
-        "path": "app/public/asset/reborn/helmet-aethersteel.svg",
-        "bytes": 410,
-        "sha256": "8726d1101f2a340075207c2ef285218248917a5c818ef4547a4d61900695255e"
-      },
-      {
-        "path": "app/public/asset/reborn/pick-aethersteel-enchanted.svg",
-        "bytes": 647,
-        "sha256": "783bbcdf901551d7b3c4266d6d0475cd07c7fd963aae4c1ab6ae100d71775666"
-      },
-      {
-        "path": "app/public/asset/reborn/pick-aethersteel.svg",
-        "bytes": 516,
-        "sha256": "8f2f303767476ff625201360172395c481f14880369f7c0e45406e0da7f64a20"
-      },
-      {
-        "path": "app/public/asset/reborn/player-aethersteel.svg",
-        "bytes": 549,
-        "sha256": "792bf823679e96f15195c92ec40e0c6f3fc9923690346da82bb0737c77b8edae"
-      },
-      {
-        "path": "app/public/asset/reborn/sword-aethersteel-enchanted.svg",
-        "bytes": 674,
-        "sha256": "52c9a8e99be568496a86c83e6fb7a5105dc35a4b2e46b606c6184925b144a851"
-      },
-      {
-        "path": "app/public/asset/reborn/sword-aethersteel.svg",
-        "bytes": 543,
-        "sha256": "4afc77fbab8229d7d12c9d06144d7d0153b09852ceefff06169c0d05f742e4a5"
       },
       {
         "path": "app/public/asset/reborn-app-preview.png",
@@ -804,13 +744,13 @@
       },
       {
         "path": "app/public/local-content-runtime.js",
-        "bytes": 1289,
-        "sha256": "e2e73f5fe0f257284268383794deac53df90169eaa7a256928b4838f97889b24"
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       {
         "path": "app/public/local-content.js",
-        "bytes": 3832,
-        "sha256": "d3c3fec3b5042fd9cd7807296366e2eed1817b99dc9c6cf4efb58c54d4ee9eb4"
+        "bytes": 85,
+        "sha256": "a8ac328fe2e0f800e7e407e1a16eae002a1e3a25db8091f1d0abb551c9217c52"
       },
       {
         "path": "app/public/local.css",
@@ -839,8 +779,8 @@
       },
       {
         "path": "app/public/online-fidelity.css",
-        "bytes": 4881,
-        "sha256": "2c22b9f36891fc5eda78d8c695b8adec2ed11ad612b6ba0d0aa946d0b2de1c7d"
+        "bytes": 5094,
+        "sha256": "f1394ed6b64b39ea602b19cd3d846bd45883209a602c676de65319dc623e2788"
       },
       {
         "path": "app/public/online-fidelity.js",
@@ -929,8 +869,8 @@
       },
       {
         "path": "app/src/online/client.mjs",
-        "bytes": 23040,
-        "sha256": "ca0d7c050917ceadae4e6be67f393aa6eba9b16c47eab0ea5f6f20ade3a1a4e2"
+        "bytes": 23276,
+        "sha256": "ff900b8227aa50b1f6b0c0de05427b0e4f61b261a7746d6ae20ef70e2aaaae29"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -979,5 +919,5 @@
       }
     ]
   },
-  "signature": "GwF+zEmvoizmkXEVaVdL7awfooNpRLa0nEukfkbJhtXLiE6ExTZOUDxjwKk/rr0cJXH9vT5ai3HX7vrI2g17AA=="
+  "signature": "V4JDokJ79UbPS+x+2N4+n50bKWFQ2cpy3SxDDhcR49sxLcEQzRJSXV8Qow+YanhMVmOA//JjTDwrdyQJfVB4Aw=="
 }

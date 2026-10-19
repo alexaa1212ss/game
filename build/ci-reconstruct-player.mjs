@@ -7,4 +7,3 @@ const root=path.resolve('payload/versions',r.version);
 for(const f of r.files){const b=readFileSync(path.join(root,f.path));if(b.length!==f.bytes||createHash('sha256').update(b).digest('hex')!==f.sha256)throw Error('File verification failed: '+f.path);}
 function walk(d,p=''){return readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name),p+e.name+'/'):[{name:p+e.name,path:path.join(d,e.name)}]);}
 const files=walk(root).filter(f=>f.name!=='trusted-release.json');writeZip(files,r.file);const b=readFileSync(r.file);if(b.length!==r.bytes||createHash('sha256').update(b).digest('hex')!==r.sha256)throw Error('Reproduced archive does not match signed artifact.');console.log('Signed update reproduced byte-for-byte without a private signing key.');
-

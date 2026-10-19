@@ -27,6 +27,10 @@ try{
  await exerciseInput();report.after=await evaluate(inspect);
  if(!(report.after.object?.x>report.before.object?.x)||!(report.after.object?.spriteX>report.before.object?.spriteX))throw Error('Initial browser input/state/render path failed');
  const boot=await evaluate('window.__inputBoot'),oldLease=await evaluate('window.RebornOnline.gameLease');
+ await until(async()=>await evaluate(`(()=>{const s=window.__inputGame?.scene?.getScene('Game');return s?.leaderboardData?.some(p=>p.sessionId===window.CavegameLocalId)&&document.querySelector('.leaderboard li.me')})()`));
+ report.leaderboard=await evaluate(`(()=>{const s=window.__inputGame.scene.getScene('Game');return {rows:s.leaderboardData,localBalance:s.myBalance,selfText:document.querySelector('.leaderboard li.me').textContent,selfColor:getComputedStyle(document.querySelector('.leaderboard li.me')).color,players:document.querySelector('#player-count').textContent}})()`);
+ if(report.leaderboard.localBalance!==report.leaderboard.rows.find(p=>p.sessionId===report.before.id)?.score)throw Error('Native HUD did not apply the authoritative shop balance');
+ report.steps.push('Native leaderboard lists online players, highlights self and applies authoritative shop balance');
  const current=JSON.parse(readFileSync(path.join(install,'installed.json'),'utf8')).current,app=path.join(install,'versions',current,'app');
  const {openIdentity}=await import(pathToFileURL(path.join(app,'src/online/identity.mjs'))),{signIn}=await import(pathToFileURL(path.join(app,'src/online/client.mjs')));
  const key=openIdentity(path.join(process.env.LOCALAPPDATA,'CavegameReborn/identity')),receipt=JSON.parse(readFileSync(path.join(process.env.LOCALAPPDATA,'CavegameReborn/alpha-agreement.json'),'utf8')).receipt;
