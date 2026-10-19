@@ -3,18 +3,21 @@
 </p>
 
 <p align="center">
-  <strong>A Windows game player with signed updates and automated release checks.</strong>
+  <strong>An online survival sandbox with a Windows launcher, persistent progress, and verified updates.</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/alexaa1212ss/game/releases/latest"><img src="https://img.shields.io/github/v/release/alexaa1212ss/game?style=flat-square&amp;color=52d9bb&amp;label=release" alt="Latest release"></a>
+  <a href="https://github.com/alexaa1212ss/game/actions/workflows/player-release.yml"><img src="https://github.com/alexaa1212ss/game/actions/workflows/player-release.yml/badge.svg" alt="Windows release checks"></a>
   <img src="https://img.shields.io/badge/platform-Windows_x64-172936?style=flat-square" alt="Windows x64">
   <img src="https://img.shields.io/badge/status-closed_alpha-172936?style=flat-square" alt="Closed alpha">
   <img src="https://img.shields.io/badge/updates-Ed25519_%2B_SHA256-172936?style=flat-square" alt="Ed25519 signatures and SHA256 verification">
 </p>
 
 <p align="center">
-  <a href="https://github.com/alexaa1212ss/game/releases/latest/download/CavegameRebornSetup.msi"><strong>Download for Windows</strong></a>
+  <a href="https://github.com/alexaa1212ss/game/releases/latest/download/CavegameRebornSetup.msi"><strong>Cavegame: Reborn — Download Closed Alpha</strong></a>
+  &nbsp; · &nbsp;
+  <a href="docs/PLAYING.md">Player guide &amp; connection help</a>
   &nbsp; · &nbsp;
   <a href="ALPHA-NOTES.md">Alpha notes</a>
   &nbsp; · &nbsp;
@@ -33,7 +36,11 @@
 
 The player includes its runtime. No separate Node.js installation, development tools, server download, manual configuration, or ZIP extraction is required.
 
-> **Alpha availability:** the current server runs on the operator's PC through a temporary tunnel. It is available while that PC and host are running; 24/7 hosting is not yet in place.
+> **Now hosted in Oracle Chicago.** The game server runs independently of the developer’s laptop, with a fixed address, automatic restart, and persistent saves. Hosting currently uses time-limited trial credits; uninterrupted availability is not guaranteed.
+
+**Already installed?** Close Reborn and reopen your normal shortcut. The launcher checks for signed updates and the official server address automatically. Your identity and progress remain intact; no new server address or routine reinstall is needed.
+
+Having trouble connecting? See the [backup connection menu and troubleshooting guide](docs/PLAYING.md#connection-help).
 
 ## Explore the alpha
 
@@ -49,6 +56,7 @@ See the [alpha notes](ALPHA-NOTES.md) for the current season, gameplay changes, 
 
 | Area | Implementation |
 | :--- | :--- |
+| Cloud hosting | Separate Oracle Chicago gameplay host; HTTPS/WSS, reserved address, automatic service startup and private backups. |
 | Release automation | GitHub Actions builds a per-user Windows MSI and runs installation, update, gameplay protocol, and uninstall checks. |
 | Update integrity | Independent Ed25519 signatures plus SHA256 verification for release files and archives. |
 | Binary protocol | JavaScript codec with typed fields, variable-length integers, bounded reads, and cached schema writers. |
@@ -81,7 +89,7 @@ Your login identity stays protected on your Windows account. Export an **encrypt
 
 The installer and launcher are **not yet Authenticode-signed**, so Microsoft reputation warnings may appear. Never disable antivirus or add exclusions. Signed update verification is a separate integrity mechanism; it does not replace Windows publisher signing.
 
-The alpha is evolving. Automated protocol checks do not establish that every visual interaction works on every PC. Interactive installation on another physical PC and browser gameplay still need tester confirmation.
+The alpha is evolving. Release checks include clean Windows install/update/launch/uninstall and automated Edge input/session tests. These checks do not prove that every interaction works on every tester’s PC. Real tester reports remain part of verification.
 
 ## Feedback and contributions
 

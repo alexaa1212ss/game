@@ -28,6 +28,23 @@ The workflow defines release promotion after its installation and acceptance sta
 | [player-release.yml](../.github/workflows/player-release.yml) | Windows build, installation and update checks, artifact publication, and stable channel promotion. |
 | [alpha/](../alpha/) | Signed release metadata, file audits, and channel descriptors. |
 
+## Hosting and client separation
+
+The gameplay server runs on a separate Oracle Chicago VM. Closing the developer’s laptop does not stop it. GitHub supplies downloads and signed metadata; it does not run the game simulation.
+
+```mermaid
+flowchart LR
+    W[Windows launcher] -->|Signed directory and updates| G[GitHub]
+    W --> C[Game client]
+    C -->|HTTPS and WSS| P[Cloud HTTPS proxy]
+    P --> S[Authoritative game server]
+    S --> D[Persistent world and player state]
+```
+
+The normal player package excludes the server implementation, game databases, privileged tooling and private signing keys. The server controls inventories, gameplay state and permissions. Player-side file changes do not grant Developer access.
+
+The reserved address survives ordinary VM/service restarts. Hosting currently uses expiring trial credits; no uptime guarantee or automatic two-week shutdown is implied. See the [player guide](PLAYING.md) for connection recovery.
+
 ## Protocol design
 
 The codec uses packet schemas supplied by the reconstructed player payload. It supports fixed-width numbers, strings, booleans, arrays, and variable-length integers.
@@ -57,6 +74,8 @@ Avoid dispatching release automation merely to inspect documentation: the workfl
 
 ## Verification boundaries
 
-The acceptance script checks installed-player behavior through launcher HTTP endpoints and the binary WebSocket protocol. It records browser rendering as unverified.
+The release pipeline checks installed-player behavior through native launch, launcher HTTP endpoints, the binary WebSocket protocol and a separate automated Edge input/session test. Its checks include an actual previous-version upgrade and canonical latest-installer download/install/uninstall. The protocol acceptance report alone is not a visual inspection of every screen.
 
-Second-PC interactive installation, visual movement/mining in the installed player, and further real release update/rollback scenarios require additional tester evidence. See [alpha notes](../ALPHA-NOTES.md) and the acceptance script's `notYetVerified` list for context.
+[0.4.10 Windows acceptance](https://github.com/alexaa1212ss/game/actions/runs/39179535443) passed, including the 0.4.9 → 0.4.10 update. The operator personally confirmed an installed client could join the Chicago host without the old Windows server window. Individual tester PCs, regional routing, and the hidden backup panel still need physical tester feedback. See [alpha notes](../ALPHA-NOTES.md) for current limitations.
+
+Documentation updates do not require rebuilding the game or changing signed release channels.

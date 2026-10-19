@@ -12,7 +12,7 @@ Useful feedback includes a clear reproduction case, an accurate description of t
 - Whether the problem happens consistently.
 - A relevant, redacted error message or screenshot if available.
 
-For connection failures, mention roughly when the problem occurred. The alpha server currently depends on an operator PC and temporary tunnel.
+For connection failures, include the exact error, player version and approximate time with timezone. The Alpha now runs on a separate Oracle Chicago server; the operator’s laptop does not need to stay on. Try the [player connection guide](docs/PLAYING.md#connection-help) first. Do not delete identity files to clear an address cache.
 
 ## Protect your identity
 
