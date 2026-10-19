@@ -53,11 +53,18 @@ jobs:
           if($LASTEXITCODE -ne 0){gh release create "alpha-$v" --prerelease --target '${{ github.sha }}' --title "Closed Alpha $v - validation in progress" --notes 'Staged signed player update. Installer validation has not finished.'}
           gh release upload "alpha-$v" "RebornClient-$v.zip" --clobber
           if($LASTEXITCODE -ne 0){throw 'Staged update upload failed'}
+      - name: Verify expected authoritative server release over HTTPS
+        shell: pwsh
+        run: |
+          $expected=(Get-Content alpha/build-input.json -Raw | ConvertFrom-Json).version
+          $directory=Get-Content alpha/channel-next.json -Raw | ConvertFrom-Json
+          $info=Invoke-RestMethod ($directory.deployment.server+'/v1/info')
+          if($info.version -ne $expected -or $info.protocol -ne 1 -or !$info.alphaAgreement){throw 'Expected authoritative server version/agreement is not ready'}
       - name: Previous installer to real HTTPS signed update and native launch
         shell: pwsh
         run: |
-          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.12/CavegameRebornSetup.msi' -OutFile previous.msi
-          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '35710df33b755aabb48f8097b5a4d5c108d2060f8fec1f82f39229cbf9487e01'){throw 'Previous MSI hash mismatch'}
+          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.13/CavegameRebornSetup.msi' -OutFile previous.msi
+          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '556b93068ab875cdffdf43baf78cefc3b0e1e08666754a47169e429b5880d7ea'){throw 'Previous MSI hash mismatch'}
           $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path previous.msi).Path)`"",'/qn','/norestart','/L*v','previous-install.log') -Wait -PassThru -WindowStyle Hidden
           if($p.ExitCode -ne 0){throw 'Previous installer failed'}
           # Explicit signed staging directory for this clean CI fixture only.

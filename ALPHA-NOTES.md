@@ -1,3 +1,16 @@
+# Cavegame Reborn Closed Alpha 0.4.15 — EXP V1.0
+
+- Every level remains exactly 100 EXP. Coal ore gives 15, iron 20, gold 10, and diamond 20 base EXP per successfully mined block. Stone, cobble and ordinary blocks give zero mining EXP.
+- Zombie, skeleton and spider spawners can now be mined with iron or diamond picks. Base EXP decreases linearly from 500 at level 0 to 100 at level 28, then stays 100. Rewards use your current level before mining and round to whole EXP.
+- Defeating a player grants exactly 80 EXP; zombies grant 40, skeletons 30 and spiders 30 base EXP. Existing Grind bonuses still apply to mining and mobs. Fortune and extra item yields do not multiply EXP. Player-placed ores/spawners and Creative mining give no mining EXP.
+- Spawner base mining duration is 2 seconds with iron and 1 second with diamond, before existing Efficiency/research effects. Fixes a spawner occupancy check that could interrupt authoritative simulation.
+- Existing saved EXP, accounts, identity, inventory, world, season, permissions and enchanting costs are preserved. Offline worlds keep their previous EXP behavior. No wipe or save migration. Values follow the operator's specified EXP table; original numerical server awards were not recovered.
+- Local acceptance: 481/481 regressions, signed package authorization/inventory audit, 15 real packaged Edge checks including mouse mining and native EXP HUD, and the exact signed Linux deployment preflight. Prior crafting/menu/compass fixes remain intact.
+- Clean Windows release checks verify the expected HTTPS server version, signed 0.4.13 → 0.4.15 automatic update, MSI installation/upgrade/uninstall, actual input/render/session recovery and canonical latest download before stable promotion.
+- Existing installs update when you close the game and reopen the normal shortcut online. No reinstall or identity replacement is required.
+
+---
+
 # Cavegame Reborn Closed Alpha 0.4.13 — Craft Max, Movement & Compass
 
 - Online walking speed increases slightly from 340 to 350 world units per second. Sneak, flight and the offline game retain their existing speeds.
