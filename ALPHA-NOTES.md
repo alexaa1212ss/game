@@ -1,3 +1,15 @@
+# Cavegame Reborn Closed Alpha 0.4.12 — Community & Menu Fixes
+
+- Community sits directly below Gold Empire, clear of the native EXP bar and gold HUD.
+- Closing Community or Gold Empire returns keyboard focus to the game. Space no longer reopens the menu.
+- Community keeps only the top ten entries per kills, mining and lifetime-gold board. Exact generated CI/test-bot labels are excluded. Native online HUD rankings and all accounts/progress remain intact.
+- Same world and season; no XP/balance/inventory/permission changes or account deletion. The private Oracle deployment passed HTTPS readiness and preserved all 23 accounts and 14 saved player records, with a fresh complete backup.
+- Local acceptance: 458/458 regressions, signed packaged-client authorization/assets, seven actual Edge menu/layout checks, and the signed Linux server HTTP preflight.
+- Windows release checks verify the signed 0.4.11 → 0.4.12 update, MSI install/upgrade/uninstall, agreement/login/gameplay, native HUD, menu focus/layout and session recovery before stable promotion.
+- Existing installed players receive the signed update when they reopen their normal game shortcut with internet access. No reinstall or new identity is needed.
+
+---
+
 # Cavegame Reborn Closed Alpha 0.4.11 — Gold HUD & Classic Content
 
 - Restores the original live gold leaderboard and shop balance: top five online players, with your row red at its real rank; if below fifth, your own rank appears beneath the top five.
