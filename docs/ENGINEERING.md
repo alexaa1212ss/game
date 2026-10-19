@@ -76,6 +76,6 @@ Avoid dispatching release automation merely to inspect documentation: the workfl
 
 The release pipeline checks installed-player behavior through native launch, launcher HTTP endpoints, the binary WebSocket protocol and a separate automated Edge input/session test. Its checks include an actual previous-version upgrade and canonical latest-installer download/install/uninstall. The protocol acceptance report alone is not a visual inspection of every screen.
 
-[0.4.10 Windows acceptance](https://github.com/alexaa1212ss/game/actions/runs/39179535443) passed, including the 0.4.9 → 0.4.10 update. The operator personally confirmed an installed client could join the Chicago host without the old Windows server window. Individual tester PCs, regional routing, and the hidden backup panel still need physical tester feedback. See [alpha notes](../ALPHA-NOTES.md) for current limitations.
+[0.4.11 Windows acceptance](https://github.com/alexaa1212ss/game/actions/runs/39181879282) passed, including the 0.4.10 → 0.4.11 signed automatic update, native gold HUD/shop balance and canonical installer checks. The operator personally confirmed an installed client could join the Chicago host without the old Windows server window. Individual tester PCs, regional routing, and the hidden backup panel still need physical tester feedback. See [alpha notes](../ALPHA-NOTES.md) for current limitations.
 
 Documentation updates do not require rebuilding the game or changing signed release channels.

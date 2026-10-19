@@ -5,7 +5,7 @@
 - Experimental Aethersteel resource/ore/tools/armor, Arc Launcher/Charges and 15 custom enchantments removed from Online. Existing experimental ore becomes stone. Original gear, accounts, balances, world seed and Season 2 are preserved; the server has a complete pre-update backup. No season wipe.
 - The player package excludes experimental artwork. Shared source assets remain preserved for the offline build and historical releases.
 - Classic caps are corroborated by the [community enchantment reference](https://cavegame-io.fandom.com/wiki/Enchantments); the original private server's roll probabilities remain unavailable.
-- 437 local regression tests and 13 Linux cloud staging tests passed. Native Windows installer, signed 0.4.10 upgrade, agreement/login/gameplay and native HUD checks run in the release workflow before promotion. Physical remote testers still need to confirm their experience.
+- 437 local regression tests and 13 Linux cloud staging tests passed. [Clean Windows release checks](https://github.com/alexaa1212ss/game/actions/runs/39181879282) also passed: native install, signed 0.4.10 → 0.4.11 automatic update, agreement/login/gameplay, native HUD/shop balance, session recovery, identity-preserving uninstall, and canonical installer download/hash/install. Physical remote testers still need to confirm their experience.
 - The original HUD's integer wire format saturates displayed balances at 2,147,483,647; the Gold Empire dashboard retains exact large balances. Server transactions remain authoritative.
 
 ---
