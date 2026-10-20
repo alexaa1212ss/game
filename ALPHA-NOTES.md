@@ -1,11 +1,7 @@
-# Cavegame Reborn - Closed Alpha 0.4.16
+# Cavegame Reborn - Closed Alpha 0.4.17
 
-Worldgen V6.1 starts a fresh 30-day season with rounded sponge terrain, winding open passages, and balanced exposed/buried ore deposits.
+Original terrain art, with a subtle pixelated finish: warm rippled sand, blue-gray stone, coal/iron/gold/diamond deposits, hidden stone, cobble and loose ore icons. All twelve images remain 64 x 64 with their existing gameplay roles.
 
-- Continuous timber halls, occasional long trunk halls, and 28-32 cobble spawner rooms.
-- Persistent chest loot with two slots, an occasional third slot, and rare enchanted equipment.
-- One central 750 x 750 region rebuilds every eight hours. Warnings appear one minute and fifteen seconds before disconnecting players; press Play again afterwards. Inventory and outside-region progress survive regional resets.
-- New seasons archive the previous season and start fresh seasonal progress. Accounts, identity keys and permissions are retained.
-- EXP V1 rewards, crafting, movement controls, Community/Gold Empire menu fixes and normal player terrain visibility are preserved.
+This is a player art update. The current Oracle world, season, inventories, EXP, permissions and gameplay are unchanged. No server reset is needed.
 
-Existing installs update when opened through the normal online shortcut. Keep your identity and recovery backup. No uninstall is needed.
+Existing installations receive the signed automatic update when closed and reopened through the normal online shortcut. No reinstall is needed.

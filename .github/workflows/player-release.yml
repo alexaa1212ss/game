@@ -56,15 +56,16 @@ jobs:
       - name: Verify expected authoritative server release over HTTPS
         shell: pwsh
         run: |
-          $expected=(Get-Content alpha/build-input.json -Raw | ConvertFrom-Json).version
+          $inputData=Get-Content alpha/build-input.json -Raw | ConvertFrom-Json
+          $expected=if($inputData.serverVersion){$inputData.serverVersion}else{$inputData.version}
           $directory=Get-Content alpha/channel-next.json -Raw | ConvertFrom-Json
           $info=Invoke-RestMethod ($directory.deployment.server+'/v1/info')
           if($info.version -ne $expected -or $info.protocol -ne 1 -or !$info.alphaAgreement){throw 'Expected authoritative server version/agreement is not ready'}
       - name: Previous installer to real HTTPS signed update and native launch
         shell: pwsh
         run: |
-          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.15/CavegameRebornSetup.msi' -OutFile previous.msi
-          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne 'd9bfc7edb9c120ea0c1088da5ddc665af213335b6509f645f9e41cd56416cd1c'){throw 'Previous MSI hash mismatch'}
+          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.16/CavegameRebornSetup.msi' -OutFile previous.msi
+          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne 'a54a03ff22ca22d0ad2b1d5a36ca7dc8b27a583a43adb659c085fc50955d00d5'){throw 'Previous MSI hash mismatch'}
           $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path previous.msi).Path)`"",'/qn','/norestart','/L*v','previous-install.log') -Wait -PassThru -WindowStyle Hidden
           if($p.ExitCode -ne 0){throw 'Previous installer failed'}
           # Explicit signed staging directory for this clean CI fixture only.
