@@ -63,8 +63,8 @@ jobs:
       - name: Previous installer to real HTTPS signed update and native launch
         shell: pwsh
         run: |
-          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.13/CavegameRebornSetup.msi' -OutFile previous.msi
-          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne '556b93068ab875cdffdf43baf78cefc3b0e1e08666754a47169e429b5880d7ea'){throw 'Previous MSI hash mismatch'}
+          Invoke-WebRequest 'https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.15/CavegameRebornSetup.msi' -OutFile previous.msi
+          if((Get-FileHash previous.msi -Algorithm SHA256).Hash.ToLowerInvariant() -ne 'd9bfc7edb9c120ea0c1088da5ddc665af213335b6509f645f9e41cd56416cd1c'){throw 'Previous MSI hash mismatch'}
           $p=Start-Process msiexec.exe -ArgumentList @('/i',"`"$((Resolve-Path previous.msi).Path)`"",'/qn','/norestart','/L*v','previous-install.log') -Wait -PassThru -WindowStyle Hidden
           if($p.ExitCode -ne 0){throw 'Previous installer failed'}
           # Explicit signed staging directory for this clean CI fixture only.

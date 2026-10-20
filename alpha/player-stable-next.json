@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.15",
-    "file": "RebornClient-0.4.15.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.15/RebornClient-0.4.15.zip",
-    "bytes": 38033944,
-    "sha256": "8645072b4d1314ff01cb5c163035212691d4804a340d85b31737a1ba483a3b8a",
+    "version": "0.4.16",
+    "file": "RebornClient-0.4.16.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.16/RebornClient-0.4.16.zip",
+    "bytes": 38035738,
+    "sha256": "bc15d7e32e4c46712692194467fd6a4aa10047ac0ec5dca2c07823bfeb8888dd",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792446289709,
-    "expiresAt": 1795038289709,
+    "publishedAt": 1792468413562,
+    "expiresAt": 1795060413562,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -703,14 +703,24 @@
         "sha256": "18f70bedc72bf9c2387d9d78b7ff8c1d6ce29b5c385e335cb33dadac26273253"
       },
       {
+        "path": "app/public/asset/worldgen-v6/wood-floor.svg",
+        "bytes": 694,
+        "sha256": "1cec35799c82439f91a4230c99c5dc03c2118bd93a35cf4493c10337ff82b074"
+      },
+      {
+        "path": "app/public/asset/worldgen-v6/wood-wall.svg",
+        "bytes": 578,
+        "sha256": "2e5e40c17bde228f310f9726997138273ab3a90017e76fc9199bfdbf27b80116"
+      },
+      {
         "path": "app/public/client-enhancements.js",
         "bytes": 173,
         "sha256": "6f898d565904b95686a68d7dc32d47e606abae57a3319ffc242d9049ef4d2725"
       },
       {
         "path": "app/public/client.local.js",
-        "bytes": 1638291,
-        "sha256": "3993cd2fb121a55cb946bf89f1143c4a5a893c96e9ca93fc7110e19a72a04e6b"
+        "bytes": 1638311,
+        "sha256": "22b8f8b454ac0a169f1766f68962bc3ee980981d7a9fa6eb33b83130ea20ecf8"
       },
       {
         "path": "app/public/empire.css",
@@ -724,8 +734,8 @@
       },
       {
         "path": "app/public/index.html",
-        "bytes": 17231,
-        "sha256": "3b2c3ab5b07bc1fd0193469ec23d2332c67dd136243b687f2087b9047932e0cb"
+        "bytes": 17284,
+        "sha256": "d69a7ac75434068cd2451190529eaf93816d6fd69e8192d5b976280337aa94b5"
       },
       {
         "path": "app/public/interface-art.css",
@@ -794,8 +804,8 @@
       },
       {
         "path": "app/public/online-input.js",
-        "bytes": 4868,
-        "sha256": "f4eee7952b81e4237d2a25b31bac37180af52857c396e6cb75d70852233a225b"
+        "bytes": 5273,
+        "sha256": "397d464da367a091133d98515e7a08cceeeebf876136f8cf7cf9733b7233b79e"
       },
       {
         "path": "app/public/online-launcher.html",
@@ -841,6 +851,11 @@
         "path": "app/public/ui-shell.js",
         "bytes": 4813,
         "sha256": "14b8e780cd2bbc0f56ca84e65502327163d0db2e3c33fab313e7308ebd44d4dc"
+      },
+      {
+        "path": "app/public/worldgen-v6-content.js",
+        "bytes": 893,
+        "sha256": "8fcf3ce1c959fd4aaf35e2b31efa5ef1a32bc55f9e023630ab2c7c9ddb6464f1"
       },
       {
         "path": "app/scripts/start-online-client.mjs",
@@ -919,5 +934,5 @@
       }
     ]
   },
-  "signature": "pLXQkvnJ0mDnkHs4Hlz6RQNwtRxTYIV7VCCpSf18mQLg4sxcEGd7EIpU0zlRmL6ZTF+ZGgeo73WyN+ceJkJjCA=="
+  "signature": "fGwFzKp0vPGmF4gaSooqKqNns1mVWvkPox/YrHkHEFh3alX44AWHSBul8bIF8RCsU9S+s9DTBOSODZdzWXLmDg=="
 }
