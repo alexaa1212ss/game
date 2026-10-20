@@ -1,9 +1,9 @@
-# Cavegame Reborn - Closed Alpha 0.4.20
+# Cavegame Reborn - Closed Alpha 0.4.21
 
-Restores the original shared-pack sand, stone, ores, hidden fog, cobble and loose ore icons.
+Visible sprite details: teal player eyes, small brows and freckles, tiny finger creases, zombie stitches/teeth, spider fangs/segments, skeleton facial bones and goblin tusks/scars. Turret bases and shafts now use cool gunmetal panels and rivets. The special golden-apple item is now visually green; its name and gameplay are unchanged. The grappling hook has new steel side barbs and a retracted tip, plus a matching head on the active rope.
 
-Forty custom sprites receive small controlled edits: player armor variants, helmets, enchanted tools and swords, hook, golden apple, generator, turrets and five mobs. Native dimensions, alpha, outlines and protected faces are retained; at least 95% of visible pixels stay unchanged. Normal free-pack swords and tools are unchanged; enchanted versions change only existing magical highlight/tint regions.
+All nineteen enchanted variants use a new static cyan/violet aura baked behind the normal artwork. Fully opaque normal sprite pixels are preserved. There are no new glow animation loops, particles, shaders or timers. The hook head reuses the existing rope Graphics object with a bounded set of drawing commands.
 
-Graphics now default to native 1080p HD, or QHD/2160p on high-DPI screens. Inventory/chest icons use smooth scaling. The one-time graphics preference upgrade preserves later manual quality selections. Gameplay field of view and controls are retained.
+Native image dimensions, item/block IDs, normal shared-pack tools, terrain and the existing HD options are retained. This is controlled editing of the existing sprites, not a claim of independently original art. The earlier tiny-edit percentage limit is superseded by the requested visible details and new glow.
 
-The current world, season, inventories, EXP and permissions are unchanged. No server restart, reset or reinstall is needed. Close and reopen the normal online shortcut to receive the signed automatic update.
+Accounts, world, season, inventories, EXP and permissions are unchanged. No Oracle restart or reinstall is needed. Close and reopen the normal shortcut online to receive the signed automatic update.
