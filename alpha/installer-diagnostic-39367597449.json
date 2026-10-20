@@ -1,0 +1,5 @@
+{
+  "run": "39367597449",
+  "native": "{\n  \"status\": 0,\n  \"signal\": null,\n  \"error\": null,\n  \"stdout\": \"\",\n  \"stderr\": \"\"\n}",
+  "buildOutput": "**********************\r\nPowerShell transcript start\r\nStart time: 20261020040431\r\nUsername: runnervmgnbhw\\runneradmin\r\nRunAs User: runnervmgnbhw\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmgnbhw (Microsoft Windows NT 10.0.20348.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\ec88155e-8a5c-4438-b456-b28319690f28.ps1'\r\nProcess ID: 5468\r\nPSVersion: 7.6.6\r\nPSEdition: Core\r\nGitCommitId: 7.6.6\r\nOS: Microsoft Windows 10.0.20348\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.4\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\nTranscript started, output file is installer-build-output.txt\r\n\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20261020040517\r\n**********************\r\n"
+}
