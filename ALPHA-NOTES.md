@@ -1,7 +1,9 @@
-# Cavegame Reborn - Closed Alpha 0.4.17
+# Cavegame Reborn - Closed Alpha 0.4.20
 
-Original terrain art, with a subtle pixelated finish: warm rippled sand, blue-gray stone, coal/iron/gold/diamond deposits, hidden stone, cobble and loose ore icons. All twelve images remain 64 x 64 with their existing gameplay roles.
+Restores the original shared-pack sand, stone, ores, hidden fog, cobble and loose ore icons.
 
-This is a player art update. The current Oracle world, season, inventories, EXP, permissions and gameplay are unchanged. No server reset is needed.
+Forty custom sprites receive small controlled edits: player armor variants, helmets, enchanted tools and swords, hook, golden apple, generator, turrets and five mobs. Native dimensions, alpha, outlines and protected faces are retained; at least 95% of visible pixels stay unchanged. Normal free-pack swords and tools are unchanged; enchanted versions change only existing magical highlight/tint regions.
 
-Existing installations receive the signed automatic update when closed and reopened through the normal online shortcut. No reinstall is needed.
+Graphics now default to native 1080p HD, or QHD/2160p on high-DPI screens. Inventory/chest icons use smooth scaling. The one-time graphics preference upgrade preserves later manual quality selections. Gameplay field of view and controls are retained.
+
+The current world, season, inventories, EXP and permissions are unchanged. No server restart, reset or reinstall is needed. Close and reopen the normal online shortcut to receive the signed automatic update.
