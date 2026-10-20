@@ -57,6 +57,9 @@ try{
  report.steps.push('Native leaderboard lists online players, highlights self and applies authoritative shop balance');
  await until(()=>evaluate("document.querySelector('#empire-launch')?.hidden===false"));await exerciseCommunityMenus();await exerciseCraftMaximum();
  const current=JSON.parse(readFileSync(path.join(install,'installed.json'),'utf8')).current,app=path.join(install,'versions',current,'app');
+ // Native startup supplies this version; the isolated test must do the same before importing runtime constants.
+ const expected=JSON.parse(readFileSync('alpha/build-input.json','utf8')).version;if(current!==expected)throw Error('Installed client version does not match the signed candidate');
+ process.env.CAVEGAME_APP_VERSION=current;report.reauthenticationClientVersion=current;
  const {openIdentity}=await import(pathToFileURL(path.join(app,'src/online/identity.mjs'))),{signIn}=await import(pathToFileURL(path.join(app,'src/online/client.mjs')));
  const key=openIdentity(path.join(process.env.LOCALAPPDATA,'CavegameReborn/identity')),receipt=JSON.parse(readFileSync(path.join(process.env.LOCALAPPDATA,'CavegameReborn/alpha-agreement.json'),'utf8')).receipt;
  const endpoint=await evaluate('window.CavegameRemote.endpoint'),origin=new URL(endpoint);origin.protocol=origin.protocol==='wss:'?'https:':'http:';
