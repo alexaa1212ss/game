@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.17",
-    "file": "RebornClient-0.4.17.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.17/RebornClient-0.4.17.zip",
-    "bytes": 38035685,
-    "sha256": "8c6eea80aa475b32239d212b8e4b558e8bcdf27d5c8108bd9a35bef2c79354b8",
+    "version": "0.4.20",
+    "file": "RebornClient-0.4.20.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.20/RebornClient-0.4.20.zip",
+    "bytes": 38084895,
+    "sha256": "57794027edd7596b4d8fed00be90e6991df45f5241e96f97e24b4855dc5d2774",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792489320972,
-    "expiresAt": 1795081320972,
+    "publishedAt": 1792517415092,
+    "expiresAt": 1795109415092,
     "files": [
       {
         "path": "app/public/asset/bg1.png",
@@ -144,8 +144,8 @@
       },
       {
         "path": "app/public/asset/scaled/bow-enchanted.png",
-        "bytes": 2475,
-        "sha256": "c50d945ad6659f2d3b659d99929e863cb1d5c7afcf47c21bd80af82762b0f25e"
+        "bytes": 3517,
+        "sha256": "eabb963e9fa798592f29d2eb714c7138fdad48f6c1df71a64340a97cadbdf5fc"
       },
       {
         "path": "app/public/asset/scaled/bow.png",
@@ -179,13 +179,13 @@
       },
       {
         "path": "app/public/asset/scaled/coal.png",
-        "bytes": 1052,
-        "sha256": "ffdf4dbc7e1635ce3a0c7d3d786f82d129223e5824193e6ce63706f092bbde56"
+        "bytes": 950,
+        "sha256": "d696fb29634dc07dab8bc1316500ab1dbb3c47dbceb9c9904f61b076ad6a7e7a"
       },
       {
         "path": "app/public/asset/scaled/cobble.png",
-        "bytes": 1320,
-        "sha256": "ade535b8d24af5823617a472a74eb699f3e7ca057082833ef2e43008c10b66d1"
+        "bytes": 1886,
+        "sha256": "36d82b709744c4b2d373456781a77de4da5dc50bb46ca6d8cfd57ea52e8ec113"
       },
       {
         "path": "app/public/asset/scaled/cracks.png",
@@ -199,8 +199,8 @@
       },
       {
         "path": "app/public/asset/scaled/diamond.png",
-        "bytes": 974,
-        "sha256": "d1bf7fba06e8f76a847570901dc7c2c78aac21ed7e06dd5c8c9eae62f4ccdd10"
+        "bytes": 1032,
+        "sha256": "5edd5a372f37e72312113cb067aff6cf15fcb2aeef0837cbc61f300df7cb478e"
       },
       {
         "path": "app/public/asset/scaled/dirt.png",
@@ -224,18 +224,18 @@
       },
       {
         "path": "app/public/asset/scaled/goblin-king.png",
-        "bytes": 5775,
-        "sha256": "8850ffe3c7e29ba6bb0fa25fcbb59e7d50bda5ba75fc955e53580ae9230a0611"
+        "bytes": 9610,
+        "sha256": "b71182588ab4d9c9fd4cadc99265c977a462d948a89d1d4527c93cfd10d2cb96"
       },
       {
         "path": "app/public/asset/scaled/goblin.png",
-        "bytes": 5762,
-        "sha256": "088b3295afcdc7c3068c7584accff094769287f59db1ffedff5f299ddaee79c8"
+        "bytes": 9480,
+        "sha256": "4da979e44a4f0463285b8b3e25964b4797c46dbe38717cc1f249bc7ea2a263c6"
       },
       {
         "path": "app/public/asset/scaled/gold-generator.png",
-        "bytes": 2539,
-        "sha256": "f5f590818b9059ef1305d7cd887130b5c6c71586d20395e399fc17ad1c661d30"
+        "bytes": 3930,
+        "sha256": "94c391092732f956b131395bea6f955085083da9b1750b5eae699f584cead558"
       },
       {
         "path": "app/public/asset/scaled/gold-particles.png",
@@ -244,13 +244,13 @@
       },
       {
         "path": "app/public/asset/scaled/gold.png",
-        "bytes": 1044,
-        "sha256": "856b599b0dcc2ea0b46d48bd7c891f49263653c2230f277e8596ac902b7b6334"
+        "bytes": 902,
+        "sha256": "ebcdf071dd8a19dfac978ddeb6c631f06a72d26b8c13d1fff08162c4524d6e06"
       },
       {
         "path": "app/public/asset/scaled/golden-apple.png",
-        "bytes": 1078,
-        "sha256": "9da4d3cacca07c77e88841d79e0828014283af4a609b35f4e00981635b8abef2"
+        "bytes": 1756,
+        "sha256": "57311f4ad58b0309c9299075ffcd1144e85f425a0abc0295fe064e31e1a245bc"
       },
       {
         "path": "app/public/asset/scaled/golden-compass.png",
@@ -259,8 +259,8 @@
       },
       {
         "path": "app/public/asset/scaled/grappling-hook.png",
-        "bytes": 1677,
-        "sha256": "9abe3e7c3ea4add99336073e94bbb42ad982d7ea496835e1a08abcb60271c97f"
+        "bytes": 2696,
+        "sha256": "d578fc0140d552d524eee9a593ad8b9dfe5084f455002dec3ae9ba71fbf425f0"
       },
       {
         "path": "app/public/asset/scaled/gray-filter.png",
@@ -269,8 +269,8 @@
       },
       {
         "path": "app/public/asset/scaled/greystone-dark.png",
-        "bytes": 1432,
-        "sha256": "c5ab337c55aea3d4679818b8f0d0f655cd01134973ddda204eda4d373989246c"
+        "bytes": 867,
+        "sha256": "46b7daa47a5d730de8db7378e54f1f61a3049c8eed5ce877e139ee50b9d0319f"
       },
       {
         "path": "app/public/asset/scaled/gun.png",
@@ -284,48 +284,48 @@
       },
       {
         "path": "app/public/asset/scaled/helmet_diamond-enchanted.png",
-        "bytes": 1933,
-        "sha256": "f01c428bc50b213e0e50c071f2bb8b0d5788a9bc639f45e5fbfe9fd40b997e6a"
+        "bytes": 2910,
+        "sha256": "54fad08a70d3b8d14095764556de31814ba3f845cbeeb528bf495d1456761298"
       },
       {
         "path": "app/public/asset/scaled/helmet_diamond.png",
-        "bytes": 1754,
-        "sha256": "342961520a55bc5ba5785ddae1fdcbfd88b249c0d91cd6f52bc9e564583b3571"
+        "bytes": 2731,
+        "sha256": "70036d44656b22377b29d145a46accfd8dcc116c67711c298c779591e024f7e8"
       },
       {
         "path": "app/public/asset/scaled/helmet_gold-enchanted.png",
-        "bytes": 1962,
-        "sha256": "5996848edb75e4d3c12d82b8356525445271f7a82bcaacd8176ea7e39d0a9f5c"
+        "bytes": 2942,
+        "sha256": "1c77a46e179d02d80482b2d9e2db4604b2a0af2d1d5acef4b30ab21a9552a0cb"
       },
       {
         "path": "app/public/asset/scaled/helmet_gold.png",
-        "bytes": 1772,
-        "sha256": "4063bfa49314b5570e3c50a691b88a9c46da0a112d9c15ad4061b2b4fa52e703"
+        "bytes": 2740,
+        "sha256": "e85c5ba58ed3a6d43c7fa7b51423f37a929bf651ea51fedb455b70719f9dbd71"
       },
       {
         "path": "app/public/asset/scaled/helmet_iron-enchanted.png",
-        "bytes": 1898,
-        "sha256": "5d89f9cf103e2b2214b980c10d5c7479dcb3dfd6e6a2f59641f40979bcdd12ab"
+        "bytes": 2898,
+        "sha256": "795922e20443f06a504a3d0cbc6d9fd128f3fff7d795a79bbb917c51b0b0d99a"
       },
       {
         "path": "app/public/asset/scaled/helmet_iron.png",
-        "bytes": 1701,
-        "sha256": "74dad5e6d88bebaa117f55669783be9753ef35333b40077e484bc0d4da4478cd"
+        "bytes": 2694,
+        "sha256": "89893de0f2cce1e64af0d1898e8be86313f6558ee0a2897fa6830969bd6718fc"
       },
       {
         "path": "app/public/asset/scaled/helmet_leather-enchanted.png",
-        "bytes": 1840,
-        "sha256": "62945335f33ec85275e9eadf1af279e955ebcf672997f6176d5d5ca0ebc90e1e"
+        "bytes": 2792,
+        "sha256": "d624c95a8fa3cc67aff1c2c9fba597cf76aed1314ed579b229aba277b1f290d2"
       },
       {
         "path": "app/public/asset/scaled/helmet_leather.png",
-        "bytes": 1686,
-        "sha256": "3c319d158ad2e478a29228988689c2e996341a924af84bf953983c373751bab4"
+        "bytes": 2619,
+        "sha256": "d3d80cae19563457389d847fa9365f6e985a61da703d4b7f90b7b5fd147c68f3"
       },
       {
         "path": "app/public/asset/scaled/iron.png",
-        "bytes": 983,
-        "sha256": "7feacd7963e7ea5213b62a2500902b3a10c79b8a1c8bb4b14bf92364ca5d65c6"
+        "bytes": 865,
+        "sha256": "627cd2ca7909d55510a1415306b5617f48c485eadce4bd69fdbafc874d179a5a"
       },
       {
         "path": "app/public/asset/scaled/leaves-spawn.png",
@@ -379,8 +379,8 @@
       },
       {
         "path": "app/public/asset/scaled/pick_diamond-enchanted.png",
-        "bytes": 1530,
-        "sha256": "16bade54685db98e02e681dd3376c02f9ccaef6cd3c34d915dc34b59e27aa760"
+        "bytes": 2302,
+        "sha256": "40d81d1df5a6fa25e640aff008eeafad5496a0c41a140c59d72190119dce25cf"
       },
       {
         "path": "app/public/asset/scaled/pick_diamond.png",
@@ -389,8 +389,8 @@
       },
       {
         "path": "app/public/asset/scaled/pick_gold-enchanted.png",
-        "bytes": 1739,
-        "sha256": "05846046daf8abcaedac936c3f0aa275f4074e2a1c37751c5ce6d9610fc5d493"
+        "bytes": 2313,
+        "sha256": "722f08fad71d04441e46495e429b3c6c2d88b476a6786c6b291cbb0c99df543a"
       },
       {
         "path": "app/public/asset/scaled/pick_gold.png",
@@ -399,8 +399,8 @@
       },
       {
         "path": "app/public/asset/scaled/pick_iron-enchanted.png",
-        "bytes": 1714,
-        "sha256": "61013a7b894274a7d5df2372818bdd1a6c10a20137616c92c91c47494fbfa137"
+        "bytes": 2296,
+        "sha256": "cc64c05d7500f87230dc284297ee3308e870e3a2ccbee8809381f27e36af9874"
       },
       {
         "path": "app/public/asset/scaled/pick_iron.png",
@@ -409,8 +409,8 @@
       },
       {
         "path": "app/public/asset/scaled/pick_stone-enchanted.png",
-        "bytes": 1669,
-        "sha256": "9cc786de5a234f6e604b5b77bff9b0952cf491488be952cdbcebfcd645108c0e"
+        "bytes": 2251,
+        "sha256": "23706ae0ac80f2a4d6f43ab23e906c052b8fd6c4787849590234a9cb2c4ff469"
       },
       {
         "path": "app/public/asset/scaled/pick_stone.png",
@@ -419,8 +419,8 @@
       },
       {
         "path": "app/public/asset/scaled/pick_wood-enchanted.png",
-        "bytes": 1665,
-        "sha256": "809c38afdc3ada26da914164340dc6c502ca9be7cfd9982c97b0edca93dcf583"
+        "bytes": 2241,
+        "sha256": "6cd0d37b01d272fdad679ca855950143dc29e077e06e795a7df64742409364a0"
       },
       {
         "path": "app/public/asset/scaled/pick_wood.png",
@@ -429,43 +429,43 @@
       },
       {
         "path": "app/public/asset/scaled/player-diamond-enchanted.png",
-        "bytes": 2425,
-        "sha256": "198205b065f4ac17731424771b0c8dea8f273dae5619992b6f94848ec04e00b2"
+        "bytes": 3856,
+        "sha256": "6438fa37ce3e0dad26b9f874ee89c0331184d7e13891042f1531727c8f87dc1c"
       },
       {
         "path": "app/public/asset/scaled/player-diamond.png",
-        "bytes": 2262,
-        "sha256": "837b409138bb22b08d8fd4e98b7ba71a9155f55fea02836850ffe4d09cead3bf"
+        "bytes": 3661,
+        "sha256": "c339c2d0ec50b0ff9dda7367f2d4a4bfdadce7452b701eac1fa18f5575ef587e"
       },
       {
         "path": "app/public/asset/scaled/player-gold-enchanted.png",
-        "bytes": 2443,
-        "sha256": "211db27f0d1665116c44f7cb746c0bd11bdaffeca0f6b7949a60394fa7a10ff8"
+        "bytes": 3877,
+        "sha256": "054459af3e19af0106c2ce36d8e8d1c284f451ea8b55fafe675d8c1ded96e82a"
       },
       {
         "path": "app/public/asset/scaled/player-gold.png",
-        "bytes": 2285,
-        "sha256": "1e2840cf799d3669cf8c6457846ba5ca60eabf4053d30bd0b57b8307b324d378"
+        "bytes": 3699,
+        "sha256": "3daca3f13f57d5345e151c39141aeffecb6ed2a241291bb0fbf307bc77d3dcc2"
       },
       {
         "path": "app/public/asset/scaled/player-iron-enchanted.png",
-        "bytes": 2393,
-        "sha256": "411252c8d36514b104e2202826a2049c60479146ad4b2f3366a21691ba4f0d77"
+        "bytes": 3825,
+        "sha256": "8ea66fdd352336201c16a5977e453764061dc6f3eb15e1a79273e9f6825c1c56"
       },
       {
         "path": "app/public/asset/scaled/player-iron.png",
-        "bytes": 2234,
-        "sha256": "f3436edaaf0ab9614bf372ef22b2b07d0952c88304660e671d4999f3804fa6de"
+        "bytes": 3634,
+        "sha256": "2cf967c9fb34e62c062819eb87ea68cfac84a2431040837005e33b544e176f80"
       },
       {
         "path": "app/public/asset/scaled/player-leather-enchanted.png",
-        "bytes": 2399,
-        "sha256": "3873cf22bc2d84cd7cf75b36828303d4928bbda4e70a07d3839065c786a145e6"
+        "bytes": 3810,
+        "sha256": "eca3c981df1362be440fa8891d5373b95490896e37839ffee6ad4479d54d01f0"
       },
       {
         "path": "app/public/asset/scaled/player-leather.png",
-        "bytes": 2246,
-        "sha256": "cba76e9fd73c0fb3f0ad4270d963cdd36e868960310eaa271748c08601a45ad4"
+        "bytes": 3617,
+        "sha256": "7589e63f62a1c7dc478c35eaa2b79f78b2fa01143aa05d51f3f5d3047a5117f5"
       },
       {
         "path": "app/public/asset/scaled/red-spores.png",
@@ -504,8 +504,8 @@
       },
       {
         "path": "app/public/asset/scaled/sand.png",
-        "bytes": 1242,
-        "sha256": "46366dbcca161f74de45aef9a436268af2be5aba0275f0aeddd5dd38c39c338a"
+        "bytes": 1120,
+        "sha256": "ba6e5ea4e2e74d766b5ac9b1c258a171e8726982fe443f120ed020acf1fede9d"
       },
       {
         "path": "app/public/asset/scaled/sapling.png",
@@ -519,8 +519,8 @@
       },
       {
         "path": "app/public/asset/scaled/skeleton.png",
-        "bytes": 3817,
-        "sha256": "4c938f9a55b82089c84cecf1cc82b5f894725df8daf3d2989036deb4c04a0f75"
+        "bytes": 4769,
+        "sha256": "9dafbabb1014ca9138c17cc4778403d0d249b71a3c7de9a976284f493febef33"
       },
       {
         "path": "app/public/asset/scaled/spawner.png",
@@ -539,8 +539,8 @@
       },
       {
         "path": "app/public/asset/scaled/spider.png",
-        "bytes": 1675,
-        "sha256": "407023f8b59bfba0f87f01f9237a970c9b6b37936976399a4cd6c0d28e175eee"
+        "bytes": 2690,
+        "sha256": "92bcf6cef9accb958199cbe24a8c3b0c56b45320b5eb48493daab047501bfa72"
       },
       {
         "path": "app/public/asset/scaled/stew.png",
@@ -554,33 +554,33 @@
       },
       {
         "path": "app/public/asset/scaled/stone.png",
-        "bytes": 1540,
-        "sha256": "5a142241c38abc33e4971ae96efe160009209e4cad6d3c9319ce7967f1ce9e8f"
+        "bytes": 988,
+        "sha256": "64d615e1a524d5c83564e0f0dd6c3e42d5f0d4fd6723aefc644b3e6e3d7e6e4b"
       },
       {
         "path": "app/public/asset/scaled/stone_coal_alt.png",
-        "bytes": 2359,
-        "sha256": "e230a085633e04d63c4a41b1862fae445f44fac48c2da3ecc37b69120114f0a0"
+        "bytes": 2756,
+        "sha256": "7fd699749e072913bd92de3e1401dc8d6d655ab54a0b37749eda5a332dff7346"
       },
       {
         "path": "app/public/asset/scaled/stone_diamond.png",
-        "bytes": 2187,
-        "sha256": "05e3a48d1505207fee97fa7bc752a1e8cb44cbb3592560cc7167377aa03c339e"
+        "bytes": 2296,
+        "sha256": "9e2105c1c4cc0b9194827f362ff920a08a51731ad18a1e9b190432074a668611"
       },
       {
         "path": "app/public/asset/scaled/stone_gold.png",
-        "bytes": 2333,
-        "sha256": "06cc6ab6a8e98f34fd0f0e014e4fe66b8e6d20f06867b68b120e217886f097d7"
+        "bytes": 2701,
+        "sha256": "15b5bd215433a8c9cea7e8248e69ba8821a0b4d58998d6bb92fad8ad8af89056"
       },
       {
         "path": "app/public/asset/scaled/stone_silver_alt.png",
-        "bytes": 2221,
-        "sha256": "453e65a78003fcc0c551a9a4c5e8be4d3dbf4ae4bd9da3670e8a581742ed6acb"
+        "bytes": 2611,
+        "sha256": "311c7b0060aab88d36c37c0eef9bc700d4ca10733e4e158101195843f3efd745"
       },
       {
         "path": "app/public/asset/scaled/sword_diamond-enchanted.png",
-        "bytes": 1644,
-        "sha256": "5f362f14063ccd2804bf33caeea91f2ff4ed54f3057526cd1fd5158be06379c2"
+        "bytes": 2528,
+        "sha256": "cdba65fd9bcee4c9b46e2057a1dd2ec021943ca12bfb584379159bccd4c2fbb4"
       },
       {
         "path": "app/public/asset/scaled/sword_diamond.png",
@@ -589,8 +589,8 @@
       },
       {
         "path": "app/public/asset/scaled/sword_gold-enchanted.png",
-        "bytes": 1635,
-        "sha256": "71af7afed0c2c7b6198a9a1a3b2172b9c5dc7177bb17ff02689ffec850ef0b03"
+        "bytes": 2540,
+        "sha256": "6e114129267678d44218071c079a69ac46aa7bc75d7bc76a609c48289de95caa"
       },
       {
         "path": "app/public/asset/scaled/sword_gold.png",
@@ -599,8 +599,8 @@
       },
       {
         "path": "app/public/asset/scaled/sword_iron-enchanted.png",
-        "bytes": 1578,
-        "sha256": "74be86d3275b741e23a213fc7f0fc7ca3ee529dd03b99dd3fb94fca4cb60b74d"
+        "bytes": 2493,
+        "sha256": "9ab973f832f3651d2472fe00ffda59123220d525edc9dd150f614ffd630fdbce"
       },
       {
         "path": "app/public/asset/scaled/sword_iron.png",
@@ -609,8 +609,8 @@
       },
       {
         "path": "app/public/asset/scaled/sword_stone-enchanted.png",
-        "bytes": 1611,
-        "sha256": "e4b0eef8ddb42155fee5da09cd01e967d206c73791658e54621a2f4d3eade462"
+        "bytes": 2525,
+        "sha256": "2b75af74f8b8e1ccc472ad55c9d031356f1faa265c23799338cc1b6e512c6cf3"
       },
       {
         "path": "app/public/asset/scaled/sword_stone.png",
@@ -619,8 +619,8 @@
       },
       {
         "path": "app/public/asset/scaled/sword_wood-enchanted.png",
-        "bytes": 1558,
-        "sha256": "3651c73ea0b8f953d3f759c66ba6cdbaf5818c977b477e768ad6c48f86e5c82b"
+        "bytes": 2451,
+        "sha256": "391f0b169f33259c6d7922f213262a0a583d74a03d2e42b544027de33bea9ca2"
       },
       {
         "path": "app/public/asset/scaled/sword_wood.png",
@@ -639,13 +639,13 @@
       },
       {
         "path": "app/public/asset/scaled/tnt-turret-inventory.png",
-        "bytes": 2911,
-        "sha256": "cae8fe902b46e2879811b8e89d8869b91c2f85ca84d689824ea6a282fde637f0"
+        "bytes": 4290,
+        "sha256": "625c1811fd7a49fdef6dcd60fe34789576c79046e58c4499c81f5d7bd387476f"
       },
       {
         "path": "app/public/asset/scaled/tnt-turret.png",
-        "bytes": 1971,
-        "sha256": "9c76b4e08b78604d5ff64ef45c5e0975aa733774b8ef725cc02bc88f388b4e15"
+        "bytes": 3408,
+        "sha256": "b4526596a88dcb45a62ebfc6a2fb71b856ecf292cfb8f09bbed6f5ca455edc37"
       },
       {
         "path": "app/public/asset/scaled/tnt.png",
@@ -659,18 +659,18 @@
       },
       {
         "path": "app/public/asset/scaled/turret-base.png",
-        "bytes": 2682,
-        "sha256": "675f06fb944b65217b30ec8a1810521b86ade7d2647ae39b8d7affe961c658ec"
+        "bytes": 4278,
+        "sha256": "8f7fae3da73f33202bffbeb2010b2506e9fa945b3b7576c436794814b4e61353"
       },
       {
         "path": "app/public/asset/scaled/turret-inventory.png",
-        "bytes": 3165,
-        "sha256": "873e4e8dc358ea4a4145cfa50616ba6cfb4808240615448614c56aaff7ec08c6"
+        "bytes": 4502,
+        "sha256": "0e77553ded8d3dae63055714dc9613dedd1ea1d4b0f5002bb2d6219f8d958873"
       },
       {
         "path": "app/public/asset/scaled/turret.png",
-        "bytes": 3334,
-        "sha256": "29f96e49b6ee51fbc3e97003839cc8177685d0f05dab39f52e8f74fe87db07b6"
+        "bytes": 4402,
+        "sha256": "a4b801b29cb14c812b77abf378c677254e2cf00d7c826b24fd9e71bcf6fa8b3d"
       },
       {
         "path": "app/public/asset/scaled/vault-door.png",
@@ -699,8 +699,8 @@
       },
       {
         "path": "app/public/asset/scaled/zombie.png",
-        "bytes": 1669,
-        "sha256": "18f70bedc72bf9c2387d9d78b7ff8c1d6ce29b5c385e335cb33dadac26273253"
+        "bytes": 2707,
+        "sha256": "76746ec8940fdd0aa6ea6779433fe93200655b5521a3dc76c2e62ba4fa33befc"
       },
       {
         "path": "app/public/asset/worldgen-v6/wood-floor.svg",
@@ -734,8 +734,8 @@
       },
       {
         "path": "app/public/index.html",
-        "bytes": 17284,
-        "sha256": "d69a7ac75434068cd2451190529eaf93816d6fd69e8192d5b976280337aa94b5"
+        "bytes": 17416,
+        "sha256": "1a3aed41421cd977f3564081149aaac0b6925c81dfbe95103cb5edf9df220ce7"
       },
       {
         "path": "app/public/interface-art.css",
@@ -789,8 +789,8 @@
       },
       {
         "path": "app/public/online-fidelity.css",
-        "bytes": 5094,
-        "sha256": "f1394ed6b64b39ea602b19cd3d846bd45883209a602c676de65319dc623e2788"
+        "bytes": 5089,
+        "sha256": "2ba7d24937aa4777862990401654a3a77a3252c195bf8c9e477b4ef0e5602f5d"
       },
       {
         "path": "app/public/online-fidelity.js",
@@ -826,6 +826,11 @@
         "path": "app/public/online.css",
         "bytes": 4405,
         "sha256": "49af51ffe168a94bd5e81e02b42f3789dc5c224018e288fad2e7d727a0bcd296"
+      },
+      {
+        "path": "app/public/player-hd.js",
+        "bytes": 505,
+        "sha256": "67ac727f383ae7a82c8e85c4662725f410e5f2f58ebd530e6f1179846122441b"
       },
       {
         "path": "app/public/player-zoom.js",
@@ -934,5 +939,5 @@
       }
     ]
   },
-  "signature": "nfDro+/FE3Ow9nLh8oEkcE6PLIBwIbMb/x0p5sVhDOpe5sPICBsEFdmNYzp0n5O+wYrQmQlZg35e+zLtuSGgDA=="
+  "signature": "+/4skf/Fv98fCgMW7TS+4i9l8J4mVqFOEdSxBv+rBdR2/P7SO76ZCHmQLVqE9WVWFEk41PPDaid0tRtjLc/JBw=="
 }
