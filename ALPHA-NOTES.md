@@ -1,7 +1,7 @@
-# Cavegame Reborn - Closed Alpha 0.4.23
+# Cavegame Reborn - Closed Alpha 0.4.24
 
-The new Journal combines your Stats, Personal Records, Achievements, Gold Ranks, Hall of Fame, Clans and identity. The retired Community menu and research tree are removed. Research no longer changes production; existing saved fields are retained. Cosmetic gold ranks now reach Legend at 10 million gold. Hall of Fame boards await verified seasonal records and currently give no rewards.
+Inventory repair: all 19 item slots are visible, and empty positions and item order survive reconnects. Drag items between hotbar and expanded inventory slots; dropping onto an occupied slot swaps exactly those two items.
 
-There are 33 server-authoritative achievements, including three hidden secrets. Twenty public icons are finished; ten remaining public icons are explicitly marked as pending. Cards support progress, filters, keyboard access, reduced motion and original optional UI sounds. Tooltips stay above the Journal and remain visible while hovered. Settings is a coming-soon tab.
+Nearby drops are collected on the next server update without the old pickup delay. Each drop still has one server-authoritative owner. Cobble stays capped at 64; excess cobble from mining or nearby drops is discarded. Other items remain on the ground if your bag is full.
 
-Accounts, permissions, world, season, inventory, EXP and existing sprites are preserved. Close and reopen the normal game shortcut online to receive the signed automatic update. Native sign-in, recovery and update trust remain unchanged.
+Accounts, permissions, world, season, EXP, item quantities, enchantments and existing art are preserved. Close and reopen the normal game shortcut online to receive the signed automatic update. Native sign-in, recovery and update trust remain unchanged.

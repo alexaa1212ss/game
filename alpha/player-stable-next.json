@@ -2,15 +2,15 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.23",
-    "file": "RebornClient-0.4.23.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.23/RebornClient-0.4.23.zip",
-    "bytes": 38208785,
-    "sha256": "8f2cc021cffe990679e6471116a8fd3099c2a065137af7f7208e288aa455e69f",
+    "version": "0.4.24",
+    "file": "RebornClient-0.4.24.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.24/RebornClient-0.4.24.zip",
+    "bytes": 38211021,
+    "sha256": "e3b2eaf1d700ec9fab2b5712b513fb545b951f64af36719eed193179fd159efb",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792554825934,
-    "expiresAt": 1795146825934,
+    "publishedAt": 1792559544769,
+    "expiresAt": 1795151544769,
     "files": [
       {
         "path": "app/public/asset/achievements/anvil-shadow.png",
@@ -954,8 +954,8 @@
       },
       {
         "path": "app/public/index.html",
-        "bytes": 17560,
-        "sha256": "cbddac6b051462c9f28614433ae8b575abb96baac2d807f095a2dfe5951b4d9d"
+        "bytes": 17658,
+        "sha256": "bb1ed3695478465450a9482058337a2b1c49786f563474192c2c4419282a6fd3"
       },
       {
         "path": "app/public/interface-art.css",
@@ -966,6 +966,16 @@
         "path": "app/public/interface-art.js",
         "bytes": 6994,
         "sha256": "ee463ed1a0767cd620bab9c3eb5112689e729c2dfc5b8ade360ee786121c68e9"
+      },
+      {
+        "path": "app/public/inventory-drag.css",
+        "bytes": 451,
+        "sha256": "9651ace7a50cb6345f53bd23bc1b1b0e734790ab4094f2760d281e9c1069ae63"
+      },
+      {
+        "path": "app/public/inventory-drag.js",
+        "bytes": 4501,
+        "sha256": "4be1f29f3001bf6f0fa6e5ed0a232502e9bb6a8c259a489890e6e7204e4d5e2c"
       },
       {
         "path": "app/public/journal-online.js",
@@ -1024,8 +1034,8 @@
       },
       {
         "path": "app/public/online-guard.js",
-        "bytes": 2262,
-        "sha256": "726de634f6b28e20a92a4ba804e835944b0ded94b0c98a7c7b4362b7f0b43f54"
+        "bytes": 2318,
+        "sha256": "f1a3bca318d965bae57eeaad586bfb560ca143fbafaf8496a27a5618665c8a6a"
       },
       {
         "path": "app/public/online-input.js",
@@ -1125,7 +1135,7 @@
       {
         "path": "app/src/online/client.mjs",
         "bytes": 23276,
-        "sha256": "ff900b8227aa50b1f6b0c0de05427b0e4f61b261a7746d6ae20ef70e2aaaae29"
+        "sha256": "c695a6f4695de41e52d47ebd99a82d78ae49088309217358fa8db169eb31b22d"
       },
       {
         "path": "app/src/online/constants.mjs",
@@ -1174,5 +1184,5 @@
       }
     ]
   },
-  "signature": "DPUMtXU8b74c8MA5m4WzekR/U8ftnqM4TQ9eWpToZJZI3fK36z1vPI0pq+pSnxMEbSpH4/ruBpWmWTnmeOjiBg=="
+  "signature": "75I2PhHTxCJ7fTfMVeSTRBhMQK5mft59fYs6ROrEdJtX/0OZ8bjOgClOh4YtsI05NnAQqyIhfiRhyDhIfnLXBg=="
 }
