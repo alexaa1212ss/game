@@ -2,16 +2,236 @@
   "release": {
     "format": 1,
     "product": "RebornPlayer",
-    "version": "0.4.21",
-    "file": "RebornClient-0.4.21.zip",
-    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.21/RebornClient-0.4.21.zip",
-    "bytes": 38102922,
-    "sha256": "4c0f94e27253a331672697606141c2fd7ce23962e0fcf42f326334aeab486885",
+    "version": "0.4.23",
+    "file": "RebornClient-0.4.23.zip",
+    "artifactUrl": "https://github.com/alexaa1212ss/game/releases/download/alpha-0.4.23/RebornClient-0.4.23.zip",
+    "bytes": 38208785,
+    "sha256": "8f2cc021cffe990679e6471116a8fd3099c2a065137af7f7208e288aa455e69f",
     "launcherVersion": 1,
     "protocol": 1,
-    "publishedAt": 1792519620441,
-    "expiresAt": 1795111620441,
+    "publishedAt": 1792554825934,
+    "expiresAt": 1795146825934,
     "files": [
+      {
+        "path": "app/public/asset/achievements/anvil-shadow.png",
+        "bytes": 1188,
+        "sha256": "28054901025e7acd0bc56018bd4159a907be0d295a47c649c2b0b50cf6973254"
+      },
+      {
+        "path": "app/public/asset/achievements/anvil.png",
+        "bytes": 1897,
+        "sha256": "7a7b549df565085c25cb8b027ae224b3b717f29d7b9930d5c7619be2d97a91fb"
+      },
+      {
+        "path": "app/public/asset/achievements/coal-shadow.png",
+        "bytes": 1613,
+        "sha256": "1a47394858a40effbdda3c21787c83e20f2e1c66f119262a848070c81c2fb592"
+      },
+      {
+        "path": "app/public/asset/achievements/coal.png",
+        "bytes": 3000,
+        "sha256": "154acf34428a30dfda50025a14c3c2f66277bb5593a437d4fa04392dae8cb7d9"
+      },
+      {
+        "path": "app/public/asset/achievements/cog-shadow.png",
+        "bytes": 1466,
+        "sha256": "d3789811fadfb8661b6c70ddc38546450030753cc868274104a213a9020596bc"
+      },
+      {
+        "path": "app/public/asset/achievements/cog.png",
+        "bytes": 4109,
+        "sha256": "41e033aa136616f1bcd45c8183b18f13ad48edda16b2edffc3e8c9a14128b91a"
+      },
+      {
+        "path": "app/public/asset/achievements/coins-shadow.png",
+        "bytes": 1290,
+        "sha256": "0bb18fc4aef56e5a9a05d03325951c9868d5fbef31be82df2096eae7cd04dd2c"
+      },
+      {
+        "path": "app/public/asset/achievements/coins.png",
+        "bytes": 3105,
+        "sha256": "48cf87f16bdf86299a738f28e821117f66d27230c9c9f7f0464e60fd2c2cdfb2"
+      },
+      {
+        "path": "app/public/asset/achievements/compass-shadow.png",
+        "bytes": 1698,
+        "sha256": "ca8400e49b1862b8fdd16fa3d0c8abdc4a2a87dfeb64292680d1f60104758c20"
+      },
+      {
+        "path": "app/public/asset/achievements/compass.png",
+        "bytes": 4092,
+        "sha256": "c8ee0f5cea1e2087e724a1f463e20174aba79f73d0f8281c097bdf9ddfb625c5"
+      },
+      {
+        "path": "app/public/asset/achievements/crown-shadow.png",
+        "bytes": 1384,
+        "sha256": "051539b4ea820ac13c753f00189c67a4e12c3b4647f31cfe6db40c2e2a8f1d39"
+      },
+      {
+        "path": "app/public/asset/achievements/crown.png",
+        "bytes": 2656,
+        "sha256": "0816a871de290a43fad6253fa581d2d4be12062d70b46c5eb2626f967251c5fa"
+      },
+      {
+        "path": "app/public/asset/achievements/depth-shadow.png",
+        "bytes": 1445,
+        "sha256": "b64551e0a09bc67d8915102356e26fb5308e28faa288ddf4f79db4db6815e4bb"
+      },
+      {
+        "path": "app/public/asset/achievements/depth.png",
+        "bytes": 2550,
+        "sha256": "fc5bf2286947d7b6909050461a315fde990824b9e2d5769911a670d038f283d4"
+      },
+      {
+        "path": "app/public/asset/achievements/diamond-shadow.png",
+        "bytes": 1392,
+        "sha256": "b35d1f22116c6d90caa42f8dbee7d05f32504d783ca73c0915b59c5bda1ece28"
+      },
+      {
+        "path": "app/public/asset/achievements/diamond.png",
+        "bytes": 3123,
+        "sha256": "90c1dad6de10b8d2bff7f114fd74581fbbf49ceaa158112fb2e78f951595cc95"
+      },
+      {
+        "path": "app/public/asset/achievements/generator-shadow.png",
+        "bytes": 617,
+        "sha256": "560a1be25d2da8d9fd634aa7e02b717a52f7f2408cdc9749c381c613a7c6ea13"
+      },
+      {
+        "path": "app/public/asset/achievements/generator.png",
+        "bytes": 1793,
+        "sha256": "927d4a56b2874780d55b9ecee4b13b8dfa381c5a450971474e39e150dde4599d"
+      },
+      {
+        "path": "app/public/asset/achievements/gold-shadow.png",
+        "bytes": 1796,
+        "sha256": "8fc634d27122077618963eeafaf239b013004c10b8e2a1b8397cc628df5305c1"
+      },
+      {
+        "path": "app/public/asset/achievements/gold.png",
+        "bytes": 3221,
+        "sha256": "f74bf0d4c8594b95f975fc22fb2154eeb8178dec02b42902dda340bd6cd3ff0b"
+      },
+      {
+        "path": "app/public/asset/achievements/iron-shadow.png",
+        "bytes": 1600,
+        "sha256": "4b307f4ee9a91e184e6bd0bc8aa22d46b446a3950a0a3a93c82fb5fdea7c19a5"
+      },
+      {
+        "path": "app/public/asset/achievements/iron.png",
+        "bytes": 3475,
+        "sha256": "4d5b263b25266bc77fdadc62e7fad533f1dffe6353b3d1c3e6f2afa706dc3499"
+      },
+      {
+        "path": "app/public/asset/achievements/lantern-shadow.png",
+        "bytes": 1039,
+        "sha256": "eeef9c56b8844f38fed15e8190bb6603d6b0a8e8312b399e052bb9e33b5c172d"
+      },
+      {
+        "path": "app/public/asset/achievements/lantern.png",
+        "bytes": 2103,
+        "sha256": "77f1d7f92ebccd49393f68c1e563935e1796755c7c066aed7eeea8aadf1a5bcc"
+      },
+      {
+        "path": "app/public/asset/achievements/nest-shadow.png",
+        "bytes": 477,
+        "sha256": "837cdb79c0d6e938b34666f65b26ec87c4f362dabd40d502f13b41a4cb74202c"
+      },
+      {
+        "path": "app/public/asset/achievements/nest.png",
+        "bytes": 1389,
+        "sha256": "e129a62b37f48a4fbdc41012fdb6221c79a15cf07e2e1c253cad594e89f3b970"
+      },
+      {
+        "path": "app/public/asset/achievements/pending-shadow.png",
+        "bytes": 1408,
+        "sha256": "79afedb94f9ceb080f5f19b6f6cea38f85b117d5f6b09056e4b1bd9f1cbf8b3a"
+      },
+      {
+        "path": "app/public/asset/achievements/pending.png",
+        "bytes": 3573,
+        "sha256": "8c0f81adee9a94c4f8f5366858b61a6e4fbc4e6d1de304c451a35c4ddec10423"
+      },
+      {
+        "path": "app/public/asset/achievements/pick-shadow.png",
+        "bytes": 1724,
+        "sha256": "742936cf5a32bb38a234a2af5252dc00a46c9102bbb87073fda859e1f771d190"
+      },
+      {
+        "path": "app/public/asset/achievements/pick.png",
+        "bytes": 3134,
+        "sha256": "1d887ddeb0175549dc8f3f240c5dbdbccec6d3c1b18ae60aa18100a5b6118787"
+      },
+      {
+        "path": "app/public/asset/achievements/pouch-shadow.png",
+        "bytes": 1748,
+        "sha256": "9db75d630127f60b6f26f49f3a67d8076cf713bc65e5bd6936d94de29f84ee81"
+      },
+      {
+        "path": "app/public/asset/achievements/pouch.png",
+        "bytes": 3457,
+        "sha256": "0a7c844bbe450464a0930fb3dccb606dba4448ae47939c63192467e5c0b9d354"
+      },
+      {
+        "path": "app/public/asset/achievements/secret-shadow.png",
+        "bytes": 805,
+        "sha256": "45f2d32d00fc522bb9cd8ed4162afaea675aa10a7daef9f69f5d32d06e122e24"
+      },
+      {
+        "path": "app/public/asset/achievements/secret.png",
+        "bytes": 1584,
+        "sha256": "9ad6076e174a06c942d88a3dfc3542c5192adb1c0968bec6db4311cc07f3279c"
+      },
+      {
+        "path": "app/public/asset/achievements/shield-shadow.png",
+        "bytes": 1249,
+        "sha256": "c139b0ebee5498b5c02a474d69d29bb61142bc39d381bd36a1bf45bd17d8bdd4"
+      },
+      {
+        "path": "app/public/asset/achievements/shield.png",
+        "bytes": 3577,
+        "sha256": "5d78b6994328ecd3afdac1d369584da9b5fdf9bab981e90d3a92ad64551972b9"
+      },
+      {
+        "path": "app/public/asset/achievements/stone-shadow.png",
+        "bytes": 1464,
+        "sha256": "0ffe74de5c4f63b7b860ad418d2c940af4fc649a0a6360a497d199bac518e64a"
+      },
+      {
+        "path": "app/public/asset/achievements/stone.png",
+        "bytes": 3546,
+        "sha256": "c57df2ed964512883e63f507be97c4b378bdc5d3514cd74c57fbc4dd12f91ccc"
+      },
+      {
+        "path": "app/public/asset/achievements/swords-shadow.png",
+        "bytes": 2475,
+        "sha256": "2388e8c480d6746c950c5b661e963a4103d2486eb3997b25a387e1ef83305f76"
+      },
+      {
+        "path": "app/public/asset/achievements/swords.png",
+        "bytes": 4707,
+        "sha256": "442b9f3b31b971dcc22943ddb16cb84f8b6eb559fc8004d5e43e8b5157bd4449"
+      },
+      {
+        "path": "app/public/asset/achievements/treasury-shadow.png",
+        "bytes": 650,
+        "sha256": "4339d5a12638eb7856689efd2e00ff6afd9c22d199980a7c72604495ec917606"
+      },
+      {
+        "path": "app/public/asset/achievements/treasury.png",
+        "bytes": 1301,
+        "sha256": "63e71133bb164b08f583ccefcc5f02c064787688dd7464df625806bda754a121"
+      },
+      {
+        "path": "app/public/asset/achievements/trowel-shadow.png",
+        "bytes": 1825,
+        "sha256": "fc8f39c9649cd823e46bab76e62ffa2052f737175ca5bd9184de0409d57e5cbf"
+      },
+      {
+        "path": "app/public/asset/achievements/trowel.png",
+        "bytes": 3259,
+        "sha256": "2c2797823cd9907d82d58017f1debc7715672f29569b6a4d9fdfba1920e419cf"
+      },
       {
         "path": "app/public/asset/bg1.png",
         "bytes": 40064,
@@ -724,28 +944,33 @@
       },
       {
         "path": "app/public/empire.css",
-        "bytes": 12709,
-        "sha256": "54cd18fa0b607b2a475f569154295f19b1be9e0e723b0eff1a58a03fa31f3d4f"
+        "bytes": 11237,
+        "sha256": "ce50f7391ecf5b3838c9ae8a6e3538002d2606b8fbc440069854d22fe1a2e70f"
       },
       {
         "path": "app/public/empire.js",
-        "bytes": 27256,
-        "sha256": "7b1e35b789f162b8b77bb2a5c7caaf425a665076e62adf7dbf884c0214baa47c"
+        "bytes": 24625,
+        "sha256": "ebdb4ab2acc915435a33069b63f623849ec616c0590c700d64cc12ed9c24a3a1"
       },
       {
         "path": "app/public/index.html",
-        "bytes": 17416,
-        "sha256": "1a3aed41421cd977f3564081149aaac0b6925c81dfbe95103cb5edf9df220ce7"
+        "bytes": 17560,
+        "sha256": "cbddac6b051462c9f28614433ae8b575abb96baac2d807f095a2dfe5951b4d9d"
       },
       {
         "path": "app/public/interface-art.css",
-        "bytes": 45403,
-        "sha256": "aaae0d54161d73c56453c60eaae99d7f1bab3f3c95db47c003cba7d46d7a960e"
+        "bytes": 46908,
+        "sha256": "11e9ea30016dfc19edceaf13c829eb376535662eecda34cd4ecd67943da63dd7"
       },
       {
         "path": "app/public/interface-art.js",
-        "bytes": 6954,
-        "sha256": "4158d36598751c07af5f695630f8be36d0096739930271fa7aa536c32cd9c9a2"
+        "bytes": 6994,
+        "sha256": "ee463ed1a0767cd620bab9c3eb5112689e729c2dfc5b8ade360ee786121c68e9"
+      },
+      {
+        "path": "app/public/journal-online.js",
+        "bytes": 8083,
+        "sha256": "79aa829f1c9576f146198b1a3f895307758c23ae844622d928e9687854aa902d"
       },
       {
         "path": "app/public/local-adapter.js",
@@ -784,8 +1009,8 @@
       },
       {
         "path": "app/public/online-client.js",
-        "bytes": 8082,
-        "sha256": "f4af3e4cd18c857991af85c04b98d55a4f32196068b76cbf613cf8240049325e"
+        "bytes": 2293,
+        "sha256": "ddac0a02173d72ee810d895d65fbe5681374b2c7937c52849ee91d008631a88a"
       },
       {
         "path": "app/public/online-fidelity.css",
@@ -824,8 +1049,8 @@
       },
       {
         "path": "app/public/online.css",
-        "bytes": 4405,
-        "sha256": "49af51ffe168a94bd5e81e02b42f3789dc5c224018e288fad2e7d727a0bcd296"
+        "bytes": 3153,
+        "sha256": "c118ce616df7f6640239e61a41d1dece8d3b826c975d1b9e10dfb4f7dd16c313"
       },
       {
         "path": "app/public/player-hd.js",
@@ -846,6 +1071,16 @@
         "path": "app/public/terms",
         "bytes": 855,
         "sha256": "aa0df2b07010f5fbd2dc7950ff0036ed34d700cdd85a0eeef5dc6a5414b8f972"
+      },
+      {
+        "path": "app/public/ui-components.css",
+        "bytes": 4072,
+        "sha256": "b6836a2a7e3f125fda7b51f3e8c4ddf468b68596f1bfa587a83efe31c731621f"
+      },
+      {
+        "path": "app/public/ui-components.js",
+        "bytes": 3777,
+        "sha256": "34db66e1cce62a9d41cea9dbd7480feac6747e35ff3075897a201fc4b893d5ef"
       },
       {
         "path": "app/public/ui-shell.css",
@@ -939,5 +1174,5 @@
       }
     ]
   },
-  "signature": "FyOk5yo/018Xs6Y5aupXIKhfmuBpEhQ019O57mlw4O6S+d+s+phkImMywWXXGZ0LjbW3AofLvAhLg3Q6VWifDA=="
+  "signature": "DPUMtXU8b74c8MA5m4WzekR/U8ftnqM4TQ9eWpToZJZI3fK36z1vPI0pq+pSnxMEbSpH4/ruBpWmWTnmeOjiBg=="
 }
