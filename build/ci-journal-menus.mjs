@@ -1,0 +1,22 @@
+// Shared real-input acceptance for the installed client. Read-only on production.
+export async function exerciseJournalMenus({evaluate,command,pause,until,report}){
+ const expect=(value,message)=>{if(!value)throw Error(message);};
+ const point=selector=>evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)});if(!e)throw Error('Missing menu element');const r=e.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+ const hover=async selector=>command('Input.dispatchMouseEvent',{type:'mouseMoved',...await point(selector)});
+ const click=async selector=>{await hover(selector);const p=await point(selector);await command('Input.dispatchMouseEvent',{type:'mousePressed',...p,button:'left',buttons:1,clickCount:1});await command('Input.dispatchMouseEvent',{type:'mouseReleased',...p,button:'left',buttons:0,clickCount:1});await pause(220);};
+ const key=async(key,code,n)=>{await command('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:n,nativeVirtualKeyCode:n});await command('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:n,nativeVirtualKeyCode:n});await pause(220);};
+ expect(await evaluate("document.querySelectorAll('.ro-community-open,.ro-panel').length===0"),'Retired Community menu is still present');
+ for(const escape of [true,false]){await click('#empire-launch');expect(await evaluate('window.CavegameUI.current()')==='empire','Journal did not open');if(escape)await key('Escape','Escape',27);else await click('#empire-close');expect(await evaluate('document.activeElement?.tagName')==='CANVAS','Journal did not return focus to game');await key(' ','Space',32);expect(await evaluate('window.CavegameUI.current()')===null,'Space reopened Journal');}
+ await click('#empire-launch');await click('[data-tab="dashboard"]');await until(()=>evaluate("document.querySelector('#journal-identity')?.textContent.includes(window.RebornOnline.account.id)"));
+ await click('[data-tab="achievements"]');await until(()=>evaluate("document.querySelectorAll('[data-achievement]').length===33"));
+ const payload=await evaluate("fetch('/local/empire').then(r=>{if(!r.ok)throw Error('Journal authorization failed');return r.json()})"),secrets=(payload.achievements?.cards??[]).filter(a=>a.secret&&!a.unlocked);
+ expect(payload.achievements?.total===33,'Authoritative achievement catalog missing');
+ for(const a of secrets)expect(Object.keys(a).sort().join(',')==='id,secret,unlocked','Locked secret disclosed extra data');
+ await hover('[data-achievement="miner-hundred"]');await until(()=>evaluate("document.querySelector('#achievement-tooltip')?.classList.contains('is-visible')"));
+ const visible=await evaluate(`new Promise(resolve=>{const t=document.querySelector('#achievement-tooltip');let hidden=0;const observer=new MutationObserver(()=>{if(t.hidden||!t.classList.contains('is-visible'))hidden++;});observer.observe(t,{attributes:true,attributeFilter:['hidden','class']});setTimeout(()=>{observer.disconnect();resolve({hidden,visible:!t.hidden,above:Number(getComputedStyle(t).zIndex)>Number(getComputedStyle(document.querySelector('#empire-panel')).zIndex)});},3100);})`);
+ expect(visible.visible&&visible.hidden===0&&visible.above,'Stationary Journal tooltip disappeared or fell behind modal');
+ await click('[data-tab="clans"]');await until(()=>evaluate("document.querySelector('#empire-clans')?.textContent.trim().length>10"));
+ await click('[data-tab="settings"]');expect(await evaluate("document.querySelector('#empire-settings').textContent.includes('Settings coming soon!!')"),'Settings message missing');await key('Escape','Escape',27);
+ const boards=await evaluate("fetch('/v1/leaderboards').then(r=>{if(!r.ok)throw Error('Leaderboard authorization failed');return r.json()})");for(const rows of Object.values(boards))expect(rows.length<=10&&!rows.some(p=>/^(?:AlphaCI_[0-9a-f]{6}|BrowserCI_[0-9a-f]{4}|TestBot_[0-9a-f]{4})$/i.test(p.nickname)),'HUD leaderboard limit or QA filter failed');
+ report.journal={cards:33,lockedSecretsChecked:secrets.length,stationaryTooltip:visible,boardRows:Object.fromEntries(Object.entries(boards).map(([k,v])=>[k,v.length])),focusAndSpacePassed:true};report.steps.push('Journal identity, 33 cards, secret privacy, sustained tooltip layering, Clans and Settings; both close paths restore canvas focus without Space reopening; HUD boards remain top ten without QA identities');
+}

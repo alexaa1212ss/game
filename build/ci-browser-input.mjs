@@ -1,6 +1,7 @@
 // Real isolated Edge instance + installed ordinary player. No test packet injection.
 import {spawn} from 'node:child_process';import {existsSync,readFileSync,writeFileSync,mkdtempSync} from 'node:fs';import path from 'node:path';import os from 'node:os';
 import {pathToFileURL} from 'node:url';
+import {exerciseJournalMenus} from './ci-journal-menus.mjs';
 const install=path.join(process.env.LOCALAPPDATA,'Programs/CavegameReborn'),base='http://127.0.0.1:33942',game='http://127.0.0.1:33944',pause=ms=>new Promise(r=>setTimeout(r,ms)),report={steps:[],browserErrors:[]};let browser,cdp,nonce;
 async function until(fn,limit=180){const deadline=Date.now()+limit*500;for(let i=0;i<limit&&Date.now()<deadline;i++){try{const v=await fn();if(v)return v;}catch{}await pause(500);}throw Error('Browser acceptance timed out.');}
 async function request(route,body){const r=await fetch(base+route,{method:body?'POST':'GET',headers:{'x-reborn-launcher':nonce??'','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});const d=await r.json();if(!r.ok)throw Error(d.error);return d;}
@@ -10,16 +11,6 @@ const inspect=`(()=>{const g=window.__inputGame,s=g?.scene?.getScene('Game'),id=
 async function exerciseInput(){
  await command('Input.dispatchMouseEvent',{type:'mouseMoved',x:740,y:430});await command('Input.dispatchMouseEvent',{type:'mousePressed',x:740,y:430,button:'left',buttons:1,clickCount:1});await pause(200);await command('Input.dispatchMouseEvent',{type:'mouseReleased',x:740,y:430,button:'left',buttons:0,clickCount:1});
  await command('Input.dispatchKeyEvent',{type:'keyDown',key:'d',code:'KeyD',text:'d',windowsVirtualKeyCode:68,nativeVirtualKeyCode:68});await pause(800);await command('Input.dispatchKeyEvent',{type:'keyUp',key:'d',code:'KeyD',windowsVirtualKeyCode:68,nativeVirtualKeyCode:68});await pause(400);
-}
-async function exerciseCommunityMenus(){
- const geometry=await evaluate(`(()=>{const rect=s=>{const r=document.querySelector(s).getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}};return {community:rect('.ro-community-open'),empire:rect('#empire-launch'),xp:rect('#xp-bar'),leaderboard:rect('.leaderboard')}})()`);
- const a=geometry.community,b=geometry.empire,overlap=(x,y)=>x.width&&x.height&&y.width&&y.height&&x.x<y.x+y.width&&x.x+x.width>y.x&&x.y<y.y+y.height&&x.y+x.height>y.y;
- if(a.y<b.y+b.height+5||Math.abs(a.x-b.x)>1||overlap(a,geometry.xp)||overlap(a,geometry.leaderboard))throw Error('Community must be directly below Gold Empire and clear of native EXP/leaderboard');
- const click=async selector=>{const r=await evaluate(`(()=>{const r=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);await command('Input.dispatchMouseEvent',{type:'mousePressed',...r,button:'left',buttons:1,clickCount:1});await command('Input.dispatchMouseEvent',{type:'mouseReleased',...r,button:'left',buttons:0,clickCount:1});await pause(200);};
- const key=async(key,code,n)=>{await command('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:n,nativeVirtualKeyCode:n});await command('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:n,nativeVirtualKeyCode:n});await pause(200);};
- for(const [opener,id,close] of [['.ro-community-open','online-community','#ro-close'],['#empire-launch','empire','#empire-close']])for(const escape of [true,false]){await click(opener);if(await evaluate('window.CavegameUI.current()')!==id)throw Error('Menu did not open: '+id);if(escape)await key('Escape','Escape',27);else await click(close);if(await evaluate('document.activeElement?.tagName')!=='CANVAS')throw Error('Menu did not return focus to the game');await key(' ','Space',32);if(await evaluate('window.CavegameUI.current()')!==null)throw Error('Space reopened '+id);}
- await click('.ro-community-open');await until(()=>evaluate("document.querySelectorAll('#ro-content table').length===3"));const boards=await evaluate("fetch('/v1/leaderboards').then(r=>r.json())");for(const rows of Object.values(boards)){if(rows.length>10||rows.some(p=>/^(?:AlphaCI_[0-9a-f]{6}|BrowserCI_[0-9a-f]{4}|TestBot_[0-9a-f]{4})$/i.test(p.nickname)))throw Error('Server Community board limit or QA filter failed');}if(!await evaluate("[...document.querySelectorAll('#ro-content h3')].every(h=>h.textContent.includes('Top 10'))"))throw Error('Top 10 headings missing');await key('Escape','Escape',27);
- report.community={geometry,boardRows:Object.fromEntries(Object.entries(boards).map(([k,v])=>[k,v.length])),focusAndSpacePassed:true};report.steps.push('Community sits below Gold Empire clear of native EXP/HUD; both close paths return focus to canvas; Space does not reopen; real server boards are top ten without generated QA identities');
 }
 async function exerciseCraftMaximum(){
  await evaluate(`(()=>{const original=window.fetch;window.__bulkResults=[];window.fetch=async function(input,...rest){const r=await original.call(this,input,...rest);if(String(input).endsWith('/v1/craft-max'))window.__bulkResults.push(await r.clone().json());return r;};})()`);
@@ -55,7 +46,7 @@ try{
  report.leaderboard=await evaluate(`(()=>{const s=window.__inputGame.scene.getScene('Game');return {rows:s.leaderboardData,localBalance:s.myBalance,selfText:document.querySelector('.leaderboard li.me').textContent,selfColor:getComputedStyle(document.querySelector('.leaderboard li.me')).color,players:document.querySelector('#player-count').textContent}})()`);
  if(report.leaderboard.localBalance!==report.leaderboard.rows.find(p=>p.sessionId===report.before.id)?.score)throw Error('Native HUD did not apply the authoritative shop balance');
  report.steps.push('Native leaderboard lists online players, highlights self and applies authoritative shop balance');
- await until(()=>evaluate("document.querySelector('#empire-launch')?.hidden===false"));await exerciseCommunityMenus();await exerciseCraftMaximum();
+ await until(()=>evaluate("document.querySelector('#empire-launch')?.hidden===false"));await exerciseJournalMenus({evaluate,command,pause,until,report});await exerciseCraftMaximum();
  const current=JSON.parse(readFileSync(path.join(install,'installed.json'),'utf8')).current,app=path.join(install,'versions',current,'app');
  // Native startup supplies this version; the isolated test must do the same before importing runtime constants.
  const expected=JSON.parse(readFileSync('alpha/build-input.json','utf8')).version;if(current!==expected)throw Error('Installed client version does not match the signed candidate');
