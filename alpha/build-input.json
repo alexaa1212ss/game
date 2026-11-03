@@ -1,1 +1,8 @@
-{"version":"0.4.24","installerVersion":"0.4.24","runtimeVersion":"24.22.0","runtimeSha256":"ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c","serverVersion":"0.4.24","ciRevision":"inventory-layout-pickup-drag-1"}
+{
+  "version": "0.4.75",
+  "installerVersion": "0.4.75",
+  "runtimeVersion": "24.22.0",
+  "runtimeSha256": "ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c",
+  "serverVersion": "0.4.74",
+  "ciRevision": "final-retirement-original-account-migration-1"
+}

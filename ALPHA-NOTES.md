@@ -1,7 +1,11 @@
-# Cavegame Reborn - Closed Alpha 0.4.24
+# NoLife.io — final downloaded-client update
 
-Inventory repair: all 19 item slots are visible, and empty positions and item order survive reconnects. Drag items between hotbar and expanded inventory slots; dropping onto an occupied slot swaps exactly those two items.
+The downloaded game is discontinued. Browser NoLife.io is the only version receiving live gameplay updates.
 
-Nearby drops are collected on the next server update without the old pickup delay. Each drop still has one server-authoritative owner. Cobble stays capped at 64; excess cobble from mining or nearby drops is discarded. Other items remain on the ground if your bag is full.
+Open the updated launcher and click **Move to browser**. Read the current Alpha agreement in the browser. Compare the browser fingerprint with the original launcher, then use its same button to confirm. A copied link cannot finish without this source-device confirmation.
 
-Accounts, permissions, world, season, EXP, item quantities, enchantments and existing art are preserved. Close and reopen the normal game shortcut online to receive the signed automatic update. Native sign-in, recovery and update trust remain unchanged.
+Set up a unique login username and password on your existing account. The original account ID, gold, loot, XP, statistics, permissions and linked alt stay intact. Sign In restores that account on another device. The browser remembers the current agreement and trusted device.
+
+If the browser already holds another account, transfer stops safely; use a separate browser profile to preserve both. After you can play with your existing progress in the browser, you may remove the downloaded client. Local identity and encrypted backups are retained.
+
+Password reset is marked Coming Soon. Keep an existing linked device or recovery code.

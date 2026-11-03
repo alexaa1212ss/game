@@ -51,7 +51,7 @@ jobs:
           $v=(Get-Content alpha/build-input.json -Raw | ConvertFrom-Json).version
           gh release view "alpha-$v" *> $null
           if($LASTEXITCODE -ne 0){gh release create "alpha-$v" --prerelease --target '${{ github.sha }}' --title "Closed Alpha $v - validation in progress" --notes 'Staged signed player update. Installer validation has not finished.'}
-          gh release upload "alpha-$v" "RebornClient-$v.zip" --clobber
+          gh release upload "alpha-$v" "RebornClient-$v.zip" alpha/player-stable-next.json --clobber
           if($LASTEXITCODE -ne 0){throw 'Staged update upload failed'}
       - name: Verify expected authoritative server release over HTTPS
         shell: pwsh
@@ -74,7 +74,7 @@ jobs:
           $env:CAVEGAME_TEST_OLD_LAUNCHER='1'
           node build/ci-player-acceptance.mjs
           Remove-Item Env:CAVEGAME_TEST_OLD_LAUNCHER
-          if($LASTEXITCODE -ne 0){throw 'Installed agreement/update/public gameplay acceptance failed'}
+          if($LASTEXITCODE -ne 0){throw 'Installed agreement/update/retirement acceptance failed'}
           $pointer=Get-Content (Join-Path $env:LOCALAPPDATA 'Programs/CavegameReborn/installed.json') -Raw | ConvertFrom-Json
           if($pointer.current -ne (Get-Content alpha/build-input.json -Raw | ConvertFrom-Json).version){throw 'HTTPS update did not activate'}
           $identity=Join-Path $env:LOCALAPPDATA 'CavegameReborn/identity/identity.json'
@@ -83,13 +83,15 @@ jobs:
           if((Get-FileHash $identity).Hash -ne $before){throw 'MSI upgrade changed identity'}
           Copy-Item alpha/candidate-player-config.json (Join-Path $env:LOCALAPPDATA 'Programs/CavegameReborn/player-config.json') -Force
           node build/ci-player-acceptance.mjs
-          if($LASTEXITCODE -ne 0){throw 'New MSI gameplay acceptance failed'}
-      - name: Real Edge ordinary input and persisted-receipt session recovery
-        timeout-minutes: 4
+          if($LASTEXITCODE -ne 0){throw 'New MSI retirement acceptance failed'}
+      - name: Real Edge original-account transfer and browser play
+        timeout-minutes: 5
         shell: pwsh
         run: |
+          npm install --no-save --ignore-scripts playwright@1.60.0
+          if($LASTEXITCODE -ne 0){throw 'Pinned browser test dependency failed'}
           node build/ci-browser-input.mjs
-          if($LASTEXITCODE -ne 0){throw 'Actual browser input/recovery acceptance failed'}
+          if($LASTEXITCODE -ne 0){throw 'Original-account browser migration acceptance failed'}
       - name: Uninstall keeps identity and acceptance
         shell: pwsh
         run: |
@@ -117,7 +119,7 @@ jobs:
           git commit -m "Activate verified Closed Alpha $v player directory"
           git push
           if($LASTEXITCODE -ne 0){throw 'Stable directory activation failed'}
-          gh release edit "alpha-$v" --prerelease=false --latest --title "Cavegame Reborn Closed Alpha $v" --notes-file ALPHA-NOTES.md
+          gh release edit "alpha-$v" --prerelease=false --latest --title "NoLife.io final account transfer client $v" --notes-file ALPHA-NOTES.md
           if($LASTEXITCODE -ne 0){throw 'Release promotion failed'}
       - name: Verify canonical latest download and install that exact artifact
         shell: pwsh
